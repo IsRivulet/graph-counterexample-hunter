@@ -1,0 +1,1783 @@
+{
+  "benchmark": "MathCheck-Bench",
+  "version": "0.2.0",
+  "description": "Finite-scope counterexample-search tasks over simple undirected graphs.",
+  "graph_type": "simple_undirected",
+  "vertex_scopes": [
+    3,
+    4,
+    5
+  ],
+  "task_count": 102,
+  "split_counts": {
+    "train": 45,
+    "validation": 27,
+    "test": 30
+  },
+  "tasks": [
+    {
+      "task_id": "MC001",
+      "split": "train",
+      "property_id": "connected_implies_bipartite",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected"
+      ],
+      "conclusion": "bipartite",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC002",
+      "split": "train",
+      "property_id": "connected_implies_bipartite",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected"
+      ],
+      "conclusion": "bipartite",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC003",
+      "split": "train",
+      "property_id": "connected_implies_bipartite",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected"
+      ],
+      "conclusion": "bipartite",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC004",
+      "split": "train",
+      "property_id": "connected_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected"
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC005",
+      "split": "train",
+      "property_id": "connected_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected"
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC006",
+      "split": "train",
+      "property_id": "connected_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected"
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC007",
+      "split": "train",
+      "property_id": "tree_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree"
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC008",
+      "split": "train",
+      "property_id": "tree_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree"
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC009",
+      "split": "train",
+      "property_id": "tree_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree"
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC010",
+      "split": "train",
+      "property_id": "tree_implies_bipartite",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree"
+      ],
+      "conclusion": "bipartite",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC011",
+      "split": "train",
+      "property_id": "tree_implies_bipartite",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree"
+      ],
+      "conclusion": "bipartite",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC012",
+      "split": "train",
+      "property_id": "tree_implies_bipartite",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree"
+      ],
+      "conclusion": "bipartite",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC013",
+      "split": "train",
+      "property_id": "tree_implies_eulerian_trail",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree"
+      ],
+      "conclusion": "eulerian_trail",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC014",
+      "split": "train",
+      "property_id": "tree_implies_eulerian_trail",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree"
+      ],
+      "conclusion": "eulerian_trail",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC015",
+      "split": "train",
+      "property_id": "tree_implies_eulerian_trail",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree"
+      ],
+      "conclusion": "eulerian_trail",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC016",
+      "split": "train",
+      "property_id": "eulerian_circuit_implies_all_even",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "eulerian_circuit"
+      ],
+      "conclusion": "all_even_degree",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC017",
+      "split": "train",
+      "property_id": "eulerian_circuit_implies_all_even",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "eulerian_circuit"
+      ],
+      "conclusion": "all_even_degree",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC018",
+      "split": "train",
+      "property_id": "eulerian_circuit_implies_all_even",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "eulerian_circuit"
+      ],
+      "conclusion": "all_even_degree",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC019",
+      "split": "train",
+      "property_id": "eulerian_circuit_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "eulerian_circuit"
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC020",
+      "split": "train",
+      "property_id": "eulerian_circuit_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "eulerian_circuit"
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC021",
+      "split": "train",
+      "property_id": "eulerian_circuit_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "eulerian_circuit"
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC022",
+      "split": "train",
+      "property_id": "eulerian_trail_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "eulerian_trail"
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC023",
+      "split": "train",
+      "property_id": "eulerian_trail_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "eulerian_trail"
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC024",
+      "split": "train",
+      "property_id": "eulerian_trail_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "eulerian_trail"
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC025",
+      "split": "train",
+      "property_id": "all_even_implies_eulerian_circuit",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "all_even_degree"
+      ],
+      "conclusion": "eulerian_circuit",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC026",
+      "split": "train",
+      "property_id": "all_even_implies_eulerian_circuit",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "all_even_degree"
+      ],
+      "conclusion": "eulerian_circuit",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC027",
+      "split": "train",
+      "property_id": "all_even_implies_eulerian_circuit",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "all_even_degree"
+      ],
+      "conclusion": "eulerian_circuit",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC028",
+      "split": "train",
+      "property_id": "bipartite_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "bipartite"
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC029",
+      "split": "train",
+      "property_id": "bipartite_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "bipartite"
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC030",
+      "split": "train",
+      "property_id": "bipartite_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "bipartite"
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC031",
+      "split": "validation",
+      "property_id": "bipartite_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "bipartite"
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC032",
+      "split": "validation",
+      "property_id": "bipartite_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "bipartite"
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC033",
+      "split": "validation",
+      "property_id": "bipartite_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "bipartite"
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC034",
+      "split": "validation",
+      "property_id": "complete_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "complete"
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC035",
+      "split": "validation",
+      "property_id": "complete_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "complete"
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC036",
+      "split": "validation",
+      "property_id": "complete_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "complete"
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC037",
+      "split": "validation",
+      "property_id": "complete_implies_eulerian_circuit",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "complete"
+      ],
+      "conclusion": "eulerian_circuit",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC038",
+      "split": "validation",
+      "property_id": "complete_implies_eulerian_circuit",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "complete"
+      ],
+      "conclusion": "eulerian_circuit",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC039",
+      "split": "validation",
+      "property_id": "complete_implies_eulerian_circuit",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "complete"
+      ],
+      "conclusion": "eulerian_circuit",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC040",
+      "split": "validation",
+      "property_id": "has_cycle_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "has_cycle"
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC041",
+      "split": "validation",
+      "property_id": "has_cycle_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "has_cycle"
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC042",
+      "split": "validation",
+      "property_id": "has_cycle_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "has_cycle"
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC043",
+      "split": "validation",
+      "property_id": "connected_even_implies_eulerian_circuit",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected",
+        "all_even_degree"
+      ],
+      "conclusion": "eulerian_circuit",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC044",
+      "split": "validation",
+      "property_id": "connected_even_implies_eulerian_circuit",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected",
+        "all_even_degree"
+      ],
+      "conclusion": "eulerian_circuit",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC045",
+      "split": "validation",
+      "property_id": "connected_even_implies_eulerian_circuit",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected",
+        "all_even_degree"
+      ],
+      "conclusion": "eulerian_circuit",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC046",
+      "split": "test",
+      "property_id": "connected_bipartite_tree_implies_eulerian_trail",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected",
+        "bipartite",
+        "tree"
+      ],
+      "conclusion": "eulerian_trail",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC047",
+      "split": "test",
+      "property_id": "connected_bipartite_tree_implies_eulerian_trail",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected",
+        "bipartite",
+        "tree"
+      ],
+      "conclusion": "eulerian_trail",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC048",
+      "split": "test",
+      "property_id": "connected_bipartite_tree_implies_eulerian_trail",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected",
+        "bipartite",
+        "tree"
+      ],
+      "conclusion": "eulerian_trail",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC049",
+      "split": "test",
+      "property_id": "connected_maxdeg2_implies_eulerian_trail",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected",
+        "max_degree_at_most_2"
+      ],
+      "conclusion": "eulerian_trail",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC050",
+      "split": "test",
+      "property_id": "connected_maxdeg2_implies_eulerian_trail",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected",
+        "max_degree_at_most_2"
+      ],
+      "conclusion": "eulerian_trail",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC051",
+      "split": "test",
+      "property_id": "connected_maxdeg2_implies_eulerian_trail",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected",
+        "max_degree_at_most_2"
+      ],
+      "conclusion": "eulerian_trail",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC052",
+      "split": "test",
+      "property_id": "connected_maxdeg2_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected",
+        "max_degree_at_most_2"
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC053",
+      "split": "test",
+      "property_id": "connected_maxdeg2_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected",
+        "max_degree_at_most_2"
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC054",
+      "split": "test",
+      "property_id": "connected_maxdeg2_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected",
+        "max_degree_at_most_2"
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC055",
+      "split": "test",
+      "property_id": "tree_with_leaf_implies_has_cycle",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree",
+        "has_leaf"
+      ],
+      "conclusion": "has_cycle",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC056",
+      "split": "test",
+      "property_id": "tree_with_leaf_implies_has_cycle",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree",
+        "has_leaf"
+      ],
+      "conclusion": "has_cycle",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC057",
+      "split": "test",
+      "property_id": "tree_with_leaf_implies_has_cycle",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree",
+        "has_leaf"
+      ],
+      "conclusion": "has_cycle",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC058",
+      "split": "test",
+      "property_id": "connected_cyclic_implies_eulerian",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected",
+        "has_cycle"
+      ],
+      "conclusion": "eulerian_circuit",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC059",
+      "split": "test",
+      "property_id": "connected_cyclic_implies_eulerian",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected",
+        "has_cycle"
+      ],
+      "conclusion": "eulerian_circuit",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC060",
+      "split": "test",
+      "property_id": "connected_cyclic_implies_eulerian",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "connected",
+        "has_cycle"
+      ],
+      "conclusion": "eulerian_circuit",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC061",
+      "split": "train",
+      "property_id": "degree2_implies_leaf",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "min_degree_at_least",
+          "k": 2
+        }
+      ],
+      "conclusion": "has_leaf",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC062",
+      "split": "train",
+      "property_id": "degree2_implies_leaf",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "min_degree_at_least",
+          "k": 2
+        }
+      ],
+      "conclusion": "has_leaf",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC063",
+      "split": "train",
+      "property_id": "degree2_implies_leaf",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "min_degree_at_least",
+          "k": 2
+        }
+      ],
+      "conclusion": "has_leaf",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC064",
+      "split": "train",
+      "property_id": "maxdegree1_implies_bipartite",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "max_degree_at_most",
+          "k": 1
+        }
+      ],
+      "conclusion": "bipartite",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC065",
+      "split": "train",
+      "property_id": "maxdegree1_implies_bipartite",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "max_degree_at_most",
+          "k": 1
+        }
+      ],
+      "conclusion": "bipartite",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC066",
+      "split": "train",
+      "property_id": "maxdegree1_implies_bipartite",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "max_degree_at_most",
+          "k": 1
+        }
+      ],
+      "conclusion": "bipartite",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC067",
+      "split": "train",
+      "property_id": "two_leaves_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "num_leaves_at_least",
+          "k": 2
+        }
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC068",
+      "split": "train",
+      "property_id": "two_leaves_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "num_leaves_at_least",
+          "k": 2
+        }
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC069",
+      "split": "train",
+      "property_id": "two_leaves_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "num_leaves_at_least",
+          "k": 2
+        }
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC070",
+      "split": "train",
+      "property_id": "two_color_implies_bipartite",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "chromatic_number_at_most",
+          "k": 2
+        }
+      ],
+      "conclusion": "bipartite",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC071",
+      "split": "train",
+      "property_id": "two_color_implies_bipartite",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "chromatic_number_at_most",
+          "k": 2
+        }
+      ],
+      "conclusion": "bipartite",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC072",
+      "split": "train",
+      "property_id": "two_color_implies_bipartite",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "chromatic_number_at_most",
+          "k": 2
+        }
+      ],
+      "conclusion": "bipartite",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC073",
+      "split": "train",
+      "property_id": "diameter2_implies_complete",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "diameter_at_most",
+          "k": 2
+        }
+      ],
+      "conclusion": "complete",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC074",
+      "split": "train",
+      "property_id": "diameter2_implies_complete",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "diameter_at_most",
+          "k": 2
+        }
+      ],
+      "conclusion": "complete",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC075",
+      "split": "train",
+      "property_id": "diameter2_implies_complete",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "diameter_at_most",
+          "k": 2
+        }
+      ],
+      "conclusion": "complete",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC076",
+      "split": "validation",
+      "property_id": "not_bipartite_implies_cycle",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "bipartite",
+          "negated": true
+        }
+      ],
+      "conclusion": "has_cycle",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC077",
+      "split": "validation",
+      "property_id": "not_bipartite_implies_cycle",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "bipartite",
+          "negated": true
+        }
+      ],
+      "conclusion": "has_cycle",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC078",
+      "split": "validation",
+      "property_id": "not_bipartite_implies_cycle",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "bipartite",
+          "negated": true
+        }
+      ],
+      "conclusion": "has_cycle",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC079",
+      "split": "validation",
+      "property_id": "tree_implies_not_cycle",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree"
+      ],
+      "conclusion": {
+        "predicate": "has_cycle",
+        "negated": true
+      },
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC080",
+      "split": "validation",
+      "property_id": "tree_implies_not_cycle",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree"
+      ],
+      "conclusion": {
+        "predicate": "has_cycle",
+        "negated": true
+      },
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC081",
+      "split": "validation",
+      "property_id": "tree_implies_not_cycle",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree"
+      ],
+      "conclusion": {
+        "predicate": "has_cycle",
+        "negated": true
+      },
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC082",
+      "split": "validation",
+      "property_id": "cycle_or_complete_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "or": [
+            "has_cycle",
+            "complete"
+          ]
+        }
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC083",
+      "split": "validation",
+      "property_id": "cycle_or_complete_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "or": [
+            "has_cycle",
+            "complete"
+          ]
+        }
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC084",
+      "split": "validation",
+      "property_id": "cycle_or_complete_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "or": [
+            "has_cycle",
+            "complete"
+          ]
+        }
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC085",
+      "split": "validation",
+      "property_id": "impossible_degree5_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "min_degree_at_least",
+          "k": 5
+        }
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC086",
+      "split": "validation",
+      "property_id": "impossible_degree5_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "min_degree_at_least",
+          "k": 5
+        }
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC087",
+      "split": "validation",
+      "property_id": "impossible_degree5_implies_tree",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "min_degree_at_least",
+          "k": 5
+        }
+      ],
+      "conclusion": "tree",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC088",
+      "split": "test",
+      "property_id": "contradictory_tree_implies_complete",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree",
+        {
+          "predicate": "tree",
+          "negated": true
+        }
+      ],
+      "conclusion": "complete",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC089",
+      "split": "test",
+      "property_id": "contradictory_tree_implies_complete",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree",
+        {
+          "predicate": "tree",
+          "negated": true
+        }
+      ],
+      "conclusion": "complete",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC090",
+      "split": "test",
+      "property_id": "contradictory_tree_implies_complete",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree",
+        {
+          "predicate": "tree",
+          "negated": true
+        }
+      ],
+      "conclusion": "complete",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC091",
+      "split": "test",
+      "property_id": "negated_or_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "or": [
+            "tree",
+            {
+              "predicate": "chromatic_number_at_most",
+              "k": 2
+            }
+          ],
+          "negated": true
+        }
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC092",
+      "split": "test",
+      "property_id": "negated_or_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "or": [
+            "tree",
+            {
+              "predicate": "chromatic_number_at_most",
+              "k": 2
+            }
+          ],
+          "negated": true
+        }
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC093",
+      "split": "test",
+      "property_id": "negated_or_implies_connected",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "or": [
+            "tree",
+            {
+              "predicate": "chromatic_number_at_most",
+              "k": 2
+            }
+          ],
+          "negated": true
+        }
+      ],
+      "conclusion": "connected",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC094",
+      "split": "test",
+      "property_id": "diameter_and_negated_or",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "diameter_at_most",
+          "k": 2
+        },
+        {
+          "or": [
+            {
+              "predicate": "complete",
+              "negated": true
+            },
+            {
+              "predicate": "num_leaves_at_least",
+              "k": 2
+            }
+          ]
+        }
+      ],
+      "conclusion": {
+        "predicate": "chromatic_number_at_most",
+        "k": 2
+      },
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC095",
+      "split": "test",
+      "property_id": "diameter_and_negated_or",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "diameter_at_most",
+          "k": 2
+        },
+        {
+          "or": [
+            {
+              "predicate": "complete",
+              "negated": true
+            },
+            {
+              "predicate": "num_leaves_at_least",
+              "k": 2
+            }
+          ]
+        }
+      ],
+      "conclusion": {
+        "predicate": "chromatic_number_at_most",
+        "k": 2
+      },
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC096",
+      "split": "test",
+      "property_id": "diameter_and_negated_or",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "diameter_at_most",
+          "k": 2
+        },
+        {
+          "or": [
+            {
+              "predicate": "complete",
+              "negated": true
+            },
+            {
+              "predicate": "num_leaves_at_least",
+              "k": 2
+            }
+          ]
+        }
+      ],
+      "conclusion": {
+        "predicate": "chromatic_number_at_most",
+        "k": 2
+      },
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC097",
+      "split": "test",
+      "property_id": "tree_implies_cycle_or_two_color",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree"
+      ],
+      "conclusion": {
+        "or": [
+          "has_cycle",
+          {
+            "predicate": "chromatic_number_at_most",
+            "k": 2
+          }
+        ]
+      },
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC098",
+      "split": "test",
+      "property_id": "tree_implies_cycle_or_two_color",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree"
+      ],
+      "conclusion": {
+        "or": [
+          "has_cycle",
+          {
+            "predicate": "chromatic_number_at_most",
+            "k": 2
+          }
+        ]
+      },
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC099",
+      "split": "test",
+      "property_id": "tree_implies_cycle_or_two_color",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "tree"
+      ],
+      "conclusion": {
+        "or": [
+          "has_cycle",
+          {
+            "predicate": "chromatic_number_at_most",
+            "k": 2
+          }
+        ]
+      },
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC100",
+      "split": "test",
+      "property_id": "diameter1_implies_complete",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "diameter_at_most",
+          "k": 1
+        }
+      ],
+      "conclusion": "complete",
+      "min_nodes": 1,
+      "max_nodes": 3,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC101",
+      "split": "test",
+      "property_id": "diameter1_implies_complete",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "diameter_at_most",
+          "k": 1
+        }
+      ],
+      "conclusion": "complete",
+      "min_nodes": 1,
+      "max_nodes": 4,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    {
+      "task_id": "MC102",
+      "split": "test",
+      "property_id": "diameter1_implies_complete",
+      "graph_type": "simple_undirected",
+      "premises": [
+        {
+          "predicate": "diameter_at_most",
+          "k": 1
+        }
+      ],
+      "conclusion": "complete",
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    }
+  ]
+}

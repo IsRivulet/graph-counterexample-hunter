@@ -1,0 +1,2566 @@
+{
+  "benchmark": "MathCheck-Bench",
+  "version": "0.2.0",
+  "label_semantics": "counterexample_exists_in_scope means at least one graph in the finite specified scope satisfies every premise and violates the conclusion.",
+  "ground_truth_is_independent_of_production_backend": true,
+  "cases": [
+    {
+      "task_id": "MC001",
+      "property_id": "connected_implies_bipartite",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "connected": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC002",
+      "property_id": "connected_implies_bipartite",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "connected": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC003",
+      "property_id": "connected_implies_bipartite",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "connected": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC004",
+      "property_id": "connected_implies_tree",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "connected": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC005",
+      "property_id": "connected_implies_tree",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "connected": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC006",
+      "property_id": "connected_implies_tree",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "connected": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC007",
+      "property_id": "tree_implies_connected",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 5,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC008",
+      "property_id": "tree_implies_connected",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 75,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 21,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC009",
+      "property_id": "tree_implies_connected",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 1099,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 146,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC010",
+      "property_id": "tree_implies_bipartite",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 5,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC011",
+      "property_id": "tree_implies_bipartite",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 75,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 21,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC012",
+      "property_id": "tree_implies_bipartite",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 1099,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 146,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC013",
+      "property_id": "tree_implies_eulerian_trail",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 5,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC014",
+      "property_id": "tree_implies_eulerian_trail",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "premise_values": {
+          "tree": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 19,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC015",
+      "property_id": "tree_implies_eulerian_trail",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "premise_values": {
+          "tree": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 19,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC016",
+      "property_id": "eulerian_circuit_implies_all_even",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC017",
+      "property_id": "eulerian_circuit_implies_all_even",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 75,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 5,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC018",
+      "property_id": "eulerian_circuit_implies_all_even",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 1099,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 43,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC019",
+      "property_id": "eulerian_circuit_implies_tree",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "eulerian_circuit": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC020",
+      "property_id": "eulerian_circuit_implies_tree",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "eulerian_circuit": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC021",
+      "property_id": "eulerian_circuit_implies_tree",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "eulerian_circuit": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC022",
+      "property_id": "eulerian_trail_implies_connected",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC023",
+      "property_id": "eulerian_trail_implies_connected",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 75,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 39,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC024",
+      "property_id": "eulerian_trail_implies_connected",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 1099,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 517,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC025",
+      "property_id": "all_even_implies_eulerian_circuit",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [],
+        "premise_values": {
+          "all_even_degree": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 2,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC026",
+      "property_id": "all_even_implies_eulerian_circuit",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [],
+        "premise_values": {
+          "all_even_degree": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 2,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC027",
+      "property_id": "all_even_implies_eulerian_circuit",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [],
+        "premise_values": {
+          "all_even_degree": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 2,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC028",
+      "property_id": "bipartite_implies_connected",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [],
+        "premise_values": {
+          "bipartite": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 2,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC029",
+      "property_id": "bipartite_implies_connected",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [],
+        "premise_values": {
+          "bipartite": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 2,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC030",
+      "property_id": "bipartite_implies_connected",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [],
+        "premise_values": {
+          "bipartite": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 2,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC031",
+      "property_id": "bipartite_implies_tree",
+      "split": "validation",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [],
+        "premise_values": {
+          "bipartite": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 2,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC032",
+      "property_id": "bipartite_implies_tree",
+      "split": "validation",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [],
+        "premise_values": {
+          "bipartite": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 2,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC033",
+      "property_id": "bipartite_implies_tree",
+      "split": "validation",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [],
+        "premise_values": {
+          "bipartite": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 2,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC034",
+      "property_id": "complete_implies_connected",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 3,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC035",
+      "property_id": "complete_implies_connected",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 75,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 4,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC036",
+      "property_id": "complete_implies_connected",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 1099,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 5,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC037",
+      "property_id": "complete_implies_eulerian_circuit",
+      "split": "validation",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "premise_values": {
+          "complete": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 3,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC038",
+      "property_id": "complete_implies_eulerian_circuit",
+      "split": "validation",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "premise_values": {
+          "complete": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 3,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC039",
+      "property_id": "complete_implies_eulerian_circuit",
+      "split": "validation",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "premise_values": {
+          "complete": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 3,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC040",
+      "property_id": "has_cycle_implies_connected",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 1,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC041",
+      "property_id": "has_cycle_implies_connected",
+      "split": "validation",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "has_cycle": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 23,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC042",
+      "property_id": "has_cycle_implies_connected",
+      "split": "validation",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "has_cycle": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 23,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC043",
+      "property_id": "connected_even_implies_eulerian_circuit",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC044",
+      "property_id": "connected_even_implies_eulerian_circuit",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 75,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 5,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC045",
+      "property_id": "connected_even_implies_eulerian_circuit",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 1099,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 43,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC046",
+      "property_id": "connected_bipartite_tree_implies_eulerian_trail",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 5,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC047",
+      "property_id": "connected_bipartite_tree_implies_eulerian_trail",
+      "split": "test",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "premise_values": {
+          "connected": true,
+          "bipartite": true,
+          "tree": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 19,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC048",
+      "property_id": "connected_bipartite_tree_implies_eulerian_trail",
+      "split": "test",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "premise_values": {
+          "connected": true,
+          "bipartite": true,
+          "tree": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 19,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC049",
+      "property_id": "connected_maxdeg2_implies_eulerian_trail",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC050",
+      "property_id": "connected_maxdeg2_implies_eulerian_trail",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 75,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 21,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC051",
+      "property_id": "connected_maxdeg2_implies_eulerian_trail",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 1099,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 93,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC052",
+      "property_id": "connected_maxdeg2_implies_tree",
+      "split": "test",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "connected": true,
+          "max_degree_at_most_2": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC053",
+      "property_id": "connected_maxdeg2_implies_tree",
+      "split": "test",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "connected": true,
+          "max_degree_at_most_2": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC054",
+      "property_id": "connected_maxdeg2_implies_tree",
+      "split": "test",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "connected": true,
+          "max_degree_at_most_2": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC055",
+      "property_id": "tree_with_leaf_implies_has_cycle",
+      "split": "test",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "premise_values": {
+          "tree": true,
+          "has_leaf": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 3,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 1,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC056",
+      "property_id": "tree_with_leaf_implies_has_cycle",
+      "split": "test",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "premise_values": {
+          "tree": true,
+          "has_leaf": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 3,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 1,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC057",
+      "property_id": "tree_with_leaf_implies_has_cycle",
+      "split": "test",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "premise_values": {
+          "tree": true,
+          "has_leaf": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 3,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 1,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC058",
+      "property_id": "connected_cyclic_implies_eulerian",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 1,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC059",
+      "property_id": "connected_cyclic_implies_eulerian",
+      "split": "test",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "connected": true,
+          "has_cycle": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 27,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC060",
+      "property_id": "connected_cyclic_implies_eulerian",
+      "split": "test",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "connected": true,
+          "has_cycle": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 27,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC061",
+      "property_id": "degree2_implies_leaf",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "{\"k\": 2, \"predicate\": \"min_degree_at_least\"}": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 1,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC062",
+      "property_id": "degree2_implies_leaf",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "{\"k\": 2, \"predicate\": \"min_degree_at_least\"}": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 1,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC063",
+      "property_id": "degree2_implies_leaf",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "{\"k\": 2, \"predicate\": \"min_degree_at_least\"}": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 1,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC064",
+      "property_id": "maxdegree1_implies_bipartite",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 7,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC065",
+      "property_id": "maxdegree1_implies_bipartite",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 75,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 17,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC066",
+      "property_id": "maxdegree1_implies_bipartite",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 1099,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 43,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC067",
+      "property_id": "two_leaves_implies_tree",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "premise_values": {
+          "{\"k\": 2, \"predicate\": \"num_leaves_at_least\"}": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 5,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC068",
+      "property_id": "two_leaves_implies_tree",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "premise_values": {
+          "{\"k\": 2, \"predicate\": \"num_leaves_at_least\"}": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 5,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC069",
+      "property_id": "two_leaves_implies_tree",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "premise_values": {
+          "{\"k\": 2, \"predicate\": \"num_leaves_at_least\"}": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 5,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC070",
+      "property_id": "two_color_implies_bipartite",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 10,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC071",
+      "property_id": "two_color_implies_bipartite",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 75,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 51,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC072",
+      "property_id": "two_color_implies_bipartite",
+      "split": "train",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 1099,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 427,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC073",
+      "property_id": "diameter2_implies_complete",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "premise_values": {
+          "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 7,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 3,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC074",
+      "property_id": "diameter2_implies_complete",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "premise_values": {
+          "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 7,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 3,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC075",
+      "property_id": "diameter2_implies_complete",
+      "split": "train",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "premise_values": {
+          "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 7,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 3,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC076",
+      "property_id": "not_bipartite_implies_cycle",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 1,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC077",
+      "property_id": "not_bipartite_implies_cycle",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 75,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 24,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC078",
+      "property_id": "not_bipartite_implies_cycle",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 1099,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 672,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC079",
+      "property_id": "tree_implies_not_cycle",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 5,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC080",
+      "property_id": "tree_implies_not_cycle",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 75,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 21,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC081",
+      "property_id": "tree_implies_not_cycle",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 1099,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 146,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC082",
+      "property_id": "cycle_or_complete_implies_connected",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 3,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC083",
+      "property_id": "cycle_or_complete_implies_connected",
+      "split": "validation",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "{\"or\": [\"has_cycle\", \"complete\"]}": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 23,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 4,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC084",
+      "property_id": "cycle_or_complete_implies_connected",
+      "split": "validation",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "{\"or\": [\"has_cycle\", \"complete\"]}": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 23,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 4,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC085",
+      "property_id": "impossible_degree5_implies_tree",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 0,
+      "vacuously_true": true,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC086",
+      "property_id": "impossible_degree5_implies_tree",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 75,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 0,
+      "vacuously_true": true,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC087",
+      "property_id": "impossible_degree5_implies_tree",
+      "split": "validation",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 1099,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 0,
+      "vacuously_true": true,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC088",
+      "property_id": "contradictory_tree_implies_complete",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 0,
+      "vacuously_true": true,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC089",
+      "property_id": "contradictory_tree_implies_complete",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 75,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 0,
+      "vacuously_true": true,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC090",
+      "property_id": "contradictory_tree_implies_complete",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 1099,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 0,
+      "vacuously_true": true,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC091",
+      "property_id": "negated_or_implies_connected",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 1,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC092",
+      "property_id": "negated_or_implies_connected",
+      "split": "test",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "{\"negated\": true, \"or\": [\"tree\", {\"k\": 2, \"predicate\": \"chromatic_number_at_most\"}]}": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 23,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC093",
+      "property_id": "negated_or_implies_connected",
+      "split": "test",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "{\"negated\": true, \"or\": [\"tree\", {\"k\": 2, \"predicate\": \"chromatic_number_at_most\"}]}": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 23,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 2,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC094",
+      "property_id": "diameter_and_negated_or",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 4,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC095",
+      "property_id": "diameter_and_negated_or",
+      "split": "test",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true,
+          "{\"or\": [{\"negated\": true, \"predicate\": \"complete\"}, {\"k\": 2, \"predicate\": \"num_leaves_at_least\"}]}": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 27,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC096",
+      "property_id": "diameter_and_negated_or",
+      "split": "test",
+      "expected_status": "counterexample_exists_in_scope",
+      "counterexample": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "premise_values": {
+          "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true,
+          "{\"or\": [{\"negated\": true, \"predicate\": \"complete\"}, {\"k\": 2, \"predicate\": \"num_leaves_at_least\"}]}": true
+        },
+        "conclusion_value": false
+      },
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 27,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": false,
+      "premise_satisfying_count": 6,
+      "vacuously_true": false,
+      "expected_backend_status": "counterexample_found",
+      "oracle_method": "independent reference implementation; a verified witness certifies existence"
+    },
+    {
+      "task_id": "MC097",
+      "property_id": "tree_implies_cycle_or_two_color",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 5,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC098",
+      "property_id": "tree_implies_cycle_or_two_color",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 75,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 21,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC099",
+      "property_id": "tree_implies_cycle_or_two_color",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 1099,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 146,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC100",
+      "property_id": "diameter1_implies_complete",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 11,
+      "oracle_graphs_checked": 11,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 3,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC101",
+      "property_id": "diameter1_implies_complete",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 75,
+      "oracle_graphs_checked": 75,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 4,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    },
+    {
+      "task_id": "MC102",
+      "property_id": "diameter1_implies_complete",
+      "split": "test",
+      "expected_status": "no_counterexample_in_scope",
+      "counterexample": null,
+      "graphs_in_scope": 1099,
+      "oracle_graphs_checked": 1099,
+      "oracle_label_certified": true,
+      "oracle_scope_exhausted": true,
+      "premise_satisfying_count": 5,
+      "vacuously_true": false,
+      "expected_backend_status": "verified_true_in_scope",
+      "oracle_method": "independent reference implementation + exhaustive enumeration certifies no witness in scope"
+    }
+  ]
+}

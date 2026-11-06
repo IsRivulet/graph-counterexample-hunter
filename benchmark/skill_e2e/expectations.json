@@ -1,0 +1,15 @@
+{
+  "description": "Frozen development answer key. Never copy into model workspaces or prompts. Manual review includes natural-language fidelity.",
+  "cases": [
+    {"id": "E001", "action": "search", "status": "counterexample_found", "task": {"premises": ["connected", "bipartite"], "conclusion": "tree", "min_nodes": 1, "max_nodes": 5}, "manual_required": true},
+    {"id": "E002", "action": "search", "status": "verified_true_in_scope", "task": {"premises": ["tree"], "conclusion": "connected", "min_nodes": 1, "max_nodes": 5}, "manual_required": true},
+    {"id": "E003", "action": "search", "status": "verified_true_in_scope", "task": {"premises": [{"predicate": "min_degree_at_least", "k": 3}], "conclusion": "tree", "min_nodes": 1, "max_nodes": 3}, "manual_required": true},
+    {"id": "E004", "action": "search", "status": "no_counterexample_in_scope", "task": {"premises": ["tree"], "conclusion": "connected", "min_nodes": 1, "max_nodes": 4, "search_mode": "random", "max_graphs": 50, "seed": 17}, "manual_required": true},
+    {"id": "E005", "action": "verify", "status": "inconclusive", "task": {"premises": ["connected", "bipartite"], "conclusion": "tree", "min_nodes": 1, "max_nodes": 5}, "require_minimization": false, "manual_required": true},
+    {"id": "E006", "action": "verify", "status": "counterexample_found", "task": {"premises": ["connected", "bipartite"], "conclusion": "tree", "min_nodes": 1, "max_nodes": 5}, "manual_required": true},
+    {"id": "E007", "action": "search", "status": "counterexample_found", "task": {"premises": ["connected"], "conclusion": {"predicate": "bipartite", "negated": true}, "min_nodes": 1, "max_nodes": 4}, "manual_required": true},
+    {"id": "E008", "action": "search", "status": "counterexample_found", "task": {"premises": [{"or": ["has_cycle", "complete"]}], "conclusion": "connected", "min_nodes": 1, "max_nodes": 5}, "manual_required": true},
+    {"id": "E009", "action": "clarify", "status": "inconclusive", "manual_required": true},
+    {"id": "E010", "action": "unsupported", "status": "unsupported", "manual_required": true}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "case_count": 42,
+  "by_category": {
+    "parse_search_verify_report": 12,
+    "scope_and_search_modes": 6,
+    "direction_and_edit": 3,
+    "clarification_and_unsupported": 10,
+    "candidate_verification": 7,
+    "minimize_and_reverify": 1,
+    "backend_failure_handling": 3
+  },
+  "by_status": {
+    "counterexample_found": 15,
+    "no_counterexample_in_scope": 9,
+    "inconclusive": 11,
+    "unsupported": 7
+  },
+  "oracle_checked_parse_search_cases": 20,
+  "reference_witnesses_checked": 15,
+  "candidate_graphs_checked": 10,
+  "candidate_counterexamples_verified": 4
+}

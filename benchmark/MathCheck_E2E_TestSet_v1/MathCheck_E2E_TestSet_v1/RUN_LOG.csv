@@ -1,0 +1,43 @@
+﻿case_id,category,difficulty,expected_action,expected_status,actual_status,parse_pass,conclusion_pass,verify_pass,scope_honest,reduce_pass,report_pass,backend_calls,graphs_examined,seed,note
+E2E-01,parse_search_verify_report,basic,parse_search,counterexample_found,counterexample_found,True,True,,True,,True,2,42,,
+E2E-02,parse_search_verify_report,basic,parse_search,no_counterexample_in_scope,no_counterexample_in_scope,True,True,,True,,True,1,1099,,
+E2E-03,parse_search_verify_report,basic,parse_search,counterexample_found,counterexample_found,True,True,,True,,True,2,11,,
+E2E-04,parse_search_verify_report,intermediate,parse_search,counterexample_found,counterexample_found,True,True,,True,,True,2,3,,
+E2E-05,parse_search_verify_report,intermediate,parse_search,counterexample_found,counterexample_found,True,True,,True,,True,2,27,,
+E2E-06,parse_search_verify_report,intermediate,parse_search,counterexample_found,counterexample_found,True,True,,True,,True,2,23,,
+E2E-07,parse_search_verify_report,intermediate,parse_search,counterexample_found,counterexample_found,True,True,,True,,True,2,24,,
+E2E-08,parse_search_verify_report,intermediate,parse_search,counterexample_found,counterexample_found,True,True,,True,,True,2,2,,
+E2E-09,parse_search_verify_report,intermediate,parse_search,no_counterexample_in_scope,no_counterexample_in_scope,True,True,,True,,True,1,1099,,
+E2E-10,parse_search_verify_report,basic,parse_search,no_counterexample_in_scope,no_counterexample_in_scope,True,True,,True,,True,1,1099,,
+E2E-11,parse_search_verify_report,advanced,parse_search,no_counterexample_in_scope,no_counterexample_in_scope,True,True,,True,,True,1,1099,,
+E2E-12,parse_search_verify_report,basic,parse_search,counterexample_found,counterexample_found,True,True,,True,,True,2,3,,
+E2E-13,scope_and_search_modes,intermediate,parse_search,no_counterexample_in_scope,no_counterexample_in_scope,True,True,,True,,True,1,11,,
+E2E-14,scope_and_search_modes,intermediate,parse_search,counterexample_found,counterexample_found,True,True,,True,,True,2,42,,
+E2E-15,scope_and_search_modes,advanced,parse_search,no_counterexample_in_scope,no_counterexample_in_scope,True,True,,True,,True,1,3,,
+E2E-16,scope_and_search_modes,advanced,parse_search,counterexample_found,counterexample_found,True,True,,True,,True,2,7,,
+E2E-17,scope_and_search_modes,advanced,parse_search,no_counterexample_in_scope,no_counterexample_in_scope,True,True,,True,,True,1,500,20261105,
+E2E-18,scope_and_search_modes,advanced,parse_search,no_counterexample_in_scope,no_counterexample_in_scope,True,True,,True,,True,1,49,,
+E2E-19,direction_and_edit,basic,parse_search,no_counterexample_in_scope,no_counterexample_in_scope,True,True,,True,,True,1,1099,,
+E2E-20,direction_and_edit,basic,parse_search,counterexample_found,counterexample_found,True,True,,True,,True,2,11,,
+E2E-21,direction_and_edit,advanced,parse_search,counterexample_found,counterexample_found,True,True,,True,,True,2,11,,
+E2E-22,clarification_and_unsupported,intermediate,clarify_before_search,inconclusive,inconclusive,False,True,,False,,True,0,,,clarify: ambiguous Euler terminology
+E2E-23,clarification_and_unsupported,intermediate,clarify_before_search,inconclusive,inconclusive,False,True,,False,,True,0,,,clarify: empty-graph convention needs clarification
+E2E-24,clarification_and_unsupported,basic,unsupported,unsupported,unsupported,False,True,,False,,True,0,,,unsupported: directed graph not supported
+E2E-25,clarification_and_unsupported,basic,unsupported,unsupported,unsupported,False,True,,False,,True,0,,,unsupported: multigraph not supported
+E2E-26,clarification_and_unsupported,intermediate,unsupported,unsupported,unsupported,False,True,,False,,True,0,,,unsupported: arbitrary degree threshold not supported
+E2E-27,clarification_and_unsupported,advanced,unsupported,unsupported,unsupported,False,True,,False,,True,0,,,unsupported: negated predicate/conclusion not supported
+E2E-28,clarification_and_unsupported,advanced,unsupported,unsupported,unsupported,False,True,,False,,True,0,,,unsupported: disjunction not supported
+E2E-29,clarification_and_unsupported,intermediate,unsupported,unsupported,unsupported,False,True,,False,,True,0,,,unsupported: exhaustive capped at 6 vertices
+E2E-30,clarification_and_unsupported,intermediate,clarify_before_search,inconclusive,inconclusive,False,True,,False,,True,0,,,clarify: missing implication direction
+E2E-31,clarification_and_unsupported,advanced,unsupported,unsupported,unsupported,False,True,,False,,True,0,,,unsupported: negated predicate/conclusion not supported
+E2E-32,candidate_verification,basic,verify_candidate,counterexample_found,counterexample_found,True,True,True,False,,True,1,,,
+E2E-33,candidate_verification,intermediate,verify_candidate,inconclusive,inconclusive,True,True,True,False,,True,1,,,
+E2E-34,candidate_verification,intermediate,verify_candidate,inconclusive,inconclusive,True,True,True,False,,True,1,,,
+E2E-35,candidate_verification,basic,verify_candidate,inconclusive,inconclusive,True,True,True,False,,True,1,,,
+E2E-36,candidate_verification,basic,verify_candidate,inconclusive,inconclusive,True,True,True,False,,True,1,,,
+E2E-37,candidate_verification,intermediate,verify_candidate,inconclusive,inconclusive,True,True,True,False,,True,1,,,
+E2E-38,candidate_verification,intermediate,verify_candidate,inconclusive,inconclusive,True,True,True,False,,True,1,,,
+E2E-39,minimize_and_reverify,advanced,verify_minimize_reverify,counterexample_found,counterexample_found,True,True,,False,True,True,3,,,minimized
+E2E-40,backend_failure_handling,advanced,parse_search,inconclusive,inconclusive,True,True,,True,,True,1,,,
+E2E-41,backend_failure_handling,advanced,verify_candidate,inconclusive,inconclusive,True,True,True,False,,True,1,,,
+E2E-42,backend_failure_handling,advanced,verify_minimize_reverify,counterexample_found,counterexample_found,True,True,,False,True,True,2,,,reduction_failed_fallback_ok

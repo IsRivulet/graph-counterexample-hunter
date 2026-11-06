@@ -1,0 +1,261 @@
+{
+  "provenance": "Responses authored by the active Codex model during this session after reading SKILL.md; not a blind or independent evaluation, no external model API used. Expected actions/statuses added in the same session; parsing is reviewed manually, not independently scored.",
+  "cases": [
+    {
+      "id": "L01",
+      "user_input": "每个连通二分图都是树，搜索1到5个顶点。",
+      "model_response": {
+        "action": "search",
+        "task": {
+          "premises": [
+            "connected",
+            "bipartite"
+          ],
+          "conclusion": "tree",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive"
+        }
+      },
+      "expected_action": "search",
+      "expected_status": "counterexample_found"
+    },
+    {
+      "id": "L02",
+      "user_input": "图既连通又能二染色，就一定是树吗？查1至5点。",
+      "model_response": {
+        "action": "search",
+        "task": {
+          "premises": [
+            "connected",
+            "bipartite"
+          ],
+          "conclusion": "tree",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive"
+        }
+      },
+      "expected_action": "search",
+      "expected_status": "counterexample_found"
+    },
+    {
+      "id": "L03",
+      "user_input": "检查逆命题：每棵树都是连通二分图。",
+      "model_response": {
+        "action": "search",
+        "task": {
+          "premises": [
+            "tree"
+          ],
+          "conclusion": {
+            "or": [
+              {
+                "predicate": "connected",
+                "negated": true
+              },
+              {
+                "predicate": "bipartite",
+                "negated": true
+              }
+            ],
+            "negated": true
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive"
+        }
+      },
+      "expected_action": "search",
+      "expected_status": "verified_true_in_scope"
+    },
+    {
+      "id": "L04",
+      "user_input": "每个连通图都不是二分图。",
+      "model_response": {
+        "action": "search",
+        "task": {
+          "premises": [
+            "connected"
+          ],
+          "conclusion": {
+            "predicate": "bipartite",
+            "negated": true
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive"
+        }
+      },
+      "expected_action": "search",
+      "expected_status": "counterexample_found"
+    },
+    {
+      "id": "L05",
+      "user_input": "含环或者完全的图都是连通图。",
+      "model_response": {
+        "action": "search",
+        "task": {
+          "premises": [
+            {
+              "or": [
+                "has_cycle",
+                "complete"
+              ]
+            }
+          ],
+          "conclusion": "connected",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive"
+        }
+      },
+      "expected_action": "search",
+      "expected_status": "counterexample_found"
+    },
+    {
+      "id": "L06",
+      "user_input": "最小度至少2的图一定有叶子。",
+      "model_response": {
+        "action": "search",
+        "task": {
+          "premises": [
+            {
+              "predicate": "min_degree_at_least",
+              "k": 2
+            }
+          ],
+          "conclusion": "has_leaf",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive"
+        }
+      },
+      "expected_action": "search",
+      "expected_status": "counterexample_found"
+    },
+    {
+      "id": "L07",
+      "user_input": "把“连通二分图都是树”的连通条件删去，其他不变。",
+      "model_response": {
+        "action": "search",
+        "task": {
+          "premises": [
+            "bipartite"
+          ],
+          "conclusion": "tree",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive"
+        }
+      },
+      "expected_action": "search",
+      "expected_status": "counterexample_found"
+    },
+    {
+      "id": "L08",
+      "user_input": "每棵树都是连通图。",
+      "model_response": {
+        "action": "search",
+        "task": {
+          "premises": [
+            "tree"
+          ],
+          "conclusion": "connected",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive"
+        }
+      },
+      "expected_action": "search",
+      "expected_status": "verified_true_in_scope"
+    },
+    {
+      "id": "L09",
+      "user_input": "1至3个点，最小度至少3的图都是树。",
+      "model_response": {
+        "action": "search",
+        "task": {
+          "premises": [
+            {
+              "predicate": "min_degree_at_least",
+              "k": 3
+            }
+          ],
+          "conclusion": "tree",
+          "min_nodes": 1,
+          "max_nodes": 3,
+          "search_mode": "exhaustive"
+        }
+      },
+      "expected_action": "search",
+      "expected_status": "verified_true_in_scope"
+    },
+    {
+      "id": "L10",
+      "user_input": "欧拉图一定有欧拉路径吗？",
+      "model_response": {
+        "action": "clarify",
+        "reason": "请明确欧拉图、路径是否允许闭合，以及孤立点约定。"
+      },
+      "expected_action": "clarify"
+    },
+    {
+      "id": "L11",
+      "user_input": "允许零个顶点，每个图都是树吗？",
+      "model_response": {
+        "action": "clarify",
+        "reason": "请明确空图的连通性及树的约定。"
+      },
+      "expected_action": "clarify"
+    },
+    {
+      "id": "L12",
+      "user_input": "每个有向连通图都是树吗？",
+      "model_response": {
+        "action": "unsupported",
+        "reason": "后端仅支持有限简单无向图。"
+      },
+      "expected_action": "unsupported"
+    },
+    {
+      "id": "L13",
+      "user_input": "验证三角形是否反驳连通二分图都是树。",
+      "model_response": {
+        "action": "verify",
+        "task": {
+          "premises": [
+            "connected",
+            "bipartite"
+          ],
+          "conclusion": "tree",
+          "min_nodes": 1,
+          "max_nodes": 5
+        },
+        "graph": {
+          "nodes": [
+            0,
+            1,
+            2
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      },
+      "expected_action": "verify",
+      "expected_status": "inconclusive"
+    }
+  ]
+}

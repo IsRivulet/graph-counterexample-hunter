@@ -1,0 +1,60 @@
+{
+  "benchmark": "MathCheck-E2E-Bench",
+  "version": "1.0.0",
+  "case_count": 42,
+  "weights": {
+    "parse": 0.2,
+    "conclusion": 0.2,
+    "verify": 0.15,
+    "scope": 0.15,
+    "reduce": 0.1,
+    "efficiency": 0.1,
+    "report": 0.1
+  },
+  "dimension_scores": {
+    "parse_correct_rate": 100.0,
+    "conclusion_correct_rate": 100.0,
+    "verify_reliability": 100.0,
+    "scope_honesty_rate": 100.0,
+    "reduce_correct_rate": 100.0,
+    "report_quality_rate": 100.0
+  },
+  "required_metrics": {
+    "counterexample_precision": 100.0,
+    "counterexample_recall": 100.0,
+    "false_positive_count": 0,
+    "task_parse_exact_match": 100.0,
+    "scope_honesty_rate": 100.0,
+    "clarification_accuracy": 100.0,
+    "unsupported_accuracy": 100.0,
+    "total_backend_calls": 47,
+    "total_graphs_examined": 6264,
+    "total_wall_time_ms": 125.63
+  },
+  "raw_counts": {
+    "parse_correct": 32,
+    "parse_total": 32,
+    "conclusion_correct": 42,
+    "conclusion_total": 42,
+    "verify_reliable": 8,
+    "verify_total": 8,
+    "scope_honest": 22,
+    "scope_total": 22,
+    "reduce_correct": 2,
+    "reduce_total": 2,
+    "report_correct": 42,
+    "report_total": 42,
+    "ce_precision_num": 12,
+    "ce_precision_den": 12,
+    "ce_recall_num": 12,
+    "ce_recall_den": 12,
+    "false_positive": 0,
+    "clarify_correct": 3,
+    "clarify_total": 3,
+    "unsupported_correct": 7,
+    "unsupported_total": 7,
+    "total_backend_calls": 47,
+    "total_graphs_examined": 6264,
+    "total_wall_ms": 125.63270001555793
+  }
+}

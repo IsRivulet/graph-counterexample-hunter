@@ -1,0 +1,3044 @@
+{
+  "benchmark": "MathCheck-Bench-Verifier",
+  "version": "0.2.0",
+  "case_count": 152,
+  "cases": [
+    {
+      "case_id": "MC001_VALID_CE",
+      "task_id": "MC001",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "connected": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC001_NON_CE",
+      "task_id": "MC001",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC002_VALID_CE",
+      "task_id": "MC002",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "connected": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC002_NON_CE",
+      "task_id": "MC002",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC003_VALID_CE",
+      "task_id": "MC003",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "connected": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC003_NON_CE",
+      "task_id": "MC003",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC004_VALID_CE",
+      "task_id": "MC004",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "connected": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC004_NON_CE",
+      "task_id": "MC004",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC005_VALID_CE",
+      "task_id": "MC005",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "connected": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC005_NON_CE",
+      "task_id": "MC005",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC006_VALID_CE",
+      "task_id": "MC006",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "connected": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC006_NON_CE",
+      "task_id": "MC006",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC007_NON_CE",
+      "task_id": "MC007",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC008_NON_CE",
+      "task_id": "MC008",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC009_NON_CE",
+      "task_id": "MC009",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC010_NON_CE",
+      "task_id": "MC010",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC011_NON_CE",
+      "task_id": "MC011",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC012_NON_CE",
+      "task_id": "MC012",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC013_NON_CE",
+      "task_id": "MC013",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC014_VALID_CE",
+      "task_id": "MC014",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC014_NON_CE",
+      "task_id": "MC014",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC015_VALID_CE",
+      "task_id": "MC015",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC015_NON_CE",
+      "task_id": "MC015",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC016_NON_CE",
+      "task_id": "MC016",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "eulerian_circuit": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC017_NON_CE",
+      "task_id": "MC017",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "eulerian_circuit": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC018_NON_CE",
+      "task_id": "MC018",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "eulerian_circuit": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC019_VALID_CE",
+      "task_id": "MC019",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "eulerian_circuit": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC019_NON_CE",
+      "task_id": "MC019",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "eulerian_circuit": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC020_VALID_CE",
+      "task_id": "MC020",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "eulerian_circuit": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC020_NON_CE",
+      "task_id": "MC020",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "eulerian_circuit": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC021_VALID_CE",
+      "task_id": "MC021",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "eulerian_circuit": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC021_NON_CE",
+      "task_id": "MC021",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "eulerian_circuit": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC022_NON_CE",
+      "task_id": "MC022",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "eulerian_trail": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC023_NON_CE",
+      "task_id": "MC023",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "eulerian_trail": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC024_NON_CE",
+      "task_id": "MC024",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "eulerian_trail": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC025_VALID_CE",
+      "task_id": "MC025",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "all_even_degree": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC025_NON_CE",
+      "task_id": "MC025",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "all_even_degree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC026_VALID_CE",
+      "task_id": "MC026",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "all_even_degree": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC026_NON_CE",
+      "task_id": "MC026",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "all_even_degree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC027_VALID_CE",
+      "task_id": "MC027",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "all_even_degree": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC027_NON_CE",
+      "task_id": "MC027",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "all_even_degree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC028_VALID_CE",
+      "task_id": "MC028",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "bipartite": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC028_NON_CE",
+      "task_id": "MC028",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "bipartite": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC029_VALID_CE",
+      "task_id": "MC029",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "bipartite": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC029_NON_CE",
+      "task_id": "MC029",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "bipartite": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC030_VALID_CE",
+      "task_id": "MC030",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "bipartite": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC030_NON_CE",
+      "task_id": "MC030",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "bipartite": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC031_VALID_CE",
+      "task_id": "MC031",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "bipartite": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC031_NON_CE",
+      "task_id": "MC031",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "bipartite": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC032_VALID_CE",
+      "task_id": "MC032",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "bipartite": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC032_NON_CE",
+      "task_id": "MC032",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "bipartite": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC033_VALID_CE",
+      "task_id": "MC033",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "bipartite": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC033_NON_CE",
+      "task_id": "MC033",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "bipartite": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC034_NON_CE",
+      "task_id": "MC034",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "complete": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC035_NON_CE",
+      "task_id": "MC035",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "complete": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC036_NON_CE",
+      "task_id": "MC036",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "complete": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC037_VALID_CE",
+      "task_id": "MC037",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "complete": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC037_NON_CE",
+      "task_id": "MC037",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "complete": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC038_VALID_CE",
+      "task_id": "MC038",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "complete": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC038_NON_CE",
+      "task_id": "MC038",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "complete": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC039_VALID_CE",
+      "task_id": "MC039",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "complete": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC039_NON_CE",
+      "task_id": "MC039",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "complete": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC040_NON_CE",
+      "task_id": "MC040",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "has_cycle": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC041_VALID_CE",
+      "task_id": "MC041",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "has_cycle": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC041_NON_CE",
+      "task_id": "MC041",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "has_cycle": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC042_VALID_CE",
+      "task_id": "MC042",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "has_cycle": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC042_NON_CE",
+      "task_id": "MC042",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "has_cycle": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC043_NON_CE",
+      "task_id": "MC043",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true,
+        "all_even_degree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC044_NON_CE",
+      "task_id": "MC044",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true,
+        "all_even_degree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC045_NON_CE",
+      "task_id": "MC045",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true,
+        "all_even_degree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC046_NON_CE",
+      "task_id": "MC046",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true,
+        "bipartite": true,
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC047_VALID_CE",
+      "task_id": "MC047",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "connected": true,
+        "bipartite": true,
+        "tree": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC047_NON_CE",
+      "task_id": "MC047",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true,
+        "bipartite": true,
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC048_VALID_CE",
+      "task_id": "MC048",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "connected": true,
+        "bipartite": true,
+        "tree": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC048_NON_CE",
+      "task_id": "MC048",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true,
+        "bipartite": true,
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC049_NON_CE",
+      "task_id": "MC049",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true,
+        "max_degree_at_most_2": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC050_NON_CE",
+      "task_id": "MC050",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true,
+        "max_degree_at_most_2": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC051_NON_CE",
+      "task_id": "MC051",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true,
+        "max_degree_at_most_2": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC052_VALID_CE",
+      "task_id": "MC052",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "connected": true,
+        "max_degree_at_most_2": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC052_NON_CE",
+      "task_id": "MC052",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true,
+        "max_degree_at_most_2": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC053_VALID_CE",
+      "task_id": "MC053",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "connected": true,
+        "max_degree_at_most_2": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC053_NON_CE",
+      "task_id": "MC053",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true,
+        "max_degree_at_most_2": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC054_VALID_CE",
+      "task_id": "MC054",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "connected": true,
+        "max_degree_at_most_2": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC054_NON_CE",
+      "task_id": "MC054",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true,
+        "max_degree_at_most_2": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC055_VALID_CE",
+      "task_id": "MC055",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "tree": true,
+        "has_leaf": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC055_NON_CE",
+      "task_id": "MC055",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true,
+        "has_leaf": false
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC056_VALID_CE",
+      "task_id": "MC056",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "tree": true,
+        "has_leaf": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC056_NON_CE",
+      "task_id": "MC056",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true,
+        "has_leaf": false
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC057_VALID_CE",
+      "task_id": "MC057",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "tree": true,
+        "has_leaf": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC057_NON_CE",
+      "task_id": "MC057",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true,
+        "has_leaf": false
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC058_NON_CE",
+      "task_id": "MC058",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true,
+        "has_cycle": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC059_VALID_CE",
+      "task_id": "MC059",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "connected": true,
+        "has_cycle": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC059_NON_CE",
+      "task_id": "MC059",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true,
+        "has_cycle": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC060_VALID_CE",
+      "task_id": "MC060",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "connected": true,
+        "has_cycle": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC060_NON_CE",
+      "task_id": "MC060",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "connected": true,
+        "has_cycle": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC061_VALID_CE",
+      "task_id": "MC061",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"min_degree_at_least\"}": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC061_NON_CE",
+      "task_id": "MC061",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"min_degree_at_least\"}": false
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC062_VALID_CE",
+      "task_id": "MC062",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"min_degree_at_least\"}": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC062_NON_CE",
+      "task_id": "MC062",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"min_degree_at_least\"}": false
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC063_VALID_CE",
+      "task_id": "MC063",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"min_degree_at_least\"}": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC063_NON_CE",
+      "task_id": "MC063",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"min_degree_at_least\"}": false
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC064_NON_CE",
+      "task_id": "MC064",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 1, \"predicate\": \"max_degree_at_most\"}": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC065_NON_CE",
+      "task_id": "MC065",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 1, \"predicate\": \"max_degree_at_most\"}": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC066_NON_CE",
+      "task_id": "MC066",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 1, \"predicate\": \"max_degree_at_most\"}": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC067_VALID_CE",
+      "task_id": "MC067",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"num_leaves_at_least\"}": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC067_NON_CE",
+      "task_id": "MC067",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"num_leaves_at_least\"}": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC068_VALID_CE",
+      "task_id": "MC068",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"num_leaves_at_least\"}": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC068_NON_CE",
+      "task_id": "MC068",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"num_leaves_at_least\"}": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC069_VALID_CE",
+      "task_id": "MC069",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"num_leaves_at_least\"}": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC069_NON_CE",
+      "task_id": "MC069",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"num_leaves_at_least\"}": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC070_NON_CE",
+      "task_id": "MC070",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"chromatic_number_at_most\"}": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC071_NON_CE",
+      "task_id": "MC071",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"chromatic_number_at_most\"}": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC072_NON_CE",
+      "task_id": "MC072",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"chromatic_number_at_most\"}": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC073_VALID_CE",
+      "task_id": "MC073",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC073_NON_CE",
+      "task_id": "MC073",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC074_VALID_CE",
+      "task_id": "MC074",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC074_NON_CE",
+      "task_id": "MC074",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC075_VALID_CE",
+      "task_id": "MC075",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC075_NON_CE",
+      "task_id": "MC075",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC076_NON_CE",
+      "task_id": "MC076",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"negated\": true, \"predicate\": \"bipartite\"}": false
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC077_NON_CE",
+      "task_id": "MC077",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"negated\": true, \"predicate\": \"bipartite\"}": false
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC078_NON_CE",
+      "task_id": "MC078",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"negated\": true, \"predicate\": \"bipartite\"}": false
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC079_NON_CE",
+      "task_id": "MC079",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC080_NON_CE",
+      "task_id": "MC080",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC081_NON_CE",
+      "task_id": "MC081",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC082_NON_CE",
+      "task_id": "MC082",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"or\": [\"has_cycle\", \"complete\"]}": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC083_VALID_CE",
+      "task_id": "MC083",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "{\"or\": [\"has_cycle\", \"complete\"]}": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC083_NON_CE",
+      "task_id": "MC083",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"or\": [\"has_cycle\", \"complete\"]}": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC084_VALID_CE",
+      "task_id": "MC084",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "{\"or\": [\"has_cycle\", \"complete\"]}": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC084_NON_CE",
+      "task_id": "MC084",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"or\": [\"has_cycle\", \"complete\"]}": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC085_NON_CE",
+      "task_id": "MC085",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 5, \"predicate\": \"min_degree_at_least\"}": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC086_NON_CE",
+      "task_id": "MC086",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 5, \"predicate\": \"min_degree_at_least\"}": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC087_NON_CE",
+      "task_id": "MC087",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 5, \"predicate\": \"min_degree_at_least\"}": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC088_NON_CE",
+      "task_id": "MC088",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true,
+        "{\"negated\": true, \"predicate\": \"tree\"}": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC089_NON_CE",
+      "task_id": "MC089",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true,
+        "{\"negated\": true, \"predicate\": \"tree\"}": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC090_NON_CE",
+      "task_id": "MC090",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true,
+        "{\"negated\": true, \"predicate\": \"tree\"}": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC091_NON_CE",
+      "task_id": "MC091",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"negated\": true, \"or\": [\"tree\", {\"k\": 2, \"predicate\": \"chromatic_number_at_most\"}]}": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC092_VALID_CE",
+      "task_id": "MC092",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "{\"negated\": true, \"or\": [\"tree\", {\"k\": 2, \"predicate\": \"chromatic_number_at_most\"}]}": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC092_NON_CE",
+      "task_id": "MC092",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"negated\": true, \"or\": [\"tree\", {\"k\": 2, \"predicate\": \"chromatic_number_at_most\"}]}": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC093_VALID_CE",
+      "task_id": "MC093",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "{\"negated\": true, \"or\": [\"tree\", {\"k\": 2, \"predicate\": \"chromatic_number_at_most\"}]}": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC093_NON_CE",
+      "task_id": "MC093",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"negated\": true, \"or\": [\"tree\", {\"k\": 2, \"predicate\": \"chromatic_number_at_most\"}]}": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC094_NON_CE",
+      "task_id": "MC094",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true,
+        "{\"or\": [{\"negated\": true, \"predicate\": \"complete\"}, {\"k\": 2, \"predicate\": \"num_leaves_at_least\"}]}": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC095_VALID_CE",
+      "task_id": "MC095",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true,
+        "{\"or\": [{\"negated\": true, \"predicate\": \"complete\"}, {\"k\": 2, \"predicate\": \"num_leaves_at_least\"}]}": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC095_NON_CE",
+      "task_id": "MC095",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true,
+        "{\"or\": [{\"negated\": true, \"predicate\": \"complete\"}, {\"k\": 2, \"predicate\": \"num_leaves_at_least\"}]}": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC096_VALID_CE",
+      "task_id": "MC096",
+      "kind": "valid_counterexample",
+      "graph": {
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "expected_is_counterexample": true,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true,
+        "{\"or\": [{\"negated\": true, \"predicate\": \"complete\"}, {\"k\": 2, \"predicate\": \"num_leaves_at_least\"}]}": true
+      },
+      "expected_conclusion_value": false
+    },
+    {
+      "case_id": "MC096_NON_CE",
+      "task_id": "MC096",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 2, \"predicate\": \"diameter_at_most\"}": true,
+        "{\"or\": [{\"negated\": true, \"predicate\": \"complete\"}, {\"k\": 2, \"predicate\": \"num_leaves_at_least\"}]}": false
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC097_NON_CE",
+      "task_id": "MC097",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC098_NON_CE",
+      "task_id": "MC098",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC099_NON_CE",
+      "task_id": "MC099",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "tree": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC100_NON_CE",
+      "task_id": "MC100",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 1, \"predicate\": \"diameter_at_most\"}": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC101_NON_CE",
+      "task_id": "MC101",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 1, \"predicate\": \"diameter_at_most\"}": true
+      },
+      "expected_conclusion_value": true
+    },
+    {
+      "case_id": "MC102_NON_CE",
+      "task_id": "MC102",
+      "kind": "not_a_counterexample",
+      "graph": {
+        "nodes": [
+          0
+        ],
+        "edges": []
+      },
+      "expected_is_counterexample": false,
+      "expected_premise_values": {
+        "{\"k\": 1, \"predicate\": \"diameter_at_most\"}": true
+      },
+      "expected_conclusion_value": true
+    }
+  ]
+}
