@@ -1,0 +1,10 @@
+2026-11-06T13:06:53.363818Z  WARN sqlx::query: slow statement: execution time exceeded alert threshold summary="PRAGMA quick_check(1)" db.statement="" rows_affected=0 rows_returned=0 elapsed=1.8288942s elapsed_secs=1.8288942000000001 slow_threshold=1s
+2026-11-06T13:06:56.650667Z  WARN codex_skills::interface: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/
+2026-11-06T13:06:56.650910Z  WARN codex_skills::interface: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/
+2026-11-06T13:06:57.099938Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-11-06T13:06:58.346685Z  WARN codex_skills::interface: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/
+2026-11-06T13:06:58.360389Z  WARN codex_skills::interface: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/
+2026-11-06T13:07:01.460001Z ERROR codex_skills_extension::loader::host: failed to scan skill path file:///C:/Users/25922/.codex/skills/.system/imagegen/agents: 系统找不到指定的路径。 (os error 3)
+2026-11-06T13:07:01.460480Z ERROR codex_skills_extension::loader::host: failed to scan skill path file:///C:/Users/25922/.codex/skills/.system/imagegen/assets: 系统找不到指定的路径。 (os error 3)
+2026-11-06T13:07:01.548053Z  WARN codex_skills_extension::loader::metadata: ignoring file:///C:/Users/25922/.codex/skills/.system/openai-docs/agents/openai.yaml: failed to read openai.yaml: 系统找不到指定的路径。 (os error 3)
+2026-11-06T13:07:02.715316Z ERROR codex_skills_extension::host_service: failed to install system skills: io error while remove existing system skills dir: 拒绝访问。 (os error 5)

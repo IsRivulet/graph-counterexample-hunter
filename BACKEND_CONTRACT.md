@@ -1,4 +1,4 @@
-# MathCheck backend contract for Skill integration
+# MathCheck backend contract for graph-counterexample-hunter
 
 This document specifies the stable v0.2.0 task and result contract used by `SKILL.md`.
 

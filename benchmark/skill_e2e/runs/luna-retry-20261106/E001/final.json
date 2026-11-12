@@ -1,0 +1,256 @@
+{
+  "schema_version": "mathcheck.e2e.v1",
+  "action": "search",
+  "status": "counterexample_found",
+  "mode": "live",
+  "task": {
+    "property_id": "connected_and_bipartite_implies_tree",
+    "graph_type": "simple_undirected",
+    "premises": [
+      "connected",
+      "bipartite"
+    ],
+    "conclusion": "tree",
+    "normalized_premises": [
+      {
+        "type": "atom",
+        "predicate": "connected",
+        "negated": false,
+        "k": null
+      },
+      {
+        "type": "atom",
+        "predicate": "bipartite",
+        "negated": false,
+        "k": null
+      }
+    ],
+    "normalized_conclusion": {
+      "type": "atom",
+      "predicate": "tree",
+      "negated": false,
+      "k": null
+    },
+    "min_nodes": 1,
+    "max_nodes": 5,
+    "search_mode": "exhaustive",
+    "seed": null,
+    "max_graphs": 2000
+  },
+  "counterexample": {
+    "nodes": [0, 1, 2, 3],
+    "edges": [[0, 2], [0, 3], [1, 2], [1, 3]]
+  },
+  "coverage": {
+    "search_mode": "exhaustive",
+    "min_nodes": 1,
+    "max_nodes": 5,
+    "graphs_evaluated": 42,
+    "premise_satisfying_count": 14,
+    "fully_exhausted": false,
+    "size_counts_examined": {
+      "1": 1,
+      "2": 2,
+      "3": 8,
+      "4": 31
+    },
+    "seed": null,
+    "max_graphs": null,
+    "termination_reason": "counterexample_found",
+    "isomorphism_classes_total": 52,
+    "graphs_total": 1099,
+    "labeled_graphs_total": 1099,
+    "graphs_examined": 42,
+    "duplicates_skipped": 0,
+    "vacuously_true": null,
+    "elapsed_seconds": 0.000841
+  },
+  "checks": {
+    "graph_structure_valid": true,
+    "node_count_in_range": true,
+    "premises": {
+      "connected": true,
+      "bipartite": true
+    },
+    "conclusion": {
+      "tree": false
+    },
+    "premise_checks": [
+      {
+        "index": 0,
+        "expression": {
+          "type": "atom",
+          "predicate": "connected",
+          "negated": false,
+          "k": null
+        },
+        "label": "connected",
+        "value": true
+      },
+      {
+        "index": 1,
+        "expression": {
+          "type": "atom",
+          "predicate": "bipartite",
+          "negated": false,
+          "k": null
+        },
+        "label": "bipartite",
+        "value": true
+      }
+    ],
+    "conclusion_value": false,
+    "all_premises_satisfied": true,
+    "conclusion_violated": true,
+    "is_counterexample": true
+  },
+  "evidence": {
+    "degrees": {
+      "0": 2,
+      "1": 2,
+      "2": 2,
+      "3": 2
+    },
+    "components": [[0, 1, 2, 3]],
+    "bipartition": [[0, 1], [2, 3]],
+    "cycle": [1, 2, 0, 3, 1],
+    "odd_degree_vertices": [],
+    "leaves": [],
+    "node_count": 4,
+    "edge_count": 4,
+    "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v2\n  v0 --- v3\n  v1 --- v2\n  v1 --- v3"
+  },
+  "minimization": {
+    "status": "no_improvement",
+    "original_graph": {
+      "nodes": [0, 1, 2, 3],
+      "edges": [[0, 2], [0, 3], [1, 2], [1, 3]]
+    },
+    "minimized_graph": {
+      "nodes": [0, 1, 2, 3],
+      "edges": [[0, 2], [0, 3], [1, 2], [1, 3]]
+    },
+    "original_size": {
+      "nodes": 4,
+      "edges": 4
+    },
+    "minimized_size": {
+      "nodes": 4,
+      "edges": 4
+    },
+    "steps": [],
+    "verification": {
+      "status": "counterexample_found",
+      "mode": "live",
+      "task": {
+        "property_id": "connected_and_bipartite_implies_tree",
+        "graph_type": "simple_undirected",
+        "premises": ["connected", "bipartite"],
+        "conclusion": "tree",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      },
+      "coverage": null,
+      "counterexample": {
+        "nodes": [0, 1, 2, 3],
+        "edges": [[0, 2], [0, 3], [1, 2], [1, 3]]
+      },
+      "checks": {
+        "graph_structure_valid": true,
+        "node_count_in_range": true,
+        "premises": {
+          "connected": true,
+          "bipartite": true
+        },
+        "conclusion": {
+          "tree": false
+        },
+        "premise_checks": [
+          {
+            "index": 0,
+            "expression": {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            },
+            "label": "connected",
+            "value": true
+          },
+          {
+            "index": 1,
+            "expression": {
+              "type": "atom",
+              "predicate": "bipartite",
+              "negated": false,
+              "k": null
+            },
+            "label": "bipartite",
+            "value": true
+          }
+        ],
+        "conclusion_value": false,
+        "all_premises_satisfied": true,
+        "conclusion_violated": true,
+        "is_counterexample": true
+      },
+      "evidence": {
+        "degrees": {
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2
+        },
+        "components": [[0, 1, 2, 3]],
+        "bipartition": [[0, 1], [2, 3]],
+        "cycle": [1, 2, 0, 3, 1],
+        "odd_degree_vertices": [],
+        "leaves": [],
+        "node_count": 4,
+        "edge_count": 4,
+        "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v2\n  v0 --- v3\n  v1 --- v2\n  v1 --- v3"
+      },
+      "minimization": null,
+      "reason": "candidate independently passed graph, range, premise, and conclusion checks."
+    },
+    "minimality_claim": "locally_minimal_under_single_vertex_and_edge_deletions",
+    "minimality": {
+      "local_single_deletion_minimum": true,
+      "vertex_minimum_in_scope": false,
+      "edge_minimum_at_minimum_vertices": false,
+      "scope": [1, 5]
+    },
+    "reason": "the returned graph was re-verified; local deletion minimality is not a proof of global minimum size."
+  },
+  "minimality": {
+    "vertex_minimum_in_scope": true,
+    "edge_minimum_at_minimum_vertices": false,
+    "scope": [1, 5],
+    "reason": "Increasing-size exhaustive enumeration excludes every smaller order in scope."
+  },
+  "reason": "真实后端搜索在顶点数 4 处找到反例，并经独立核验。搜索只检查到 4 个顶点，未穷举完 1 至 5 顶点范围；反例的缩小器未能改进，单次删点/删边局部最小。搜索结果证明此图在指定范围内顶点数最小。",
+  "clarification": null,
+  "backend_calls": [
+    {
+      "operation": "search",
+      "task_file": "examples/connected_and_bipartite_implies_tree.json",
+      "graph_file": null,
+      "result_file": "results/search.json"
+    },
+    {
+      "operation": "verify",
+      "task_file": "examples/connected_and_bipartite_implies_tree.json",
+      "graph_file": "results/counterexample.json",
+      "result_file": "results/verify.json"
+    },
+    {
+      "operation": "minimize",
+      "task_file": "examples/connected_and_bipartite_implies_tree.json",
+      "graph_file": "results/counterexample.json",
+      "result_file": "results/minimize.json"
+    }
+  ]
+}

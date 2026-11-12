@@ -1,0 +1,17 @@
+{
+  "source": "D:\\桌面\\智能体课程\\mathcheck_backend_v0.1.0\\mathcheck_backend\\benchmark\\MathCheck_E2E_TestSet_v1\\MathCheck_E2E_TestSet_v1\\MathCheck_E2E_Bench_v1.json",
+  "excluded": [
+    {
+      "id": "E2E-40",
+      "reason": "requires fault injection, not supported by the live runner"
+    },
+    {
+      "id": "E2E-41",
+      "reason": "requires fault injection, not supported by the live runner"
+    },
+    {
+      "id": "E2E-42",
+      "reason": "requires fault injection, not supported by the live runner"
+    }
+  ]
+}

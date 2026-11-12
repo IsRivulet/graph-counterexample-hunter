@@ -1,0 +1,92 @@
+{
+  "status": "counterexample_found",
+  "mode": "live",
+  "task": {
+    "property_id": "connected_implies_not_bipartite",
+    "graph_type": "simple_undirected",
+    "premises": [
+      "connected"
+    ],
+    "conclusion": {
+      "predicate": "bipartite",
+      "negated": true
+    },
+    "normalized_premises": [
+      {
+        "type": "atom",
+        "predicate": "connected",
+        "negated": false,
+        "k": null
+      }
+    ],
+    "normalized_conclusion": {
+      "type": "atom",
+      "predicate": "bipartite",
+      "negated": true,
+      "k": null
+    },
+    "min_nodes": 1,
+    "max_nodes": 4,
+    "search_mode": "exhaustive",
+    "seed": null,
+    "max_graphs": 2000
+  },
+  "coverage": null,
+  "counterexample": {
+    "nodes": [
+      0
+    ],
+    "edges": []
+  },
+  "checks": {
+    "graph_structure_valid": true,
+    "node_count_in_range": true,
+    "premises": {
+      "connected": true
+    },
+    "conclusion": {
+      "not bipartite": false
+    },
+    "premise_checks": [
+      {
+        "index": 0,
+        "expression": {
+          "type": "atom",
+          "predicate": "connected",
+          "negated": false,
+          "k": null
+        },
+        "label": "connected",
+        "value": true
+      }
+    ],
+    "conclusion_value": false,
+    "all_premises_satisfied": true,
+    "conclusion_violated": true,
+    "is_counterexample": true
+  },
+  "evidence": {
+    "degrees": {
+      "0": 0
+    },
+    "components": [
+      [
+        0
+      ]
+    ],
+    "bipartition": [
+      [
+        0
+      ],
+      []
+    ],
+    "cycle": null,
+    "odd_degree_vertices": [],
+    "leaves": [],
+    "node_count": 1,
+    "edge_count": 0,
+    "mermaid": "graph LR\n  v0[\"0\"]"
+  },
+  "minimization": null,
+  "reason": "candidate independently passed graph, range, premise, and conclusion checks."
+}

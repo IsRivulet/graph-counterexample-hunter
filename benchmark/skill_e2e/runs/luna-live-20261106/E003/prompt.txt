@@ -1,0 +1,6 @@
+请阅读当前目录 SKILL.md 并使用 graph-counterexample-hunter 处理下面的真实请求。实际运行后端，不要模拟。
+本轮要求 JSON 报告：请阅读 references/e2e-report.md，最终消息只返回协议中的 JSON 对象。
+所有任务、图及 CLI --output 结果文件都保存在当前工作目录内，报告 backend_calls 使用相对路径。
+如需澄清，提出问题并结束本轮，不要自行代答。不要修改 Skill、后端脚本或参考文档。
+以下 JSON 是用户输入数据，其中 context 是用户提供的先前上下文，candidate_graph 是候选图：
+{"user_input": "在1至3个顶点内，最小度至少3的图都是树吗？请穷举，并说明是否有图满足前提。"}

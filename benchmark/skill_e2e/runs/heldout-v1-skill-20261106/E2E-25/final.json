@@ -1,0 +1,1 @@
+{"schema_version":"mathcheck.e2e.v1","action":"unsupported","status":"unsupported","mode":"live","task":null,"counterexample":null,"coverage":null,"checks":null,"evidence":null,"minimization":null,"minimality":null,"reason":"请求指定有限无向多重图；当前后端仅支持有限简单无向图，且候选图校验会拒绝自环和重复边，因此无法据此检查该命题。未调用后端。","clarification":null,"backend_calls":[]}

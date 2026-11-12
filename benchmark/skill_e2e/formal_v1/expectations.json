@@ -1,0 +1,637 @@
+{
+  "description": "Frozen expectations converted from MathCheck-E2E-Bench v1.0.0.",
+  "cases": [
+    {
+      "id": "E2E-01",
+      "action": "search",
+      "status": "counterexample_found",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_and_bipartite_implies_tree",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected",
+          "bipartite"
+        ],
+        "conclusion": "tree",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-02",
+      "action": "search",
+      "status": "verified_true_in_scope",
+      "manual_required": true,
+      "task": {
+        "property_id": "tree_implies_bipartite",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "tree"
+        ],
+        "conclusion": "bipartite",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-03",
+      "action": "search",
+      "status": "counterexample_found",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_implies_tree",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected"
+        ],
+        "conclusion": "tree",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-04",
+      "action": "search",
+      "status": "counterexample_found",
+      "manual_required": true,
+      "task": {
+        "property_id": "eulerian_trail_implies_eulerian_circuit",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "eulerian_trail"
+        ],
+        "conclusion": "eulerian_circuit",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-05",
+      "action": "search",
+      "status": "counterexample_found",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_and_has_leaf_implies_tree",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected",
+          "has_leaf"
+        ],
+        "conclusion": "tree",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-06",
+      "action": "search",
+      "status": "counterexample_found",
+      "manual_required": true,
+      "task": {
+        "property_id": "has_cycle_implies_connected",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "has_cycle"
+        ],
+        "conclusion": "connected",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-07",
+      "action": "search",
+      "status": "counterexample_found",
+      "manual_required": true,
+      "task": {
+        "property_id": "min_degree_at_least_1_implies_connected",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "min_degree_at_least_1"
+        ],
+        "conclusion": "connected",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-08",
+      "action": "search",
+      "status": "counterexample_found",
+      "manual_required": true,
+      "task": {
+        "property_id": "all_even_degree_implies_eulerian_circuit",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "all_even_degree"
+        ],
+        "conclusion": "eulerian_circuit",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-09",
+      "action": "search",
+      "status": "verified_true_in_scope",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_and_all_even_degree_implies_eulerian_circuit",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected",
+          "all_even_degree"
+        ],
+        "conclusion": "eulerian_circuit",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-10",
+      "action": "search",
+      "status": "verified_true_in_scope",
+      "manual_required": true,
+      "task": {
+        "property_id": "complete_implies_connected",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "complete"
+        ],
+        "conclusion": "connected",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-11",
+      "action": "search",
+      "status": "verified_true_in_scope",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_and_max_degree_at_most_2_implies_eulerian_trail",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected",
+          "max_degree_at_most_2"
+        ],
+        "conclusion": "eulerian_trail",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-12",
+      "action": "search",
+      "status": "counterexample_found",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_implies_eulerian_circuit",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected"
+        ],
+        "conclusion": "eulerian_circuit",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-13",
+      "action": "search",
+      "status": "verified_true_in_scope",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_and_bipartite_implies_tree",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected",
+          "bipartite"
+        ],
+        "conclusion": "tree",
+        "min_nodes": 1,
+        "max_nodes": 3,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-14",
+      "action": "search",
+      "status": "counterexample_found",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_and_bipartite_implies_tree",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected",
+          "bipartite"
+        ],
+        "conclusion": "tree",
+        "min_nodes": 1,
+        "max_nodes": 4,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-15",
+      "action": "search",
+      "status": "verified_true_in_scope",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_implies_complete",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected"
+        ],
+        "conclusion": "complete",
+        "min_nodes": 1,
+        "max_nodes": 2,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-16",
+      "action": "search",
+      "status": "counterexample_found",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_implies_complete",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected"
+        ],
+        "conclusion": "complete",
+        "min_nodes": 1,
+        "max_nodes": 3,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-17",
+      "action": "search",
+      "status": "no_counterexample_in_scope",
+      "manual_required": true,
+      "task": {
+        "property_id": "tree_implies_bipartite",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "tree"
+        ],
+        "conclusion": "bipartite",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "random",
+        "seed": 20261105,
+        "max_graphs": 500
+      }
+    },
+    {
+      "id": "E2E-18",
+      "action": "search",
+      "status": "no_counterexample_in_scope",
+      "manual_required": true,
+      "task": {
+        "property_id": "complete_implies_connected",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "complete"
+        ],
+        "conclusion": "connected",
+        "min_nodes": 2,
+        "max_nodes": 8,
+        "search_mode": "special",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-19",
+      "action": "search",
+      "status": "verified_true_in_scope",
+      "manual_required": true,
+      "task": {
+        "property_id": "tree_implies_connected",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "tree"
+        ],
+        "conclusion": "connected",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-20",
+      "action": "search",
+      "status": "counterexample_found",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_implies_bipartite",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected"
+        ],
+        "conclusion": "bipartite",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-21",
+      "action": "search",
+      "status": "counterexample_found",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_implies_tree",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected"
+        ],
+        "conclusion": "tree",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      }
+    },
+    {
+      "id": "E2E-22",
+      "action": "clarify",
+      "status": "inconclusive",
+      "manual_required": true
+    },
+    {
+      "id": "E2E-23",
+      "action": "clarify",
+      "status": "inconclusive",
+      "manual_required": true
+    },
+    {
+      "id": "E2E-24",
+      "action": "unsupported",
+      "status": "unsupported",
+      "manual_required": true
+    },
+    {
+      "id": "E2E-25",
+      "action": "unsupported",
+      "status": "unsupported",
+      "manual_required": true
+    },
+    {
+      "id": "E2E-26",
+      "action": "unsupported",
+      "status": "unsupported",
+      "manual_required": true
+    },
+    {
+      "id": "E2E-27",
+      "action": "unsupported",
+      "status": "unsupported",
+      "manual_required": true
+    },
+    {
+      "id": "E2E-28",
+      "action": "unsupported",
+      "status": "unsupported",
+      "manual_required": true
+    },
+    {
+      "id": "E2E-29",
+      "action": "unsupported",
+      "status": "unsupported",
+      "manual_required": true
+    },
+    {
+      "id": "E2E-30",
+      "action": "clarify",
+      "status": "inconclusive",
+      "manual_required": true
+    },
+    {
+      "id": "E2E-31",
+      "action": "unsupported",
+      "status": "unsupported",
+      "manual_required": true
+    },
+    {
+      "id": "E2E-32",
+      "action": "verify",
+      "status": "counterexample_found",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_and_bipartite_implies_tree",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected",
+          "bipartite"
+        ],
+        "conclusion": "tree",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      },
+      "require_minimization": false
+    },
+    {
+      "id": "E2E-33",
+      "action": "verify",
+      "status": "inconclusive",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_and_bipartite_implies_tree",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected",
+          "bipartite"
+        ],
+        "conclusion": "tree",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      },
+      "require_minimization": false
+    },
+    {
+      "id": "E2E-34",
+      "action": "verify",
+      "status": "inconclusive",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_and_bipartite_implies_tree",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected",
+          "bipartite"
+        ],
+        "conclusion": "tree",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      },
+      "require_minimization": false
+    },
+    {
+      "id": "E2E-35",
+      "action": "verify",
+      "status": "inconclusive",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_and_bipartite_implies_tree",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected",
+          "bipartite"
+        ],
+        "conclusion": "tree",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      },
+      "require_minimization": false
+    },
+    {
+      "id": "E2E-36",
+      "action": "verify",
+      "status": "inconclusive",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_and_bipartite_implies_tree",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected",
+          "bipartite"
+        ],
+        "conclusion": "tree",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      },
+      "require_minimization": false
+    },
+    {
+      "id": "E2E-37",
+      "action": "verify",
+      "status": "inconclusive",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_and_bipartite_implies_tree",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected",
+          "bipartite"
+        ],
+        "conclusion": "tree",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      },
+      "require_minimization": false
+    },
+    {
+      "id": "E2E-38",
+      "action": "verify",
+      "status": "inconclusive",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_implies_tree",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected"
+        ],
+        "conclusion": "tree",
+        "min_nodes": 3,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      },
+      "require_minimization": false
+    },
+    {
+      "id": "E2E-39",
+      "action": "verify",
+      "status": "counterexample_found",
+      "manual_required": true,
+      "task": {
+        "property_id": "connected_and_bipartite_implies_tree",
+        "graph_type": "simple_undirected",
+        "premises": [
+          "connected",
+          "bipartite"
+        ],
+        "conclusion": "tree",
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      },
+      "require_minimization": true
+    }
+  ]
+}

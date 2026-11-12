@@ -1,0 +1,9 @@
+{
+  "property_id": "connected_implies_tree",
+  "graph_type": "simple_undirected",
+  "premises": ["connected"],
+  "conclusion": "tree",
+  "min_nodes": 1,
+  "max_nodes": 5,
+  "search_mode": "exhaustive"
+}

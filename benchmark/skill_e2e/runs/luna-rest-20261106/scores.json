@@ -1,0 +1,404 @@
+{
+  "schema_version": "mathcheck.e2e.scores.v1",
+  "case_count": 8,
+  "model_requested": "gpt-6-luna",
+  "automatic_pass_count": 7,
+  "strict_pass_count": 0,
+  "pending_review_count": 7,
+  "strict_pass_rate": 0.0,
+  "counterexample_precision": 1.0,
+  "counterexample_recall": 1.0,
+  "invalid_counterexample_count": 0,
+  "dimensions": {
+    "action": {
+      "passed": 8,
+      "applicable": 8
+    },
+    "backend_status": {
+      "passed": 6,
+      "applicable": 6
+    },
+    "candidate_preserved": {
+      "passed": 2,
+      "applicable": 2
+    },
+    "clarification": {
+      "passed": 1,
+      "applicable": 1
+    },
+    "coverage_matches": {
+      "passed": 6,
+      "applicable": 6
+    },
+    "coverage_mode": {
+      "passed": 4,
+      "applicable": 4
+    },
+    "coverage_range": {
+      "passed": 4,
+      "applicable": 4
+    },
+    "execution": {
+      "passed": 8,
+      "applicable": 8
+    },
+    "exhaustion": {
+      "passed": 1,
+      "applicable": 1
+    },
+    "explicit_reverification": {
+      "passed": 3,
+      "applicable": 3
+    },
+    "independent_witness": {
+      "passed": 3,
+      "applicable": 3
+    },
+    "local_minimum_evidence": {
+      "passed": 1,
+      "applicable": 1
+    },
+    "no_backend_calls": {
+      "passed": 2,
+      "applicable": 2
+    },
+    "no_unproven_edge_minimum": {
+      "passed": 3,
+      "applicable": 3
+    },
+    "no_witness": {
+      "passed": 5,
+      "applicable": 5
+    },
+    "protocol": {
+      "passed": 8,
+      "applicable": 8
+    },
+    "reduced_witness": {
+      "passed": 3,
+      "applicable": 3
+    },
+    "reduction_chain": {
+      "passed": 3,
+      "applicable": 3
+    },
+    "reduction_did_not_grow": {
+      "passed": 3,
+      "applicable": 3
+    },
+    "reduction_recorded": {
+      "passed": 2,
+      "applicable": 3
+    },
+    "reduction_reverified": {
+      "passed": 3,
+      "applicable": 3
+    },
+    "reported_checks": {
+      "passed": 6,
+      "applicable": 6
+    },
+    "reported_evidence": {
+      "passed": 3,
+      "applicable": 3
+    },
+    "reported_graph_in_chain": {
+      "passed": 3,
+      "applicable": 3
+    },
+    "sample_scope": {
+      "passed": 1,
+      "applicable": 1
+    },
+    "status": {
+      "passed": 8,
+      "applicable": 8
+    },
+    "task_semantics": {
+      "passed": 6,
+      "applicable": 6
+    },
+    "tool_evidence": {
+      "passed": 6,
+      "applicable": 6
+    },
+    "vertex_minimum_evidence": {
+      "passed": 2,
+      "applicable": 2
+    }
+  },
+  "notes": [
+    "Structural/Boolean semantics are automatic; natural-language reason and clarification quality need human review.",
+    "CLI trace and artifacts are consistency evidence, not a tamper-proof audit or OS isolation boundary.",
+    "Published starter cases are development cases, not a held-out generalization benchmark."
+  ],
+  "cases": [
+    {
+      "id": "E003",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": true,
+        "tool_evidence": true,
+        "backend_status": true,
+        "coverage_matches": true,
+        "coverage_mode": true,
+        "coverage_range": true,
+        "exhaustion": true,
+        "no_witness": true,
+        "reported_checks": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 96521,
+        "cached_input_tokens": 86272,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 944,
+        "reasoning_output_tokens": 104
+      },
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": true,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": null
+    },
+    {
+      "id": "E004",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": true,
+        "tool_evidence": true,
+        "backend_status": true,
+        "coverage_matches": true,
+        "coverage_mode": true,
+        "coverage_range": true,
+        "sample_scope": true,
+        "no_witness": true,
+        "reported_checks": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 114759,
+        "cached_input_tokens": 98432,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1476,
+        "reasoning_output_tokens": 250
+      },
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": true,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": null
+    },
+    {
+      "id": "E005",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": true,
+        "tool_evidence": true,
+        "backend_status": true,
+        "candidate_preserved": true,
+        "coverage_matches": true,
+        "no_witness": true,
+        "reported_checks": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 118149,
+        "cached_input_tokens": 98560,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1077,
+        "reasoning_output_tokens": 113
+      },
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": true,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": null
+    },
+    {
+      "id": "E006",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": true,
+        "tool_evidence": true,
+        "backend_status": true,
+        "candidate_preserved": true,
+        "coverage_matches": true,
+        "independent_witness": true,
+        "explicit_reverification": true,
+        "reported_checks": true,
+        "reported_evidence": true,
+        "reduction_recorded": false,
+        "reduction_chain": true,
+        "reduced_witness": true,
+        "reduction_did_not_grow": true,
+        "reduction_reverified": true,
+        "reported_graph_in_chain": true,
+        "no_unproven_edge_minimum": true,
+        "local_minimum_evidence": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 171168,
+        "cached_input_tokens": 156288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2864,
+        "reasoning_output_tokens": 330
+      },
+      "claims_counterexample": true,
+      "witness_valid": true,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    },
+    {
+      "id": "E007",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": true,
+        "tool_evidence": true,
+        "backend_status": true,
+        "coverage_matches": true,
+        "coverage_mode": true,
+        "coverage_range": true,
+        "independent_witness": true,
+        "explicit_reverification": true,
+        "reported_checks": true,
+        "reported_evidence": true,
+        "reduction_recorded": true,
+        "reduction_chain": true,
+        "reduced_witness": true,
+        "reduction_did_not_grow": true,
+        "reduction_reverified": true,
+        "reported_graph_in_chain": true,
+        "no_unproven_edge_minimum": true,
+        "vertex_minimum_evidence": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 182265,
+        "cached_input_tokens": 169472,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2301,
+        "reasoning_output_tokens": 291
+      },
+      "claims_counterexample": true,
+      "witness_valid": true,
+      "automatic_pass": true,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": null
+    },
+    {
+      "id": "E008",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": true,
+        "tool_evidence": true,
+        "backend_status": true,
+        "coverage_matches": true,
+        "coverage_mode": true,
+        "coverage_range": true,
+        "independent_witness": true,
+        "explicit_reverification": true,
+        "reported_checks": true,
+        "reported_evidence": true,
+        "reduction_recorded": true,
+        "reduction_chain": true,
+        "reduced_witness": true,
+        "reduction_did_not_grow": true,
+        "reduction_reverified": true,
+        "reported_graph_in_chain": true,
+        "no_unproven_edge_minimum": true,
+        "vertex_minimum_evidence": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 140415,
+        "cached_input_tokens": 119680,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3472,
+        "reasoning_output_tokens": 716
+      },
+      "claims_counterexample": true,
+      "witness_valid": true,
+      "automatic_pass": true,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": null
+    },
+    {
+      "id": "E009",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "no_backend_calls": true,
+        "no_witness": true,
+        "clarification": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 34083,
+        "cached_input_tokens": 27136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 311,
+        "reasoning_output_tokens": 14
+      },
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": true,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": null
+    },
+    {
+      "id": "E010",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "no_backend_calls": true,
+        "no_witness": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 72876,
+        "cached_input_tokens": 60928,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 527,
+        "reasoning_output_tokens": 180
+      },
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": true,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": null
+    }
+  ]
+}

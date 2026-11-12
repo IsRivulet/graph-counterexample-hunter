@@ -1,6 +1,6 @@
-# MathCheck backend + MathCheck-Bench (v0.2.0)
+# graph-counterexample-hunter + MathCheck backend / MathCheck-Bench (v0.2.0)
 
-新增真实模型执行与独立评分入口：[benchmark/skill_e2e/README.md](benchmark/skill_e2e/README.md)。本次修改未运行测试或模型评测；目录中的既有结果均是历史快照，不代表修改后的成绩。`skill_live` 仍为历史响应回放。
+真实模型执行与独立评分入口：[benchmark/skill_e2e/README.md](benchmark/skill_e2e/README.md)。
 
 This package implements the B/C-side backend for the supplied `SKILL.md`: finite simple-undirected graph generation, counterexample search, candidate verification, greedy counterexample reduction, and a reproducible benchmark with independently generated finite-scope labels.
 

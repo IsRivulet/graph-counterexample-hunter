@@ -1,0 +1,9 @@
+{
+  "property_id": "eulerian_circuit_implies_all_even_degree",
+  "graph_type": "simple_undirected",
+  "premises": ["eulerian_circuit"],
+  "conclusion": "all_even_degree",
+  "min_nodes": 1,
+  "max_nodes": 5,
+  "search_mode": "exhaustive"
+}

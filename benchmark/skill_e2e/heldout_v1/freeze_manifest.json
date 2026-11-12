@@ -1,0 +1,29 @@
+{
+  "split": "MathCheck-E2E heldout_v1 paired evaluation",
+  "created_at_utc": "2026-11-06T13:01:50.049930+00:00",
+  "case_ids": [
+    "E2E-03",
+    "E2E-04",
+    "E2E-09",
+    "E2E-11",
+    "E2E-14",
+    "E2E-17",
+    "E2E-20",
+    "E2E-22",
+    "E2E-25",
+    "E2E-32",
+    "E2E-33",
+    "E2E-39"
+  ],
+  "excluded_development_cases": [
+    "E2E-01",
+    "E2E-02"
+  ],
+  "cases_sha256": "a4566853befaa3f64ba28c95a752c5aa8a254d8a9a1685a363517ce082f6f425",
+  "expectations_sha256": "490aaad218b85813209b117e26d466be0c3482fe34934b6a7bee76e4fd6e62f0",
+  "frozen_runtime_sha256": {
+    "SKILL.md": "a4ca77fb227f2903bb3e08fe426eeebb96a8119dc0ea765d7cfeda6271925de2",
+    "references/e2e-report.md": "d289baaeb1616b8185ee0847ed20d9012434bf1513e96cccd3e6a686fbdcdb22",
+    "VERSION": "c58a749f70f5e1ba5394ebcdbfcfa02fa938c4a173d8e41e6c476a7c8b2acddd"
+  }
+}

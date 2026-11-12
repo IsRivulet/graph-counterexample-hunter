@@ -1,0 +1,1 @@
+{"schema_version":"mathcheck.e2e.v1","action":"clarify","status":"inconclusive","mode":"live","task":null,"counterexample":null,"coverage":null,"checks":null,"evidence":null,"minimization":null,"minimality":null,"reason":"“欧拉图”的定义会影响命题真值，按要求需先澄清；本轮未调用后端。","clarification":"你这里的“欧拉图”指什么？例如：存在经过每条边恰好一次的闭合欧拉回路；或仅要求存在欧拉迹（允许起点与终点不同）。","backend_calls":[]}

@@ -1,0 +1,1 @@
+{"schema_version":"mathcheck.e2e.v1","action":"unsupported","status":"unsupported","mode":"live","task":null,"counterexample":null,"coverage":null,"checks":null,"evidence":null,"minimization":null,"minimality":null,"reason":"该请求明确要求保留有向图语义；当前后端只支持有限简单无向图，不支持有向图，因此不能用无向图搜索结果代替。","clarification":null,"backend_calls":[]}

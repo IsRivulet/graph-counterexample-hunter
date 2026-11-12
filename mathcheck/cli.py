@@ -1,4 +1,4 @@
-"""Small JSON CLI used by the MathCheck Skill."""
+"""Small JSON CLI used by the graph-counterexample-hunter Skill."""
 
 import argparse
 import json

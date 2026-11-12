@@ -1,0 +1,10 @@
+{
+  "property_id": "min_degree_at_least_3_implies_tree_on_1_to_3_vertices",
+  "graph_type": "simple_undirected",
+  "premises": [{"predicate": "min_degree_at_least", "k": 3}],
+  "conclusion": "tree",
+  "min_nodes": 1,
+  "max_nodes": 3,
+  "search_mode": "exhaustive",
+  "seed": null
+}

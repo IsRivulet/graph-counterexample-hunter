@@ -1,0 +1,83 @@
+{
+  "schema_version": "mathcheck.e2e.v1",
+  "action": "search",
+  "status": "verified_true_in_scope",
+  "mode": "live",
+  "task": {
+    "property_id": "connected_max_degree_at_most_2_implies_eulerian_trail",
+    "graph_type": "simple_undirected",
+    "premises": [
+      "connected",
+      {
+        "predicate": "max_degree_at_most",
+        "k": 2
+      }
+    ],
+    "conclusion": "eulerian_trail",
+    "normalized_premises": [
+      {
+        "type": "atom",
+        "predicate": "connected",
+        "negated": false,
+        "k": null
+      },
+      {
+        "type": "atom",
+        "predicate": "max_degree_at_most",
+        "negated": false,
+        "k": 2
+      }
+    ],
+    "normalized_conclusion": {
+      "type": "atom",
+      "predicate": "eulerian_trail",
+      "negated": false,
+      "k": null
+    },
+    "min_nodes": 1,
+    "max_nodes": 5,
+    "search_mode": "exhaustive",
+    "seed": null,
+    "max_graphs": 2000
+  },
+  "counterexample": null,
+  "coverage": {
+    "search_mode": "exhaustive",
+    "min_nodes": 1,
+    "max_nodes": 5,
+    "graphs_evaluated": 1099,
+    "premise_satisfying_count": 93,
+    "fully_exhausted": true,
+    "size_counts_examined": {
+      "1": 1,
+      "2": 2,
+      "3": 8,
+      "4": 64,
+      "5": 1024
+    },
+    "seed": null,
+    "max_graphs": null,
+    "termination_reason": "completed_all_candidates",
+    "isomorphism_classes_total": 52,
+    "graphs_total": 1099,
+    "labeled_graphs_total": 1099,
+    "graphs_examined": 1099,
+    "duplicates_skipped": 0,
+    "vacuously_true": false,
+    "elapsed_seconds": 0.03038
+  },
+  "checks": null,
+  "evidence": null,
+  "minimization": null,
+  "minimality": null,
+  "reason": "已穷举检查顶点数 1 至 5 的全部 1099 个有限简单无向图，其中 93 个满足前提；未发现反例。因此该命题在指定范围内成立。",
+  "clarification": null,
+  "backend_calls": [
+    {
+      "operation": "search",
+      "task_file": "task.json",
+      "graph_file": null,
+      "result_file": "search-result.json"
+    }
+  ]
+}

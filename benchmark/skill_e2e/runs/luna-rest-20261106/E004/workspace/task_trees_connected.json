@@ -1,0 +1,11 @@
+{
+  "property_id": "trees_are_connected",
+  "graph_type": "simple_undirected",
+  "premises": ["tree"],
+  "conclusion": "connected",
+  "min_nodes": 1,
+  "max_nodes": 4,
+  "search_mode": "random",
+  "seed": 17,
+  "max_graphs": 50
+}

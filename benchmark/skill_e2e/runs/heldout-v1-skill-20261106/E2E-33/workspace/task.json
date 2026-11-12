@@ -1,0 +1,13 @@
+{
+  "seed": null,
+  "premises": [
+    "connected",
+    "bipartite"
+  ],
+  "min_nodes": 1,
+  "property_id": "connected_and_bipartite_implies_tree",
+  "search_mode": "exhaustive",
+  "max_nodes": 5,
+  "graph_type": "simple_undirected",
+  "conclusion": "tree"
+}

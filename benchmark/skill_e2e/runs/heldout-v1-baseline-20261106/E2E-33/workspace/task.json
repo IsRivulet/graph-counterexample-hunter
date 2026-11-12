@@ -1,0 +1,6 @@
+{
+  "premises": ["connected", "bipartite"],
+  "conclusion": "tree",
+  "min_nodes": 1,
+  "max_nodes": 5
+}

@@ -1,0 +1,170 @@
+{
+  "schema_version": "mathcheck.e2e.scores.v1",
+  "case_count": 2,
+  "model_requested": "gpt-6-luna",
+  "automatic_pass_count": 1,
+  "strict_pass_count": 0,
+  "pending_review_count": 1,
+  "strict_pass_rate": 0.0,
+  "counterexample_precision": 1.0,
+  "counterexample_recall": 1.0,
+  "invalid_counterexample_count": 0,
+  "dimensions": {
+    "action": {
+      "passed": 2,
+      "applicable": 2
+    },
+    "backend_status": {
+      "passed": 2,
+      "applicable": 2
+    },
+    "coverage_matches": {
+      "passed": 2,
+      "applicable": 2
+    },
+    "coverage_mode": {
+      "passed": 2,
+      "applicable": 2
+    },
+    "coverage_range": {
+      "passed": 2,
+      "applicable": 2
+    },
+    "execution": {
+      "passed": 2,
+      "applicable": 2
+    },
+    "exhaustion": {
+      "passed": 1,
+      "applicable": 1
+    },
+    "explicit_reverification": {
+      "passed": 1,
+      "applicable": 1
+    },
+    "independent_witness": {
+      "passed": 1,
+      "applicable": 1
+    },
+    "no_unproven_edge_minimum": {
+      "passed": 1,
+      "applicable": 1
+    },
+    "no_witness": {
+      "passed": 1,
+      "applicable": 1
+    },
+    "protocol": {
+      "passed": 2,
+      "applicable": 2
+    },
+    "reduction_recorded": {
+      "passed": 0,
+      "applicable": 1
+    },
+    "reported_checks": {
+      "passed": 2,
+      "applicable": 2
+    },
+    "reported_evidence": {
+      "passed": 1,
+      "applicable": 1
+    },
+    "reported_graph_in_chain": {
+      "passed": 1,
+      "applicable": 1
+    },
+    "status": {
+      "passed": 2,
+      "applicable": 2
+    },
+    "task_semantics": {
+      "passed": 2,
+      "applicable": 2
+    },
+    "tool_evidence": {
+      "passed": 2,
+      "applicable": 2
+    },
+    "vertex_minimum_evidence": {
+      "passed": 1,
+      "applicable": 1
+    }
+  },
+  "notes": [
+    "Structural/Boolean semantics are automatic; natural-language reason and clarification quality need human review.",
+    "CLI trace and artifacts are consistency evidence, not a tamper-proof audit or OS isolation boundary.",
+    "Published starter cases are development cases, not a held-out generalization benchmark."
+  ],
+  "cases": [
+    {
+      "id": "E2E-01",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": true,
+        "tool_evidence": true,
+        "backend_status": true,
+        "coverage_matches": true,
+        "coverage_mode": true,
+        "coverage_range": true,
+        "independent_witness": true,
+        "explicit_reverification": true,
+        "reported_checks": true,
+        "reported_evidence": true,
+        "reduction_recorded": false,
+        "reported_graph_in_chain": true,
+        "no_unproven_edge_minimum": true,
+        "vertex_minimum_evidence": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 147192,
+        "cached_input_tokens": 133760,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1509,
+        "reasoning_output_tokens": 147
+      },
+      "claims_counterexample": true,
+      "witness_valid": true,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    },
+    {
+      "id": "E2E-02",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": true,
+        "tool_evidence": true,
+        "backend_status": true,
+        "coverage_matches": true,
+        "coverage_mode": true,
+        "coverage_range": true,
+        "exhaustion": true,
+        "no_witness": true,
+        "reported_checks": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 99997,
+        "cached_input_tokens": 79744,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1278,
+        "reasoning_output_tokens": 203
+      },
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": true,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": null
+    }
+  ]
+}

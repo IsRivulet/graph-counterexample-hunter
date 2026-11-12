@@ -1,0 +1,146 @@
+[
+  {
+    "blind_id": "R-0aff5f",
+    "prompt_id": "P01",
+    "case_id": "E2E-03",
+    "condition": "skill"
+  },
+  {
+    "blind_id": "R-ee3eb6",
+    "prompt_id": "P02",
+    "case_id": "E2E-04",
+    "condition": "skill"
+  },
+  {
+    "blind_id": "R-9fa0bd",
+    "prompt_id": "P03",
+    "case_id": "E2E-09",
+    "condition": "skill"
+  },
+  {
+    "blind_id": "R-bc9125",
+    "prompt_id": "P04",
+    "case_id": "E2E-11",
+    "condition": "skill"
+  },
+  {
+    "blind_id": "R-908044",
+    "prompt_id": "P05",
+    "case_id": "E2E-14",
+    "condition": "skill"
+  },
+  {
+    "blind_id": "R-75c67e",
+    "prompt_id": "P06",
+    "case_id": "E2E-17",
+    "condition": "skill"
+  },
+  {
+    "blind_id": "R-ed041d",
+    "prompt_id": "P07",
+    "case_id": "E2E-20",
+    "condition": "skill"
+  },
+  {
+    "blind_id": "R-55842e",
+    "prompt_id": "P08",
+    "case_id": "E2E-22",
+    "condition": "skill"
+  },
+  {
+    "blind_id": "R-04275e",
+    "prompt_id": "P09",
+    "case_id": "E2E-25",
+    "condition": "skill"
+  },
+  {
+    "blind_id": "R-c66b0e",
+    "prompt_id": "P10",
+    "case_id": "E2E-32",
+    "condition": "skill"
+  },
+  {
+    "blind_id": "R-da5a4c",
+    "prompt_id": "P11",
+    "case_id": "E2E-33",
+    "condition": "skill"
+  },
+  {
+    "blind_id": "R-a3f23e",
+    "prompt_id": "P12",
+    "case_id": "E2E-39",
+    "condition": "skill"
+  },
+  {
+    "blind_id": "R-2e31e0",
+    "prompt_id": "P01",
+    "case_id": "E2E-03",
+    "condition": "baseline"
+  },
+  {
+    "blind_id": "R-ca510a",
+    "prompt_id": "P02",
+    "case_id": "E2E-04",
+    "condition": "baseline"
+  },
+  {
+    "blind_id": "R-50ebd2",
+    "prompt_id": "P03",
+    "case_id": "E2E-09",
+    "condition": "baseline"
+  },
+  {
+    "blind_id": "R-8d77b1",
+    "prompt_id": "P04",
+    "case_id": "E2E-11",
+    "condition": "baseline"
+  },
+  {
+    "blind_id": "R-47a08a",
+    "prompt_id": "P05",
+    "case_id": "E2E-14",
+    "condition": "baseline"
+  },
+  {
+    "blind_id": "R-2bad79",
+    "prompt_id": "P06",
+    "case_id": "E2E-17",
+    "condition": "baseline"
+  },
+  {
+    "blind_id": "R-73ba25",
+    "prompt_id": "P07",
+    "case_id": "E2E-20",
+    "condition": "baseline"
+  },
+  {
+    "blind_id": "R-09e18c",
+    "prompt_id": "P08",
+    "case_id": "E2E-22",
+    "condition": "baseline"
+  },
+  {
+    "blind_id": "R-a46ade",
+    "prompt_id": "P09",
+    "case_id": "E2E-25",
+    "condition": "baseline"
+  },
+  {
+    "blind_id": "R-3795fb",
+    "prompt_id": "P10",
+    "case_id": "E2E-32",
+    "condition": "baseline"
+  },
+  {
+    "blind_id": "R-76ac47",
+    "prompt_id": "P11",
+    "case_id": "E2E-33",
+    "condition": "baseline"
+  },
+  {
+    "blind_id": "R-2ab739",
+    "prompt_id": "P12",
+    "case_id": "E2E-39",
+    "condition": "baseline"
+  }
+]

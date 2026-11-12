@@ -1,0 +1,9 @@
+2026-11-06T13:14:10.172438Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out
+2026-11-06T13:14:10.511560Z  WARN codex_skills::interface: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/
+2026-11-06T13:14:10.511878Z  WARN codex_skills::interface: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/
+2026-11-06T13:14:10.904161Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-11-06T13:14:11.208736Z  WARN codex_skills_extension::loader::metadata: ignoring file:///C:/Users/25922/.codex/skills/.system/openai-docs/agents/openai.yaml: failed to read openai.yaml: 系统找不到指定的路径。 (os error 3)
+2026-11-06T13:14:11.214620Z  WARN codex_skills_extension::loader::metadata: ignoring file:///C:/Users/25922/.codex/skills/.system/skill-installer/agents/openai.yaml: failed to read openai.yaml: 系统找不到指定的路径。 (os error 3)
+2026-11-06T13:14:11.214862Z  WARN codex_skills_extension::loader::metadata: ignoring file:///C:/Users/25922/.codex/skills/.system/skill-creator/agents/openai.yaml: failed to read openai.yaml: 系统找不到指定的路径。 (os error 3)
+2026-11-06T13:14:11.214948Z  WARN codex_skills_extension::loader::metadata: ignoring file:///C:/Users/25922/.codex/skills/.system/review-agent/agents/openai.yaml: failed to read openai.yaml: 系统找不到指定的路径。 (os error 3)
+2026-11-06T13:14:11.667695Z ERROR codex_skills_extension::host_service: failed to install system skills: io error while remove existing system skills dir: 拒绝访问。 (os error 5)

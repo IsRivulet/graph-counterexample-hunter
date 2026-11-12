@@ -1,9 +1,9 @@
 ---
-name: mathcheck
+name: graph-counterexample-hunter
 description: 将有限简单无向图的自然语言猜想转为结构化任务，调用程序搜索、核验并缩小反例。适用于连通性、二分性、树、欧拉性质、度数、染色数和直径等已支持谓词，以及已有候选图的核验。
 ---
 
-# MathCheck
+# graph-counterexample-hunter
 
 将输入解释为全称命题：“对指定范围内的每张图，若满足全部前提，则结论成立”。反例必须是范围内的图，满足全部前提且使结论为假。
 
@@ -30,6 +30,16 @@ python scripts/minimize_counterexample.py --task examples/connected_and_bipartit
 ```
 
 用户提供候选图时先核验合法性、范围、每条前提和结论；全部通过才确认反例。候选失败只报告拒绝，除非用户另要求搜索。搜索返回候选后另行调用核验入口，再确认反例。搜索完成后读取模式、覆盖范围、终止原因及结果。脚本异常、超时、不可用或必要证据缺失时为 `inconclusive`。限定预算随机搜索结束且无反例，只能报告该范围/预算内未找到反例。
+
+### 反例的强制缩小与复核流程
+
+搜索或用户输入的候选图通过独立 verifier 后，必须继续执行以下流程；只有用户明确要求“不缩小”时才可跳过，并在报告说明用户要求。未通过 verifier 的图绝不传给 reducer。
+
+1. 将已核验的原反例交给 `scripts/minimize_counterexample.py`，使用新的 `--output` 文件保存缩小结果。不得只依赖搜索命令的 `--minimize` 内嵌结果，因为最终报告协议要求缩小图有独立核验调用。
+2. 读取缩小结果中的 `minimized_graph`、前后规模、`steps`、`status` 和 `minimality`。即使状态为 `no_improvement`，也把返回的图写入一个新的图文件；它与原图相同仍须走下一步复核。
+3. 对返回图调用 `scripts/verify_candidate.py`，使用新的结果文件。只有该次 verifier 再次确认 `counterexample_found`，才可用它作为最终图。若 reducer 失败、没有返回图或复核失败，保留原始已核验图、原始 checks/evidence，并如实报告缩小或复核失败；不得把未核验图作为最终反例。
+4. `backend_calls` 必须按实际顺序记录 search（如有）、原图 verify、minimize、缩小图 verify 的每次调用；任务、图和结果文件路径均须真实且互不覆盖。缩小结果文件中的 `minimization` 原样放入最终报告。
+5. `minimality` 只汇报最终图对应的后端证据：搜索报告的 `vertex_minimum_in_scope` 可保留在同一最终图上；reducer 的 `local_single_deletion_minimum` 仅在缩小结果和最终图一致并已复核时报告。不能把局部最小说成全局最小，也不能把 `edge_minimum_at_minimum_vertices=false` 改成 true。
 
 报告证据应忠实于后端：`graphs_evaluated` 是实际检查数；随机 `max_graphs` 约束生成数 `samples_generated`（重复也计入）；`labeled_graphs_total` 使用相同带标号口径，非同构总数另列。穷举时报告 `premise_satisfying_count`；为零须说明范围内无图满足前提，命题真空成立。抽样计数只针对已检查样本，不足以判断全范围真空。
 

@@ -1,0 +1,8 @@
+{"type":"thread.started","thread_id":"01a1b03d-5ee6-7770-b4d4-907524508c46"}
+{"type":"turn.started"}
+{"type":"error","message":"Reconnecting... 2/5 (request timed out)"}
+{"type":"error","message":"Reconnecting... 3/5 (request timed out)"}
+{"type":"error","message":"Reconnecting... 4/5 (request timed out)"}
+{"type":"error","message":"Reconnecting... 5/5 (request timed out)"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Falling back from WebSockets to HTTPS transport. request timed out"}}
+{"type":"error","message":"Reconnecting... waiting for network (Connection failed: error sending request)"}

@@ -1,0 +1,8 @@
+{
+  "premises": ["connected", "bipartite"],
+  "conclusion": "tree",
+  "graph_type": "simple_undirected",
+  "min_nodes": 1,
+  "max_nodes": 5,
+  "search_mode": "exhaustive"
+}

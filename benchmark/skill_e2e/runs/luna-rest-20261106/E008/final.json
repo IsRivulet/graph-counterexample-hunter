@@ -1,0 +1,290 @@
+{
+  "schema_version": "mathcheck.e2e.v1",
+  "action": "search",
+  "status": "counterexample_found",
+  "mode": "live",
+  "task": {
+    "property_id": "cycle_or_complete_implies_connected",
+    "graph_type": "simple_undirected",
+    "premises": [
+      {
+        "or": [
+          "has_cycle",
+          "complete"
+        ]
+      }
+    ],
+    "conclusion": "connected",
+    "normalized_premises": [
+      {
+        "type": "or",
+        "negated": false,
+        "alternatives": [
+          {
+            "type": "atom",
+            "predicate": "has_cycle",
+            "negated": false,
+            "k": null
+          },
+          {
+            "type": "atom",
+            "predicate": "complete",
+            "negated": false,
+            "k": null
+          }
+        ]
+      }
+    ],
+    "normalized_conclusion": {
+      "type": "atom",
+      "predicate": "connected",
+      "negated": false,
+      "k": null
+    },
+    "min_nodes": 1,
+    "max_nodes": 5,
+    "search_mode": "exhaustive",
+    "seed": null,
+    "max_graphs": 2000
+  },
+  "counterexample": {
+    "nodes": [0, 1, 2, 3],
+    "edges": [[0, 1], [0, 2], [1, 2]]
+  },
+  "coverage": {
+    "search_mode": "exhaustive",
+    "min_nodes": 1,
+    "max_nodes": 5,
+    "graphs_evaluated": 23,
+    "premise_satisfying_count": 4,
+    "fully_exhausted": false,
+    "size_counts_examined": {
+      "1": 1,
+      "2": 2,
+      "3": 8,
+      "4": 12
+    },
+    "seed": null,
+    "max_graphs": null,
+    "termination_reason": "counterexample_found",
+    "isomorphism_classes_total": 52,
+    "graphs_total": 1099,
+    "labeled_graphs_total": 1099,
+    "graphs_examined": 23,
+    "duplicates_skipped": 0,
+    "vacuously_true": null,
+    "elapsed_seconds": 0.000583
+  },
+  "checks": {
+    "graph_structure_valid": true,
+    "node_count_in_range": true,
+    "premises": {
+      "(has_cycle or complete)": true
+    },
+    "conclusion": {
+      "connected": false
+    },
+    "premise_checks": [
+      {
+        "index": 0,
+        "expression": {
+          "type": "or",
+          "negated": false,
+          "alternatives": [
+            {
+              "type": "atom",
+              "predicate": "has_cycle",
+              "negated": false,
+              "k": null
+            },
+            {
+              "type": "atom",
+              "predicate": "complete",
+              "negated": false,
+              "k": null
+            }
+          ]
+        },
+        "label": "(has_cycle or complete)",
+        "value": true
+      }
+    ],
+    "conclusion_value": false,
+    "all_premises_satisfied": true,
+    "conclusion_violated": true,
+    "is_counterexample": true
+  },
+  "evidence": {
+    "degrees": {
+      "0": 2,
+      "1": 2,
+      "2": 2,
+      "3": 0
+    },
+    "components": [[0, 1, 2], [3]],
+    "bipartition": null,
+    "cycle": [1, 0, 2, 1],
+    "odd_degree_vertices": [],
+    "leaves": [],
+    "node_count": 4,
+    "edge_count": 3,
+    "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v1\n  v0 --- v2\n  v1 --- v2"
+  },
+  "minimization": {
+    "status": "no_improvement",
+    "original_graph": {
+      "nodes": [0, 1, 2, 3],
+      "edges": [[0, 1], [0, 2], [1, 2]]
+    },
+    "minimized_graph": {
+      "nodes": [0, 1, 2, 3],
+      "edges": [[0, 1], [0, 2], [1, 2]]
+    },
+    "original_size": {
+      "nodes": 4,
+      "edges": 3
+    },
+    "minimized_size": {
+      "nodes": 4,
+      "edges": 3
+    },
+    "steps": [],
+    "verification": {
+      "status": "counterexample_found",
+      "mode": "live",
+      "task": {
+        "property_id": "cycle_or_complete_implies_connected",
+        "graph_type": "simple_undirected",
+        "premises": [
+          {
+            "or": ["has_cycle", "complete"]
+          }
+        ],
+        "conclusion": "connected",
+        "normalized_premises": [
+          {
+            "type": "or",
+            "negated": false,
+            "alternatives": [
+              {
+                "type": "atom",
+                "predicate": "has_cycle",
+                "negated": false,
+                "k": null
+              },
+              {
+                "type": "atom",
+                "predicate": "complete",
+                "negated": false,
+                "k": null
+              }
+            ]
+          }
+        ],
+        "normalized_conclusion": {
+          "type": "atom",
+          "predicate": "connected",
+          "negated": false,
+          "k": null
+        },
+        "min_nodes": 1,
+        "max_nodes": 5,
+        "search_mode": "exhaustive",
+        "seed": null,
+        "max_graphs": 2000
+      },
+      "coverage": null,
+      "counterexample": {
+        "nodes": [0, 1, 2, 3],
+        "edges": [[0, 1], [0, 2], [1, 2]]
+      },
+      "checks": {
+        "graph_structure_valid": true,
+        "node_count_in_range": true,
+        "premises": {
+          "(has_cycle or complete)": true
+        },
+        "conclusion": {
+          "connected": false
+        },
+        "premise_checks": [
+          {
+            "index": 0,
+            "expression": {
+              "type": "or",
+              "negated": false,
+              "alternatives": [
+                {
+                  "type": "atom",
+                  "predicate": "has_cycle",
+                  "negated": false,
+                  "k": null
+                },
+                {
+                  "type": "atom",
+                  "predicate": "complete",
+                  "negated": false,
+                  "k": null
+                }
+              ]
+            },
+            "label": "(has_cycle or complete)",
+            "value": true
+          }
+        ],
+        "conclusion_value": false,
+        "all_premises_satisfied": true,
+        "conclusion_violated": true,
+        "is_counterexample": true
+      },
+      "evidence": {
+        "degrees": {
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 0
+        },
+        "components": [[0, 1, 2], [3]],
+        "bipartition": null,
+        "cycle": [1, 0, 2, 1],
+        "odd_degree_vertices": [],
+        "leaves": [],
+        "node_count": 4,
+        "edge_count": 3,
+        "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v1\n  v0 --- v2\n  v1 --- v2"
+      },
+      "minimization": null,
+      "reason": "candidate independently passed graph, range, premise, and conclusion checks."
+    },
+    "minimality_claim": "locally_minimal_under_single_vertex_and_edge_deletions",
+    "minimality": {
+      "local_single_deletion_minimum": true,
+      "vertex_minimum_in_scope": true,
+      "edge_minimum_at_minimum_vertices": false,
+      "scope": [1, 5]
+    },
+    "reason": "the returned graph was re-verified; local deletion minimality is not a proof of global minimum size."
+  },
+  "minimality": {
+    "vertex_minimum_in_scope": true,
+    "edge_minimum_at_minimum_vertices": false,
+    "scope": [1, 5],
+    "reason": "Increasing-size exhaustive enumeration excludes every smaller order in scope."
+  },
+  "reason": "按“含环或者完全”解释为“含环或完全”的析取。搜索找到一个三角形加孤立点的反例，并经独立核验：它含环、非连通；缩小未改进。搜索在发现反例后停止，未穷举完 1 至 5 个顶点的全部图。",
+  "clarification": null,
+  "backend_calls": [
+    {
+      "operation": "search",
+      "task_file": "task_cycle_or_complete.json",
+      "graph_file": null,
+      "result_file": "result_search.json"
+    },
+    {
+      "operation": "verify",
+      "task_file": "task_cycle_or_complete.json",
+      "graph_file": "graph_cycle_plus_isolated.json",
+      "result_file": "result_verify.json"
+    }
+  ]
+}

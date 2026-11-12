@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "language": "zh-CN",
   "created_date": "2026-11-05",
-  "purpose": "Evaluate the complete MathCheck Skill workflow from natural-language input through parsing, task construction, backend search or candidate verification, optional reduction, re-verification, and final reporting.",
+  "purpose": "Evaluate the complete graph-counterexample-hunter Skill workflow from natural-language input through parsing, task construction, backend search or candidate verification, optional reduction, re-verification, and final reporting.",
   "relationship_to_backend_benchmark": "This is a Skill-level E2E set. It complements, and does not replace, the existing 60-task MathCheck-Bench backend suite.",
   "scope": {
     "graph_type": "finite non-empty simple undirected graphs",

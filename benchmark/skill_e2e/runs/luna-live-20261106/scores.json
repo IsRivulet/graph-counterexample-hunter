@@ -1,0 +1,179 @@
+{
+  "schema_version": "mathcheck.e2e.scores.v1",
+  "case_count": 10,
+  "model_requested": "gpt-6-luna",
+  "automatic_pass_count": 0,
+  "strict_pass_count": 0,
+  "pending_review_count": 0,
+  "strict_pass_rate": 0.0,
+  "counterexample_precision": null,
+  "counterexample_recall": 0.0,
+  "invalid_counterexample_count": 0,
+  "dimensions": {
+    "artifacts_readable_and_consistent": {
+      "passed": 0,
+      "applicable": 10
+    },
+    "execution": {
+      "passed": 0,
+      "applicable": 10
+    }
+  },
+  "notes": [
+    "Structural/Boolean semantics are automatic; natural-language reason and clarification quality need human review.",
+    "CLI trace and artifacts are consistency evidence, not a tamper-proof audit or OS isolation boundary.",
+    "Published starter cases are development cases, not a held-out generalization benchmark."
+  ],
+  "cases": [
+    {
+      "id": "E001",
+      "checks": {
+        "execution": false,
+        "artifacts_readable_and_consistent": false
+      },
+      "error": "[Errno 2] No such file or directory: 'benchmark\\\\skill_e2e\\\\runs\\\\luna-live-20261106\\\\E001\\\\final.json'",
+      "usage": null,
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    },
+    {
+      "id": "E002",
+      "checks": {
+        "execution": false,
+        "artifacts_readable_and_consistent": false
+      },
+      "error": "[Errno 2] No such file or directory: 'benchmark\\\\skill_e2e\\\\runs\\\\luna-live-20261106\\\\E002\\\\final.json'",
+      "usage": null,
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    },
+    {
+      "id": "E003",
+      "checks": {
+        "execution": false,
+        "artifacts_readable_and_consistent": false
+      },
+      "error": "[Errno 2] No such file or directory: 'benchmark\\\\skill_e2e\\\\runs\\\\luna-live-20261106\\\\E003\\\\final.json'",
+      "usage": null,
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    },
+    {
+      "id": "E004",
+      "checks": {
+        "execution": false,
+        "artifacts_readable_and_consistent": false
+      },
+      "error": "[Errno 2] No such file or directory: 'benchmark\\\\skill_e2e\\\\runs\\\\luna-live-20261106\\\\E004\\\\final.json'",
+      "usage": null,
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    },
+    {
+      "id": "E005",
+      "checks": {
+        "execution": false,
+        "artifacts_readable_and_consistent": false
+      },
+      "error": "[Errno 2] No such file or directory: 'benchmark\\\\skill_e2e\\\\runs\\\\luna-live-20261106\\\\E005\\\\final.json'",
+      "usage": null,
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    },
+    {
+      "id": "E006",
+      "checks": {
+        "execution": false,
+        "artifacts_readable_and_consistent": false
+      },
+      "error": "[Errno 2] No such file or directory: 'benchmark\\\\skill_e2e\\\\runs\\\\luna-live-20261106\\\\E006\\\\final.json'",
+      "usage": null,
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    },
+    {
+      "id": "E007",
+      "checks": {
+        "execution": false,
+        "artifacts_readable_and_consistent": false
+      },
+      "error": "[Errno 2] No such file or directory: 'benchmark\\\\skill_e2e\\\\runs\\\\luna-live-20261106\\\\E007\\\\final.json'",
+      "usage": null,
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    },
+    {
+      "id": "E008",
+      "checks": {
+        "execution": false,
+        "artifacts_readable_and_consistent": false
+      },
+      "error": "[Errno 2] No such file or directory: 'benchmark\\\\skill_e2e\\\\runs\\\\luna-live-20261106\\\\E008\\\\final.json'",
+      "usage": null,
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    },
+    {
+      "id": "E009",
+      "checks": {
+        "execution": false,
+        "artifacts_readable_and_consistent": false
+      },
+      "error": "[Errno 2] No such file or directory: 'benchmark\\\\skill_e2e\\\\runs\\\\luna-live-20261106\\\\E009\\\\final.json'",
+      "usage": null,
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    },
+    {
+      "id": "E010",
+      "checks": {
+        "execution": false,
+        "artifacts_readable_and_consistent": false
+      },
+      "error": "[Errno 2] No such file or directory: 'benchmark\\\\skill_e2e\\\\runs\\\\luna-live-20261106\\\\E010\\\\final.json'",
+      "usage": null,
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+2026-11-06T13:12:33.416489Z  WARN codex_skills::interface: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/
+2026-11-06T13:12:33.419776Z  WARN codex_skills::interface: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/
+2026-11-06T13:12:33.625415Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-11-06T13:12:39.941599Z ERROR codex_skills_extension::host_service: failed to install system skills: io error while remove existing system skills dir: 目录不是空的。 (os error 145)

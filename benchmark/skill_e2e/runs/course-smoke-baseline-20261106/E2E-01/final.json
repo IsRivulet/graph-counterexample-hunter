@@ -1,0 +1,146 @@
+{
+  "schema_version": "mathcheck.e2e.v1",
+  "action": "search",
+  "status": "counterexample_found",
+  "mode": "live",
+  "task": {
+    "property_id": null,
+    "graph_type": "simple_undirected",
+    "premises": [
+      "connected",
+      "bipartite"
+    ],
+    "conclusion": "tree",
+    "normalized_premises": [
+      {
+        "type": "atom",
+        "predicate": "connected",
+        "negated": false,
+        "k": null
+      },
+      {
+        "type": "atom",
+        "predicate": "bipartite",
+        "negated": false,
+        "k": null
+      }
+    ],
+    "normalized_conclusion": {
+      "type": "atom",
+      "predicate": "tree",
+      "negated": false,
+      "k": null
+    },
+    "min_nodes": 1,
+    "max_nodes": 5,
+    "search_mode": "exhaustive",
+    "seed": null,
+    "max_graphs": 2000
+  },
+  "counterexample": {
+    "nodes": [0, 1, 2, 3],
+    "edges": [[0, 2], [0, 3], [1, 2], [1, 3]]
+  },
+  "coverage": {
+    "search_mode": "exhaustive",
+    "min_nodes": 1,
+    "max_nodes": 5,
+    "graphs_evaluated": 42,
+    "premise_satisfying_count": 14,
+    "fully_exhausted": false,
+    "size_counts_examined": {
+      "1": 1,
+      "2": 2,
+      "3": 8,
+      "4": 31
+    },
+    "seed": null,
+    "max_graphs": null,
+    "termination_reason": "counterexample_found",
+    "isomorphism_classes_total": 52,
+    "graphs_total": 1099,
+    "labeled_graphs_total": 1099,
+    "graphs_examined": 42,
+    "duplicates_skipped": 0,
+    "vacuously_true": null,
+    "elapsed_seconds": 0.001128
+  },
+  "checks": {
+    "graph_structure_valid": true,
+    "node_count_in_range": true,
+    "premises": {
+      "connected": true,
+      "bipartite": true
+    },
+    "conclusion": {
+      "tree": false
+    },
+    "premise_checks": [
+      {
+        "index": 0,
+        "expression": {
+          "type": "atom",
+          "predicate": "connected",
+          "negated": false,
+          "k": null
+        },
+        "label": "connected",
+        "value": true
+      },
+      {
+        "index": 1,
+        "expression": {
+          "type": "atom",
+          "predicate": "bipartite",
+          "negated": false,
+          "k": null
+        },
+        "label": "bipartite",
+        "value": true
+      }
+    ],
+    "conclusion_value": false,
+    "all_premises_satisfied": true,
+    "conclusion_violated": true,
+    "is_counterexample": true
+  },
+  "evidence": {
+    "degrees": {
+      "0": 2,
+      "1": 2,
+      "2": 2,
+      "3": 2
+    },
+    "components": [[0, 1, 2, 3]],
+    "bipartition": [[0, 1], [2, 3]],
+    "cycle": [1, 2, 0, 3, 1],
+    "odd_degree_vertices": [],
+    "leaves": [],
+    "node_count": 4,
+    "edge_count": 4,
+    "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v2\n  v0 --- v3\n  v1 --- v2\n  v1 --- v3"
+  },
+  "minimization": null,
+  "minimality": {
+    "vertex_minimum_in_scope": true,
+    "edge_minimum_at_minimum_vertices": false,
+    "scope": [1, 5],
+    "reason": "Increasing-size exhaustive enumeration excludes every smaller order in scope."
+  },
+  "reason": "实际穷举在 4 个顶点处找到反例 K₂,₂，并由独立核验入口确认它连通、二分且非树。搜索在找到反例后停止，未穷尽全部 1–5 顶点图；该反例在给定范围内顶点数最少。",
+  "clarification": null,
+  "backend_calls": [
+    {
+      "operation": "search",
+      "task_file": "task.json",
+      "graph_file": null,
+      "result_file": "search-result.json"
+    },
+    {
+      "operation": "verify",
+      "task_file": "task.json",
+      "graph_file": "counterexample.json",
+      "result_file": "verification-result.json"
+    }
+  ]
+}

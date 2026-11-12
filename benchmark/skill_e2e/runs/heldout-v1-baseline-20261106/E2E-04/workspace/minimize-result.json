@@ -1,0 +1,152 @@
+{
+  "status": "no_improvement",
+  "original_graph": {
+    "nodes": [
+      0,
+      1
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "minimized_graph": {
+    "nodes": [
+      0,
+      1
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "original_size": {
+    "nodes": 2,
+    "edges": 1
+  },
+  "minimized_size": {
+    "nodes": 2,
+    "edges": 1
+  },
+  "steps": [],
+  "verification": {
+    "status": "counterexample_found",
+    "mode": "live",
+    "task": {
+      "property_id": "eulerian_trail_implies_eulerian_circuit",
+      "graph_type": "simple_undirected",
+      "premises": [
+        "eulerian_trail"
+      ],
+      "conclusion": "eulerian_circuit",
+      "normalized_premises": [
+        {
+          "type": "atom",
+          "predicate": "eulerian_trail",
+          "negated": false,
+          "k": null
+        }
+      ],
+      "normalized_conclusion": {
+        "type": "atom",
+        "predicate": "eulerian_circuit",
+        "negated": false,
+        "k": null
+      },
+      "min_nodes": 1,
+      "max_nodes": 5,
+      "search_mode": "exhaustive",
+      "seed": null,
+      "max_graphs": 2000
+    },
+    "coverage": null,
+    "counterexample": {
+      "nodes": [
+        0,
+        1
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "checks": {
+      "graph_structure_valid": true,
+      "node_count_in_range": true,
+      "premises": {
+        "eulerian_trail": true
+      },
+      "conclusion": {
+        "eulerian_circuit": false
+      },
+      "premise_checks": [
+        {
+          "index": 0,
+          "expression": {
+            "type": "atom",
+            "predicate": "eulerian_trail",
+            "negated": false,
+            "k": null
+          },
+          "label": "eulerian_trail",
+          "value": true
+        }
+      ],
+      "conclusion_value": false,
+      "all_premises_satisfied": true,
+      "conclusion_violated": true,
+      "is_counterexample": true
+    },
+    "evidence": {
+      "degrees": {
+        "0": 1,
+        "1": 1
+      },
+      "components": [
+        [
+          0,
+          1
+        ]
+      ],
+      "bipartition": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "cycle": null,
+      "odd_degree_vertices": [
+        0,
+        1
+      ],
+      "leaves": [
+        0,
+        1
+      ],
+      "node_count": 2,
+      "edge_count": 1,
+      "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v0 --- v1"
+    },
+    "minimization": null,
+    "reason": "candidate independently passed graph, range, premise, and conclusion checks."
+  },
+  "minimality_claim": "locally_minimal_under_single_vertex_and_edge_deletions",
+  "minimality": {
+    "local_single_deletion_minimum": true,
+    "vertex_minimum_in_scope": false,
+    "edge_minimum_at_minimum_vertices": false,
+    "scope": [
+      1,
+      5
+    ]
+  },
+  "reason": "the returned graph was re-verified; local deletion minimality is not a proof of global minimum size."
+}

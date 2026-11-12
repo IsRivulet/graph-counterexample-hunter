@@ -21,8 +21,10 @@ def write_json(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def runtime_files():
+def runtime_files(include_skill=True):
     for name in ("SKILL.md", "BACKEND_CONTRACT.md", "README.md", "VERSION"):
+        if name == "SKILL.md" and not include_skill:
+            continue
         yield ROOT / name
     for name in ("mathcheck", "scripts", "references", "examples"):
         directory = ROOT / name
@@ -65,6 +67,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--cases", type=Path, default=HERE / "cases.json")
     parser.add_argument("--output", type=Path, required=True, help="new run directory; must not already exist")
+    parser.add_argument("--condition", choices=("skill", "baseline"), default="skill",
+                        help="skill loads SKILL.md; baseline uses the same backend without SKILL.md")
     parser.add_argument("--model", default="gpt-6-luna")
     parser.add_argument("--codex", default="codex")
     parser.add_argument("--timeout", type=float, default=300, help="seconds per case")
@@ -96,13 +100,14 @@ def main():
     except (OSError, ValueError, KeyError, TypeError) as exc:
         parser.error(str(exc))
 
-    files = list(runtime_files())
+    files = list(runtime_files(include_skill=args.condition == "skill"))
     for source in files:
         if source.resolve() != (ROOT.resolve() / source.relative_to(ROOT)):
             parser.error("Runtime links/junctions are not allowed: " + str(source))
     hashes = {str(p.relative_to(ROOT)).replace("\\", "/"): hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
     manifest = {"schema_version": "mathcheck.e2e.run.v1", "started_at": datetime.now(timezone.utc).isoformat(),
-                "model_requested": args.model, "backend_version": (ROOT / "VERSION").read_text().strip(),
+                "condition": args.condition, "model_requested": args.model,
+                "backend_version": (ROOT / "VERSION").read_text().strip(),
                 "runtime_sha256": hashes, "cases_sha256": hashlib.sha256(args.cases.read_bytes()).hexdigest(),
                 "case_ids": [c["id"] for c in cases], "cases": []}
     write_json(output / "manifest.json", manifest)
@@ -115,8 +120,10 @@ def main():
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source, target)
         write_json(folder / "input.json", case)
-        prompt = (
-            "请阅读当前目录 SKILL.md 并使用 MathCheck 处理下面的真实请求。实际运行后端，不要模拟。\n"
+        instruction = ("请阅读当前目录 SKILL.md 并使用 graph-counterexample-hunter 处理下面的真实请求。实际运行后端，不要模拟。\n"
+                       if args.condition == "skill" else
+                       "请直接处理下面的真实请求；当前没有加载 graph-counterexample-hunter Skill。可使用当前目录提供的后端脚本与契约，实际运行后端，不要模拟。\n")
+        prompt = instruction + (
             "本轮要求 JSON 报告：请阅读 references/e2e-report.md，最终消息只返回协议中的 JSON 对象。\n"
             "所有任务、图及 CLI --output 结果文件都保存在当前工作目录内，报告 backend_calls 使用相对路径。\n"
             "如需澄清，提出问题并结束本轮，不要自行代答。不要修改 Skill、后端脚本或参考文档。\n"

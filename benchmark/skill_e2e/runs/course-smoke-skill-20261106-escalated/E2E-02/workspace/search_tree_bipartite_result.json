@@ -1,0 +1,60 @@
+{
+  "status": "verified_true_in_scope",
+  "mode": "live",
+  "task": {
+    "property_id": "tree_implies_bipartite",
+    "graph_type": "simple_undirected",
+    "premises": [
+      "tree"
+    ],
+    "conclusion": "bipartite",
+    "normalized_premises": [
+      {
+        "type": "atom",
+        "predicate": "tree",
+        "negated": false,
+        "k": null
+      }
+    ],
+    "normalized_conclusion": {
+      "type": "atom",
+      "predicate": "bipartite",
+      "negated": false,
+      "k": null
+    },
+    "min_nodes": 1,
+    "max_nodes": 5,
+    "search_mode": "exhaustive",
+    "seed": null,
+    "max_graphs": 2000
+  },
+  "coverage": {
+    "search_mode": "exhaustive",
+    "min_nodes": 1,
+    "max_nodes": 5,
+    "graphs_evaluated": 1099,
+    "premise_satisfying_count": 146,
+    "fully_exhausted": true,
+    "size_counts_examined": {
+      "1": 1,
+      "2": 2,
+      "3": 8,
+      "4": 64,
+      "5": 1024
+    },
+    "seed": null,
+    "max_graphs": null,
+    "termination_reason": "completed_all_candidates",
+    "isomorphism_classes_total": 52,
+    "graphs_total": 1099,
+    "labeled_graphs_total": 1099,
+    "graphs_examined": 1099,
+    "duplicates_skipped": 0,
+    "vacuously_true": false,
+    "elapsed_seconds": 0.020007
+  },
+  "counterexample": null,
+  "checks": null,
+  "minimization": null,
+  "reason": "all simple undirected graphs in the requested vertex range were exhaustively checked; no counterexample exists in scope."
+}

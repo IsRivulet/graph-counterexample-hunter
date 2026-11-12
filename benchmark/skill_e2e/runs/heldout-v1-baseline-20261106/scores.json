@@ -1,0 +1,523 @@
+{
+  "schema_version": "mathcheck.e2e.scores.v1",
+  "case_count": 12,
+  "model_requested": "gpt-6-luna",
+  "automatic_pass_count": 7,
+  "strict_pass_count": 0,
+  "pending_review_count": 7,
+  "strict_pass_rate": 0.0,
+  "counterexample_precision": 0.5714285714285714,
+  "counterexample_recall": 0.6666666666666666,
+  "invalid_counterexample_count": 3,
+  "dimensions": {
+    "action": {
+      "passed": 9,
+      "applicable": 12
+    },
+    "artifacts_readable_and_consistent": {
+      "passed": 0,
+      "applicable": 3
+    },
+    "backend_status": {
+      "passed": 7,
+      "applicable": 7
+    },
+    "clarification": {
+      "passed": 0,
+      "applicable": 1
+    },
+    "coverage_matches": {
+      "passed": 7,
+      "applicable": 7
+    },
+    "coverage_mode": {
+      "passed": 7,
+      "applicable": 7
+    },
+    "coverage_range": {
+      "passed": 7,
+      "applicable": 7
+    },
+    "execution": {
+      "passed": 12,
+      "applicable": 12
+    },
+    "exhaustion": {
+      "passed": 2,
+      "applicable": 2
+    },
+    "explicit_reverification": {
+      "passed": 4,
+      "applicable": 4
+    },
+    "independent_witness": {
+      "passed": 4,
+      "applicable": 4
+    },
+    "local_minimum_evidence": {
+      "passed": 2,
+      "applicable": 2
+    },
+    "no_backend_calls": {
+      "passed": 0,
+      "applicable": 2
+    },
+    "no_unproven_edge_minimum": {
+      "passed": 4,
+      "applicable": 4
+    },
+    "no_witness": {
+      "passed": 3,
+      "applicable": 5
+    },
+    "protocol": {
+      "passed": 12,
+      "applicable": 12
+    },
+    "reduced_witness": {
+      "passed": 4,
+      "applicable": 4
+    },
+    "reduction_chain": {
+      "passed": 4,
+      "applicable": 4
+    },
+    "reduction_did_not_grow": {
+      "passed": 4,
+      "applicable": 4
+    },
+    "reduction_recorded": {
+      "passed": 4,
+      "applicable": 4
+    },
+    "reduction_reverified": {
+      "passed": 4,
+      "applicable": 4
+    },
+    "reported_checks": {
+      "passed": 7,
+      "applicable": 7
+    },
+    "reported_evidence": {
+      "passed": 4,
+      "applicable": 4
+    },
+    "reported_graph_in_chain": {
+      "passed": 4,
+      "applicable": 4
+    },
+    "sample_scope": {
+      "passed": 1,
+      "applicable": 1
+    },
+    "status": {
+      "passed": 10,
+      "applicable": 12
+    },
+    "task_semantics": {
+      "passed": 8,
+      "applicable": 10
+    },
+    "tool_evidence": {
+      "passed": 7,
+      "applicable": 7
+    },
+    "vertex_minimum_evidence": {
+      "passed": 2,
+      "applicable": 2
+    }
+  },
+  "notes": [
+    "Structural/Boolean semantics are automatic; natural-language reason and clarification quality need human review.",
+    "CLI trace and artifacts are consistency evidence, not a tamper-proof audit or OS isolation boundary.",
+    "Published starter cases are development cases, not a held-out generalization benchmark."
+  ],
+  "cases": [
+    {
+      "id": "E2E-03",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": true,
+        "tool_evidence": true,
+        "backend_status": true,
+        "coverage_matches": true,
+        "coverage_mode": true,
+        "coverage_range": true,
+        "independent_witness": true,
+        "explicit_reverification": true,
+        "reported_checks": true,
+        "reported_evidence": true,
+        "reduction_recorded": true,
+        "reduction_chain": true,
+        "reduced_witness": true,
+        "reduction_did_not_grow": true,
+        "reduction_reverified": true,
+        "reported_graph_in_chain": true,
+        "no_unproven_edge_minimum": true,
+        "local_minimum_evidence": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 227781,
+        "cached_input_tokens": 197760,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3354,
+        "reasoning_output_tokens": 458
+      },
+      "claims_counterexample": true,
+      "witness_valid": true,
+      "automatic_pass": true,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": null
+    },
+    {
+      "id": "E2E-04",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": true,
+        "tool_evidence": true,
+        "backend_status": true,
+        "coverage_matches": true,
+        "coverage_mode": true,
+        "coverage_range": true,
+        "independent_witness": true,
+        "explicit_reverification": true,
+        "reported_checks": true,
+        "reported_evidence": true,
+        "reduction_recorded": true,
+        "reduction_chain": true,
+        "reduced_witness": true,
+        "reduction_did_not_grow": true,
+        "reduction_reverified": true,
+        "reported_graph_in_chain": true,
+        "no_unproven_edge_minimum": true,
+        "vertex_minimum_evidence": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 223875,
+        "cached_input_tokens": 190976,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2332,
+        "reasoning_output_tokens": 311
+      },
+      "claims_counterexample": true,
+      "witness_valid": true,
+      "automatic_pass": true,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": null
+    },
+    {
+      "id": "E2E-09",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": true,
+        "tool_evidence": true,
+        "backend_status": true,
+        "coverage_matches": true,
+        "coverage_mode": true,
+        "coverage_range": true,
+        "exhaustion": true,
+        "no_witness": true,
+        "reported_checks": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 108063,
+        "cached_input_tokens": 88448,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1002,
+        "reasoning_output_tokens": 115
+      },
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": true,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": null
+    },
+    {
+      "id": "E2E-11",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": true,
+        "tool_evidence": true,
+        "backend_status": true,
+        "coverage_matches": true,
+        "coverage_mode": true,
+        "coverage_range": true,
+        "exhaustion": true,
+        "no_witness": true,
+        "reported_checks": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 97608,
+        "cached_input_tokens": 72320,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1121,
+        "reasoning_output_tokens": 136
+      },
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": true,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": null
+    },
+    {
+      "id": "E2E-14",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": true,
+        "tool_evidence": true,
+        "backend_status": true,
+        "coverage_matches": true,
+        "coverage_mode": true,
+        "coverage_range": true,
+        "independent_witness": true,
+        "explicit_reverification": true,
+        "reported_checks": true,
+        "reported_evidence": true,
+        "reduction_recorded": true,
+        "reduction_chain": true,
+        "reduced_witness": true,
+        "reduction_did_not_grow": true,
+        "reduction_reverified": true,
+        "reported_graph_in_chain": true,
+        "no_unproven_edge_minimum": true,
+        "local_minimum_evidence": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 230806,
+        "cached_input_tokens": 199552,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2692,
+        "reasoning_output_tokens": 235
+      },
+      "claims_counterexample": true,
+      "witness_valid": true,
+      "automatic_pass": true,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": null
+    },
+    {
+      "id": "E2E-17",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": true,
+        "tool_evidence": true,
+        "backend_status": true,
+        "coverage_matches": true,
+        "coverage_mode": true,
+        "coverage_range": true,
+        "sample_scope": true,
+        "no_witness": true,
+        "reported_checks": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 100210,
+        "cached_input_tokens": 88192,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1006,
+        "reasoning_output_tokens": 169
+      },
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": true,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": null
+    },
+    {
+      "id": "E2E-20",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": true,
+        "tool_evidence": true,
+        "backend_status": true,
+        "coverage_matches": true,
+        "coverage_mode": true,
+        "coverage_range": true,
+        "independent_witness": true,
+        "explicit_reverification": true,
+        "reported_checks": true,
+        "reported_evidence": true,
+        "reduction_recorded": true,
+        "reduction_chain": true,
+        "reduced_witness": true,
+        "reduction_did_not_grow": true,
+        "reduction_reverified": true,
+        "reported_graph_in_chain": true,
+        "no_unproven_edge_minimum": true,
+        "vertex_minimum_evidence": true
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 236789,
+        "cached_input_tokens": 203904,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3339,
+        "reasoning_output_tokens": 273
+      },
+      "claims_counterexample": true,
+      "witness_valid": true,
+      "automatic_pass": true,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": null
+    },
+    {
+      "id": "E2E-22",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": false,
+        "status": false,
+        "no_backend_calls": false,
+        "no_witness": false,
+        "clarification": false
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 107109,
+        "cached_input_tokens": 89088,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1034,
+        "reasoning_output_tokens": 232
+      },
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    },
+    {
+      "id": "E2E-25",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": false,
+        "status": false,
+        "no_backend_calls": false,
+        "no_witness": false
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 240345,
+        "cached_input_tokens": 202624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2854,
+        "reasoning_output_tokens": 547
+      },
+      "claims_counterexample": true,
+      "witness_valid": null,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    },
+    {
+      "id": "E2E-32",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": false,
+        "artifacts_readable_and_consistent": false
+      },
+      "error": "Backend result task differs from the expected task",
+      "usage": {
+        "input_tokens": 101520,
+        "cached_input_tokens": 89088,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1245,
+        "reasoning_output_tokens": 236
+      },
+      "claims_counterexample": true,
+      "witness_valid": null,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    },
+    {
+      "id": "E2E-33",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": true,
+        "status": true,
+        "task_semantics": false,
+        "artifacts_readable_and_consistent": false
+      },
+      "error": "No successful CLI trace matches a declared backend call",
+      "usage": {
+        "input_tokens": 72851,
+        "cached_input_tokens": 64000,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 854,
+        "reasoning_output_tokens": 57
+      },
+      "claims_counterexample": false,
+      "witness_valid": null,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    },
+    {
+      "id": "E2E-39",
+      "checks": {
+        "execution": true,
+        "protocol": true,
+        "action": false,
+        "status": true,
+        "task_semantics": true,
+        "artifacts_readable_and_consistent": false
+      },
+      "error": "No successful CLI trace matches a declared backend call",
+      "usage": {
+        "input_tokens": 155814,
+        "cached_input_tokens": 125696,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2521,
+        "reasoning_output_tokens": 238
+      },
+      "claims_counterexample": true,
+      "witness_valid": null,
+      "automatic_pass": false,
+      "manual_required": true,
+      "manual_review": null,
+      "strict_pass": false
+    }
+  ]
+}

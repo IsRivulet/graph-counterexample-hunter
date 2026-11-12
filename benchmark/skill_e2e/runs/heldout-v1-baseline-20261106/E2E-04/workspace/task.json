@@ -1,0 +1,9 @@
+{
+  "property_id": "eulerian_trail_implies_eulerian_circuit",
+  "graph_type": "simple_undirected",
+  "premises": ["eulerian_trail"],
+  "conclusion": "eulerian_circuit",
+  "min_nodes": 1,
+  "max_nodes": 5,
+  "search_mode": "exhaustive"
+}

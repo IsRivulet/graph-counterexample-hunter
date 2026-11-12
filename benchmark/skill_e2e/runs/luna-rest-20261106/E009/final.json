@@ -1,0 +1,1 @@
+{"schema_version":"mathcheck.e2e.v1","action":"clarify","status":"inconclusive","mode":"live","task":null,"counterexample":null,"coverage":null,"checks":null,"evidence":null,"minimization":null,"minimality":null,"reason":"尚未调用后端。根据技能约定，欧拉术语的定义可能改变命题真值，需先明确约定。","clarification":"请明确：1）“欧拉路径”是否允许闭合（闭合时是否也称欧拉回路）；2）含孤立点的图是否算欧拉图，或是否要求所有非孤立顶点处于同一个连通分量？","backend_calls":[]}

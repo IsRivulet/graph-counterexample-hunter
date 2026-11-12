@@ -1,0 +1,4497 @@
+{
+  "instructions": "Rate the report without looking at blind_review_map.json. Pair outputs using prompt_id.",
+  "rubric": {
+    "size_and_simplicity": "0-2",
+    "mathematical_explanation": "0-2",
+    "evidence_and_claims": "0-2"
+  },
+  "packets": [
+    {
+      "blind_id": "R-a46ade",
+      "prompt_id": "P09",
+      "user_input": "对有限无向多重图，检查每个连通二分图是否都是树。",
+      "report": {
+        "action": "search",
+        "status": "counterexample_found",
+        "task": {
+          "property_id": "connected_bipartite_multigraph_implies_tree",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "connected",
+            "bipartite"
+          ],
+          "conclusion": "tree",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            },
+            {
+              "type": "atom",
+              "predicate": "bipartite",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "tree",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": {
+          "nodes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "edges": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        "coverage": {
+          "search_mode": "exhaustive",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "graphs_evaluated": 42,
+          "premise_satisfying_count": 14,
+          "fully_exhausted": false,
+          "size_counts_examined": {
+            "1": 1,
+            "2": 2,
+            "3": 8,
+            "4": 31
+          },
+          "seed": null,
+          "max_graphs": null,
+          "termination_reason": "counterexample_found",
+          "isomorphism_classes_total": 52,
+          "graphs_total": 1099,
+          "labeled_graphs_total": 1099,
+          "graphs_examined": 42,
+          "duplicates_skipped": 0,
+          "vacuously_true": null,
+          "elapsed_seconds": 0.001297
+        },
+        "checks": {
+          "graph_structure_valid": true,
+          "node_count_in_range": true,
+          "premises": {
+            "connected": true,
+            "bipartite": true
+          },
+          "conclusion": {
+            "tree": false
+          },
+          "premise_checks": [
+            {
+              "index": 0,
+              "expression": {
+                "type": "atom",
+                "predicate": "connected",
+                "negated": false,
+                "k": null
+              },
+              "label": "connected",
+              "value": true
+            },
+            {
+              "index": 1,
+              "expression": {
+                "type": "atom",
+                "predicate": "bipartite",
+                "negated": false,
+                "k": null
+              },
+              "label": "bipartite",
+              "value": true
+            }
+          ],
+          "conclusion_value": false,
+          "all_premises_satisfied": true,
+          "conclusion_violated": true,
+          "is_counterexample": true
+        },
+        "evidence": {
+          "degrees": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2
+          },
+          "components": [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "bipartition": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "cycle": [
+            1,
+            2,
+            0,
+            3,
+            1
+          ],
+          "odd_degree_vertices": [],
+          "leaves": [],
+          "node_count": 4,
+          "edge_count": 4,
+          "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v2\n  v0 --- v3\n  v1 --- v2\n  v1 --- v3"
+        },
+        "minimization": {
+          "status": "no_improvement",
+          "original_graph": {
+            "nodes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          "minimized_graph": {
+            "nodes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          "original_size": {
+            "nodes": 4,
+            "edges": 4
+          },
+          "minimized_size": {
+            "nodes": 4,
+            "edges": 4
+          },
+          "steps": [],
+          "verification": {
+            "status": "counterexample_found",
+            "mode": "live",
+            "task": {
+              "property_id": "connected_bipartite_multigraph_implies_tree",
+              "graph_type": "simple_undirected",
+              "premises": [
+                "connected",
+                "bipartite"
+              ],
+              "conclusion": "tree",
+              "normalized_premises": [
+                {
+                  "type": "atom",
+                  "predicate": "connected",
+                  "negated": false,
+                  "k": null
+                },
+                {
+                  "type": "atom",
+                  "predicate": "bipartite",
+                  "negated": false,
+                  "k": null
+                }
+              ],
+              "normalized_conclusion": {
+                "type": "atom",
+                "predicate": "tree",
+                "negated": false,
+                "k": null
+              },
+              "min_nodes": 1,
+              "max_nodes": 5,
+              "search_mode": "exhaustive",
+              "seed": null,
+              "max_graphs": 2000
+            },
+            "coverage": null,
+            "counterexample": {
+              "nodes": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "edges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            },
+            "checks": {
+              "graph_structure_valid": true,
+              "node_count_in_range": true,
+              "premises": {
+                "connected": true,
+                "bipartite": true
+              },
+              "conclusion": {
+                "tree": false
+              },
+              "premise_checks": [
+                {
+                  "index": 0,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "connected",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "connected",
+                  "value": true
+                },
+                {
+                  "index": 1,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "bipartite",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "bipartite",
+                  "value": true
+                }
+              ],
+              "conclusion_value": false,
+              "all_premises_satisfied": true,
+              "conclusion_violated": true,
+              "is_counterexample": true
+            },
+            "evidence": {
+              "degrees": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2
+              },
+              "components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "bipartition": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ]
+              ],
+              "cycle": [
+                1,
+                2,
+                0,
+                3,
+                1
+              ],
+              "odd_degree_vertices": [],
+              "leaves": [],
+              "node_count": 4,
+              "edge_count": 4,
+              "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v2\n  v0 --- v3\n  v1 --- v2\n  v1 --- v3"
+            },
+            "minimization": null,
+            "reason": "candidate independently passed graph, range, premise, and conclusion checks."
+          },
+          "minimality_claim": "locally_minimal_under_single_vertex_and_edge_deletions",
+          "minimality": {
+            "local_single_deletion_minimum": true,
+            "vertex_minimum_in_scope": false,
+            "edge_minimum_at_minimum_vertices": false,
+            "scope": [
+              1,
+              5
+            ]
+          },
+          "reason": "the returned graph was re-verified; local deletion minimality is not a proof of global minimum size."
+        },
+        "minimality": {
+          "local_single_deletion_minimum": true,
+          "vertex_minimum_in_scope": false,
+          "edge_minimum_at_minimum_vertices": false,
+          "scope": [
+            1,
+            5
+          ]
+        },
+        "reason": "后端仅支持简单无向图；所核验的四环是有限无向多重图的特例，且连通、二分但含环，因此足以反驳原命题。搜索范围为1至5个顶点，搜索在找到反例后终止；缩小器未能进一步缩小，返回图已单独复核。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-bc9125",
+      "prompt_id": "P04",
+      "user_input": "在有限简单无向图中，若图是连通的且每个顶点度数不超过 2，那么它一定存在欧拉迹吗？顶点数 1 至 5。",
+      "report": {
+        "action": "clarify",
+        "status": "inconclusive",
+        "task": null,
+        "counterexample": null,
+        "coverage": null,
+        "checks": null,
+        "evidence": null,
+        "minimization": null,
+        "minimality": null,
+        "reason": "需要确认欧拉迹的约定，尤其是单点无边图：是否将空迹视为欧拉迹？这会影响顶点数为 1 时命题的真值。",
+        "clarification": "对于单点无边图，是否把空迹（长度为 0 的迹）视为欧拉迹？"
+      }
+    },
+    {
+      "blind_id": "R-ee3eb6",
+      "prompt_id": "P02",
+      "user_input": "请检查命题：每个具有欧拉迹的有限简单无向连通图，都一定具有欧拉回路？顶点数限制为 1 到 5。",
+      "report": {
+        "action": "clarify",
+        "status": "inconclusive",
+        "task": null,
+        "counterexample": null,
+        "coverage": null,
+        "checks": null,
+        "evidence": null,
+        "minimization": null,
+        "minimality": null,
+        "reason": "“欧拉迹”的定义会影响命题解释；按要求先澄清，尚未调用后端。",
+        "clarification": "这里的“欧拉迹”是指每条边恰好经过一次、允许起点与终点不同的迹吗？"
+      }
+    },
+    {
+      "blind_id": "R-73ba25",
+      "prompt_id": "P07",
+      "user_input": "判断“每个连通简单无向图都是二分图”是否成立，顶点数为 1 到 5。",
+      "report": {
+        "action": "search",
+        "status": "counterexample_found",
+        "task": {
+          "property_id": "connected_implies_bipartite",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "connected"
+          ],
+          "conclusion": "bipartite",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "bipartite",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": {
+          "nodes": [
+            0,
+            1,
+            2
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        "coverage": {
+          "search_mode": "exhaustive",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "graphs_evaluated": 11,
+          "premise_satisfying_count": 6,
+          "fully_exhausted": false,
+          "size_counts_examined": {
+            "1": 1,
+            "2": 2,
+            "3": 8
+          },
+          "seed": null,
+          "max_graphs": null,
+          "termination_reason": "counterexample_found",
+          "isomorphism_classes_total": 52,
+          "graphs_total": 1099,
+          "labeled_graphs_total": 1099,
+          "graphs_examined": 11,
+          "duplicates_skipped": 0,
+          "vacuously_true": null,
+          "elapsed_seconds": 0.000357
+        },
+        "checks": {
+          "graph_structure_valid": true,
+          "node_count_in_range": true,
+          "premises": {
+            "connected": true
+          },
+          "conclusion": {
+            "bipartite": false
+          },
+          "premise_checks": [
+            {
+              "index": 0,
+              "expression": {
+                "type": "atom",
+                "predicate": "connected",
+                "negated": false,
+                "k": null
+              },
+              "label": "connected",
+              "value": true
+            }
+          ],
+          "conclusion_value": false,
+          "all_premises_satisfied": true,
+          "conclusion_violated": true,
+          "is_counterexample": true
+        },
+        "evidence": {
+          "degrees": {
+            "0": 2,
+            "1": 2,
+            "2": 2
+          },
+          "components": [
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "bipartition": null,
+          "cycle": [
+            1,
+            0,
+            2,
+            1
+          ],
+          "odd_degree_vertices": [],
+          "leaves": [],
+          "node_count": 3,
+          "edge_count": 3,
+          "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v0 --- v1\n  v0 --- v2\n  v1 --- v2"
+        },
+        "minimization": {
+          "status": "no_improvement",
+          "original_graph": {
+            "nodes": [
+              0,
+              1,
+              2
+            ],
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          "minimized_graph": {
+            "nodes": [
+              0,
+              1,
+              2
+            ],
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          "original_size": {
+            "nodes": 3,
+            "edges": 3
+          },
+          "minimized_size": {
+            "nodes": 3,
+            "edges": 3
+          },
+          "steps": [],
+          "verification": {
+            "status": "counterexample_found",
+            "mode": "live",
+            "task": {
+              "property_id": "connected_implies_bipartite",
+              "graph_type": "simple_undirected",
+              "premises": [
+                "connected"
+              ],
+              "conclusion": "bipartite",
+              "normalized_premises": [
+                {
+                  "type": "atom",
+                  "predicate": "connected",
+                  "negated": false,
+                  "k": null
+                }
+              ],
+              "normalized_conclusion": {
+                "type": "atom",
+                "predicate": "bipartite",
+                "negated": false,
+                "k": null
+              },
+              "min_nodes": 1,
+              "max_nodes": 5,
+              "search_mode": "exhaustive",
+              "seed": null,
+              "max_graphs": 2000
+            },
+            "coverage": null,
+            "counterexample": {
+              "nodes": [
+                0,
+                1,
+                2
+              ],
+              "edges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            },
+            "checks": {
+              "graph_structure_valid": true,
+              "node_count_in_range": true,
+              "premises": {
+                "connected": true
+              },
+              "conclusion": {
+                "bipartite": false
+              },
+              "premise_checks": [
+                {
+                  "index": 0,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "connected",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "connected",
+                  "value": true
+                }
+              ],
+              "conclusion_value": false,
+              "all_premises_satisfied": true,
+              "conclusion_violated": true,
+              "is_counterexample": true
+            },
+            "evidence": {
+              "degrees": {
+                "0": 2,
+                "1": 2,
+                "2": 2
+              },
+              "components": [
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "bipartition": null,
+              "cycle": [
+                1,
+                0,
+                2,
+                1
+              ],
+              "odd_degree_vertices": [],
+              "leaves": [],
+              "node_count": 3,
+              "edge_count": 3,
+              "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v0 --- v1\n  v0 --- v2\n  v1 --- v2"
+            },
+            "minimization": null,
+            "reason": "candidate independently passed graph, range, premise, and conclusion checks."
+          },
+          "minimality_claim": "locally_minimal_under_single_vertex_and_edge_deletions",
+          "minimality": {
+            "local_single_deletion_minimum": true,
+            "vertex_minimum_in_scope": false,
+            "edge_minimum_at_minimum_vertices": false,
+            "scope": [
+              1,
+              5
+            ]
+          },
+          "reason": "the returned graph was re-verified; local deletion minimality is not a proof of global minimum size."
+        },
+        "minimality": {
+          "vertex_minimum_in_scope": true,
+          "edge_minimum_at_minimum_vertices": false,
+          "scope": [
+            1,
+            5
+          ],
+          "reason": "Increasing-size exhaustive enumeration excludes every smaller order in scope."
+        },
+        "reason": "The connected triangle is a verified counterexample; the search stopped upon finding it, and reduction returned no improvement.",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-2e31e0",
+      "prompt_id": "P01",
+      "user_input": "每个连通图都是树吗？只考虑 1 至 5 个顶点的有限简单无向图。",
+      "report": {
+        "action": "search",
+        "status": "counterexample_found",
+        "task": {
+          "property_id": "connected_implies_tree",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "connected"
+          ],
+          "conclusion": "tree",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "tree",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": {
+          "nodes": [
+            0,
+            1,
+            2
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        "coverage": {
+          "search_mode": "exhaustive",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "graphs_evaluated": 11,
+          "premise_satisfying_count": 6,
+          "fully_exhausted": false,
+          "size_counts_examined": {
+            "1": 1,
+            "2": 2,
+            "3": 8
+          },
+          "seed": null,
+          "max_graphs": null,
+          "termination_reason": "counterexample_found",
+          "isomorphism_classes_total": 52,
+          "graphs_total": 1099,
+          "labeled_graphs_total": 1099,
+          "graphs_examined": 11,
+          "duplicates_skipped": 0,
+          "vacuously_true": null,
+          "elapsed_seconds": 0.000346
+        },
+        "checks": {
+          "graph_structure_valid": true,
+          "node_count_in_range": true,
+          "premises": {
+            "connected": true
+          },
+          "conclusion": {
+            "tree": false
+          },
+          "premise_checks": [
+            {
+              "index": 0,
+              "expression": {
+                "type": "atom",
+                "predicate": "connected",
+                "negated": false,
+                "k": null
+              },
+              "label": "connected",
+              "value": true
+            }
+          ],
+          "conclusion_value": false,
+          "all_premises_satisfied": true,
+          "conclusion_violated": true,
+          "is_counterexample": true
+        },
+        "evidence": {
+          "degrees": {
+            "0": 2,
+            "1": 2,
+            "2": 2
+          },
+          "components": [
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "bipartition": null,
+          "cycle": [
+            1,
+            0,
+            2,
+            1
+          ],
+          "odd_degree_vertices": [],
+          "leaves": [],
+          "node_count": 3,
+          "edge_count": 3,
+          "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v0 --- v1\n  v0 --- v2\n  v1 --- v2"
+        },
+        "minimization": {
+          "status": "no_improvement",
+          "original_graph": {
+            "nodes": [
+              0,
+              1,
+              2
+            ],
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          "minimized_graph": {
+            "nodes": [
+              0,
+              1,
+              2
+            ],
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          "original_size": {
+            "nodes": 3,
+            "edges": 3
+          },
+          "minimized_size": {
+            "nodes": 3,
+            "edges": 3
+          },
+          "steps": [],
+          "verification": {
+            "status": "counterexample_found",
+            "mode": "live",
+            "task": {
+              "property_id": "connected_implies_tree",
+              "graph_type": "simple_undirected",
+              "premises": [
+                "connected"
+              ],
+              "conclusion": "tree",
+              "normalized_premises": [
+                {
+                  "type": "atom",
+                  "predicate": "connected",
+                  "negated": false,
+                  "k": null
+                }
+              ],
+              "normalized_conclusion": {
+                "type": "atom",
+                "predicate": "tree",
+                "negated": false,
+                "k": null
+              },
+              "min_nodes": 1,
+              "max_nodes": 5,
+              "search_mode": "exhaustive",
+              "seed": null,
+              "max_graphs": 2000
+            },
+            "coverage": null,
+            "counterexample": {
+              "nodes": [
+                0,
+                1,
+                2
+              ],
+              "edges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            },
+            "checks": {
+              "graph_structure_valid": true,
+              "node_count_in_range": true,
+              "premises": {
+                "connected": true
+              },
+              "conclusion": {
+                "tree": false
+              },
+              "premise_checks": [
+                {
+                  "index": 0,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "connected",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "connected",
+                  "value": true
+                }
+              ],
+              "conclusion_value": false,
+              "all_premises_satisfied": true,
+              "conclusion_violated": true,
+              "is_counterexample": true
+            },
+            "evidence": {
+              "degrees": {
+                "0": 2,
+                "1": 2,
+                "2": 2
+              },
+              "components": [
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "bipartition": null,
+              "cycle": [
+                1,
+                0,
+                2,
+                1
+              ],
+              "odd_degree_vertices": [],
+              "leaves": [],
+              "node_count": 3,
+              "edge_count": 3,
+              "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v0 --- v1\n  v0 --- v2\n  v1 --- v2"
+            },
+            "minimization": null,
+            "reason": "candidate independently passed graph, range, premise, and conclusion checks."
+          },
+          "minimality_claim": "locally_minimal_under_single_vertex_and_edge_deletions",
+          "minimality": {
+            "local_single_deletion_minimum": true,
+            "vertex_minimum_in_scope": false,
+            "edge_minimum_at_minimum_vertices": false,
+            "scope": [
+              1,
+              5
+            ]
+          },
+          "reason": "the returned graph was re-verified; local deletion minimality is not a proof of global minimum size."
+        },
+        "minimality": {
+          "local_single_deletion_minimum": true,
+          "vertex_minimum_in_scope": false,
+          "edge_minimum_at_minimum_vertices": false,
+          "scope": [
+            1,
+            5
+          ]
+        },
+        "reason": "范围内存在已核验的反例：三顶点三角形连通，但因有 3 条边而不是树。穷举在发现该反例后提前停止（fully_exhausted 为 false）；缩小器未改进该图，缩小结果已单独复核。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-09e18c",
+      "prompt_id": "P08",
+      "user_input": "检查命题：“每个欧拉图的所有顶点度数都是偶数。”",
+      "report": {
+        "action": "search",
+        "status": "verified_true_in_scope",
+        "task": {
+          "property_id": "eulerian_circuit_implies_all_even_degree",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "eulerian_circuit"
+          ],
+          "conclusion": "all_even_degree",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "eulerian_circuit",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "all_even_degree",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": null,
+        "coverage": {
+          "search_mode": "exhaustive",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "graphs_evaluated": 1099,
+          "premise_satisfying_count": 43,
+          "fully_exhausted": true,
+          "size_counts_examined": {
+            "1": 1,
+            "2": 2,
+            "3": 8,
+            "4": 64,
+            "5": 1024
+          },
+          "seed": null,
+          "max_graphs": null,
+          "termination_reason": "completed_all_candidates",
+          "isomorphism_classes_total": 52,
+          "graphs_total": 1099,
+          "labeled_graphs_total": 1099,
+          "graphs_examined": 1099,
+          "duplicates_skipped": 0,
+          "vacuously_true": false,
+          "elapsed_seconds": 0.014401
+        },
+        "checks": null,
+        "evidence": null,
+        "minimization": null,
+        "minimality": null,
+        "reason": "后端将“欧拉图”按 eulerian_circuit（连通且所有顶点度数为偶数）解释，并穷举核查了 1 至 5 个顶点的全部 1099 个简单无向图；在此范围内未发现反例。该结论限于后端定义和此顶点范围。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-76ac47",
+      "prompt_id": "P11",
+      "user_input": "请核验下面的候选图是否反驳“每个连通二分图都是树”。顶点范围为 1 到 5。",
+      "report": {
+        "action": "verify",
+        "status": "inconclusive",
+        "task": {
+          "property_id": null,
+          "graph_type": "simple_undirected",
+          "premises": [
+            "connected",
+            "bipartite"
+          ],
+          "conclusion": "tree",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            },
+            {
+              "type": "atom",
+              "predicate": "bipartite",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "tree",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "random",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": null,
+        "coverage": null,
+        "checks": {
+          "graph_structure_valid": true,
+          "node_count_in_range": true,
+          "premises": {
+            "connected": true,
+            "bipartite": false
+          },
+          "conclusion": {
+            "tree": false
+          },
+          "premise_checks": [
+            {
+              "index": 0,
+              "expression": {
+                "type": "atom",
+                "predicate": "connected",
+                "negated": false,
+                "k": null
+              },
+              "label": "connected",
+              "value": true
+            },
+            {
+              "index": 1,
+              "expression": {
+                "type": "atom",
+                "predicate": "bipartite",
+                "negated": false,
+                "k": null
+              },
+              "label": "bipartite",
+              "value": false
+            }
+          ],
+          "conclusion_value": false,
+          "all_premises_satisfied": false,
+          "conclusion_violated": true,
+          "is_counterexample": false
+        },
+        "evidence": null,
+        "minimization": null,
+        "minimality": null,
+        "reason": "候选图连通且不为树，但包含三角形而非二分图，因此不满足反例所需前提，不能反驳该命题。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-8d77b1",
+      "prompt_id": "P04",
+      "user_input": "在有限简单无向图中，若图是连通的且每个顶点度数不超过 2，那么它一定存在欧拉迹吗？顶点数 1 至 5。",
+      "report": {
+        "action": "search",
+        "status": "verified_true_in_scope",
+        "task": {
+          "property_id": "connected_max_degree_at_most_2_implies_eulerian_trail",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "connected",
+            {
+              "predicate": "max_degree_at_most",
+              "k": 2
+            }
+          ],
+          "conclusion": "eulerian_trail",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            },
+            {
+              "type": "atom",
+              "predicate": "max_degree_at_most",
+              "negated": false,
+              "k": 2
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "eulerian_trail",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": null,
+        "coverage": {
+          "search_mode": "exhaustive",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "graphs_evaluated": 1099,
+          "premise_satisfying_count": 93,
+          "fully_exhausted": true,
+          "size_counts_examined": {
+            "1": 1,
+            "2": 2,
+            "3": 8,
+            "4": 64,
+            "5": 1024
+          },
+          "seed": null,
+          "max_graphs": null,
+          "termination_reason": "completed_all_candidates",
+          "isomorphism_classes_total": 52,
+          "graphs_total": 1099,
+          "labeled_graphs_total": 1099,
+          "graphs_examined": 1099,
+          "duplicates_skipped": 0,
+          "vacuously_true": false,
+          "elapsed_seconds": 0.03038
+        },
+        "checks": null,
+        "evidence": null,
+        "minimization": null,
+        "minimality": null,
+        "reason": "已穷举检查顶点数 1 至 5 的全部 1099 个有限简单无向图，其中 93 个满足前提；未发现反例。因此该命题在指定范围内成立。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-04275e",
+      "prompt_id": "P09",
+      "user_input": "对有限无向多重图，检查每个连通二分图是否都是树。",
+      "report": {
+        "action": "unsupported",
+        "status": "unsupported",
+        "task": null,
+        "counterexample": null,
+        "coverage": null,
+        "checks": null,
+        "evidence": null,
+        "minimization": null,
+        "minimality": null,
+        "reason": "请求指定有限无向多重图；当前后端仅支持有限简单无向图，且候选图校验会拒绝自环和重复边，因此无法据此检查该命题。未调用后端。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-47a08a",
+      "prompt_id": "P05",
+      "user_input": "相同命题，但把顶点范围扩大为 1 到 4 个。请穷举：每个连通二分图都是树吗？",
+      "report": {
+        "action": "search",
+        "status": "counterexample_found",
+        "task": {
+          "property_id": "connected_and_bipartite_implies_tree",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "connected",
+            "bipartite"
+          ],
+          "conclusion": "tree",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            },
+            {
+              "type": "atom",
+              "predicate": "bipartite",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "tree",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 4,
+          "search_mode": "exhaustive",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": {
+          "nodes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "edges": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        "coverage": {
+          "search_mode": "exhaustive",
+          "min_nodes": 1,
+          "max_nodes": 4,
+          "graphs_evaluated": 42,
+          "premise_satisfying_count": 14,
+          "fully_exhausted": false,
+          "size_counts_examined": {
+            "1": 1,
+            "2": 2,
+            "3": 8,
+            "4": 31
+          },
+          "seed": null,
+          "max_graphs": null,
+          "termination_reason": "counterexample_found",
+          "isomorphism_classes_total": 18,
+          "graphs_total": 75,
+          "labeled_graphs_total": 75,
+          "graphs_examined": 42,
+          "duplicates_skipped": 0,
+          "vacuously_true": null,
+          "elapsed_seconds": 0.000969
+        },
+        "checks": {
+          "graph_structure_valid": true,
+          "node_count_in_range": true,
+          "premises": {
+            "connected": true,
+            "bipartite": true
+          },
+          "conclusion": {
+            "tree": false
+          },
+          "premise_checks": [
+            {
+              "index": 0,
+              "expression": {
+                "type": "atom",
+                "predicate": "connected",
+                "negated": false,
+                "k": null
+              },
+              "label": "connected",
+              "value": true
+            },
+            {
+              "index": 1,
+              "expression": {
+                "type": "atom",
+                "predicate": "bipartite",
+                "negated": false,
+                "k": null
+              },
+              "label": "bipartite",
+              "value": true
+            }
+          ],
+          "conclusion_value": false,
+          "all_premises_satisfied": true,
+          "conclusion_violated": true,
+          "is_counterexample": true
+        },
+        "evidence": {
+          "degrees": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2
+          },
+          "components": [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "bipartition": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "cycle": [
+            1,
+            2,
+            0,
+            3,
+            1
+          ],
+          "odd_degree_vertices": [],
+          "leaves": [],
+          "node_count": 4,
+          "edge_count": 4,
+          "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v2\n  v0 --- v3\n  v1 --- v2\n  v1 --- v3"
+        },
+        "minimization": {
+          "status": "no_improvement",
+          "original_graph": {
+            "nodes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          "minimized_graph": {
+            "nodes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          "original_size": {
+            "nodes": 4,
+            "edges": 4
+          },
+          "minimized_size": {
+            "nodes": 4,
+            "edges": 4
+          },
+          "steps": [],
+          "verification": {
+            "status": "counterexample_found",
+            "mode": "live",
+            "task": {
+              "property_id": "connected_and_bipartite_implies_tree",
+              "graph_type": "simple_undirected",
+              "premises": [
+                "connected",
+                "bipartite"
+              ],
+              "conclusion": "tree",
+              "normalized_premises": [
+                {
+                  "type": "atom",
+                  "predicate": "connected",
+                  "negated": false,
+                  "k": null
+                },
+                {
+                  "type": "atom",
+                  "predicate": "bipartite",
+                  "negated": false,
+                  "k": null
+                }
+              ],
+              "normalized_conclusion": {
+                "type": "atom",
+                "predicate": "tree",
+                "negated": false,
+                "k": null
+              },
+              "min_nodes": 1,
+              "max_nodes": 4,
+              "search_mode": "exhaustive",
+              "seed": null,
+              "max_graphs": 2000
+            },
+            "coverage": null,
+            "counterexample": {
+              "nodes": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "edges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            },
+            "checks": {
+              "graph_structure_valid": true,
+              "node_count_in_range": true,
+              "premises": {
+                "connected": true,
+                "bipartite": true
+              },
+              "conclusion": {
+                "tree": false
+              },
+              "premise_checks": [
+                {
+                  "index": 0,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "connected",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "connected",
+                  "value": true
+                },
+                {
+                  "index": 1,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "bipartite",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "bipartite",
+                  "value": true
+                }
+              ],
+              "conclusion_value": false,
+              "all_premises_satisfied": true,
+              "conclusion_violated": true,
+              "is_counterexample": true
+            },
+            "evidence": {
+              "degrees": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2
+              },
+              "components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "bipartition": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ]
+              ],
+              "cycle": [
+                1,
+                2,
+                0,
+                3,
+                1
+              ],
+              "odd_degree_vertices": [],
+              "leaves": [],
+              "node_count": 4,
+              "edge_count": 4,
+              "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v2\n  v0 --- v3\n  v1 --- v2\n  v1 --- v3"
+            },
+            "minimization": null,
+            "reason": "candidate independently passed graph, range, premise, and conclusion checks."
+          },
+          "minimality_claim": "locally_minimal_under_single_vertex_and_edge_deletions",
+          "minimality": {
+            "local_single_deletion_minimum": true,
+            "vertex_minimum_in_scope": false,
+            "edge_minimum_at_minimum_vertices": false,
+            "scope": [
+              1,
+              4
+            ]
+          },
+          "reason": "the returned graph was re-verified; local deletion minimality is not a proof of global minimum size."
+        },
+        "minimality": {
+          "local_single_deletion_minimum": true,
+          "vertex_minimum_in_scope": false,
+          "edge_minimum_at_minimum_vertices": false,
+          "scope": [
+            1,
+            4
+          ]
+        },
+        "reason": "穷举 1–4 个顶点时找到并独立核验反例：四环连通且二分，但不是树；缩小器未能改进该图。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-2ab739",
+      "prompt_id": "P12",
+      "user_input": "请先核验下面的图是否为“每个连通二分图都是树”的反例；如果是，请尽可能缩小顶点数，再缩小边数，并用独立核验入口复核缩小结果。范围 1 到 5。",
+      "report": {
+        "action": "search",
+        "status": "counterexample_found",
+        "task": {
+          "property_id": "connected_and_bipartite_implies_tree",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "connected",
+            "bipartite"
+          ],
+          "conclusion": "tree",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            },
+            {
+              "type": "atom",
+              "predicate": "bipartite",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "tree",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": {
+          "nodes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "edges": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        "coverage": {
+          "search_mode": "exhaustive",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "graphs_evaluated": 42,
+          "premise_satisfying_count": 14,
+          "fully_exhausted": false,
+          "size_counts_examined": {
+            "1": 1,
+            "2": 2,
+            "3": 8,
+            "4": 31
+          },
+          "seed": null,
+          "max_graphs": null,
+          "termination_reason": "counterexample_found",
+          "isomorphism_classes_total": 52,
+          "graphs_total": 1099,
+          "labeled_graphs_total": 1099,
+          "graphs_examined": 42,
+          "duplicates_skipped": 0,
+          "vacuously_true": null,
+          "elapsed_seconds": 0.001154
+        },
+        "checks": {
+          "graph_structure_valid": true,
+          "node_count_in_range": true,
+          "premises": {
+            "connected": true,
+            "bipartite": true
+          },
+          "conclusion": {
+            "tree": false
+          },
+          "premise_checks": [
+            {
+              "index": 0,
+              "expression": {
+                "type": "atom",
+                "predicate": "connected",
+                "negated": false,
+                "k": null
+              },
+              "label": "connected",
+              "value": true
+            },
+            {
+              "index": 1,
+              "expression": {
+                "type": "atom",
+                "predicate": "bipartite",
+                "negated": false,
+                "k": null
+              },
+              "label": "bipartite",
+              "value": true
+            }
+          ],
+          "conclusion_value": false,
+          "all_premises_satisfied": true,
+          "conclusion_violated": true,
+          "is_counterexample": true
+        },
+        "evidence": {
+          "degrees": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2
+          },
+          "components": [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "bipartition": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "cycle": [
+            1,
+            2,
+            0,
+            3,
+            1
+          ],
+          "odd_degree_vertices": [],
+          "leaves": [],
+          "node_count": 4,
+          "edge_count": 4,
+          "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v2\n  v0 --- v3\n  v1 --- v2\n  v1 --- v3"
+        },
+        "minimization": {
+          "status": "no_improvement",
+          "original_graph": {
+            "nodes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          "minimized_graph": {
+            "nodes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          "original_size": {
+            "nodes": 4,
+            "edges": 4
+          },
+          "minimized_size": {
+            "nodes": 4,
+            "edges": 4
+          },
+          "steps": [],
+          "verification": {
+            "status": "counterexample_found",
+            "mode": "live",
+            "task": {
+              "property_id": "connected_and_bipartite_implies_tree",
+              "graph_type": "simple_undirected",
+              "premises": [
+                "connected",
+                "bipartite"
+              ],
+              "conclusion": "tree",
+              "normalized_premises": [
+                {
+                  "type": "atom",
+                  "predicate": "connected",
+                  "negated": false,
+                  "k": null
+                },
+                {
+                  "type": "atom",
+                  "predicate": "bipartite",
+                  "negated": false,
+                  "k": null
+                }
+              ],
+              "normalized_conclusion": {
+                "type": "atom",
+                "predicate": "tree",
+                "negated": false,
+                "k": null
+              },
+              "min_nodes": 1,
+              "max_nodes": 5,
+              "search_mode": "exhaustive",
+              "seed": null,
+              "max_graphs": 2000
+            },
+            "coverage": null,
+            "counterexample": {
+              "nodes": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "edges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            },
+            "checks": {
+              "graph_structure_valid": true,
+              "node_count_in_range": true,
+              "premises": {
+                "connected": true,
+                "bipartite": true
+              },
+              "conclusion": {
+                "tree": false
+              },
+              "premise_checks": [
+                {
+                  "index": 0,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "connected",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "connected",
+                  "value": true
+                },
+                {
+                  "index": 1,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "bipartite",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "bipartite",
+                  "value": true
+                }
+              ],
+              "conclusion_value": false,
+              "all_premises_satisfied": true,
+              "conclusion_violated": true,
+              "is_counterexample": true
+            },
+            "evidence": {
+              "degrees": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2
+              },
+              "components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "bipartition": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ]
+              ],
+              "cycle": [
+                1,
+                2,
+                0,
+                3,
+                1
+              ],
+              "odd_degree_vertices": [],
+              "leaves": [],
+              "node_count": 4,
+              "edge_count": 4,
+              "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v2\n  v0 --- v3\n  v1 --- v2\n  v1 --- v3"
+            },
+            "minimization": null,
+            "reason": "candidate independently passed graph, range, premise, and conclusion checks."
+          },
+          "minimality_claim": "locally_minimal_under_single_vertex_and_edge_deletions",
+          "minimality": {
+            "local_single_deletion_minimum": true,
+            "vertex_minimum_in_scope": false,
+            "edge_minimum_at_minimum_vertices": false,
+            "scope": [
+              1,
+              5
+            ]
+          },
+          "reason": "the returned graph was re-verified; local deletion minimality is not a proof of global minimum size."
+        },
+        "minimality": {
+          "local_single_deletion_minimum": true,
+          "vertex_minimum_in_scope": false,
+          "edge_minimum_at_minimum_vertices": false,
+          "scope": [
+            1,
+            5
+          ]
+        },
+        "reason": "候选图确为反例。后端穷举搜索找到并独立核验了 4 顶点四环，缩小器未能进一步缩小；缩小结果也经独立核验。搜索在找到反例时提前停止，因此不声称该图在范围内全局顶点最小。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-ed041d",
+      "prompt_id": "P07",
+      "user_input": "判断“每个连通简单无向图都是二分图”是否成立，顶点数为 1 到 5。",
+      "report": {
+        "parse_error": "Final response is not a single valid JSON object.",
+        "raw_response": "{\"schema_version\":\"mathcheck.e2e.v1\",\"action\":\"search\",\"status\":\"counterexample_found\",\"mode\":\"live\",\"task\":{\"property_id\":\"connected_implies_bipartite\",\"graph_type\":\"simple_undirected\",\"premises\":[\"connected\"],\"conclusion\":\"bipartite\",\"normalized_premises\":[{\"type\":\"atom\",\"predicate\":\"connected\",\"negated\":false,\"k\":null}],\"normalized_conclusion\":{\"type\":\"atom\",\"predicate\":\"bipartite\",\"negated\":false,\"k\":null},\"min_nodes\":1,\"max_nodes\":5,\"search_mode\":\"exhaustive\",\"seed\":null,\"max_graphs\":2000},\"counterexample\":{\"nodes\":[0,1,2],\"edges\":[[0,1],[0,2],[1,2]]},\"coverage\":{\"search_mode\":\"exhaustive\",\"min_nodes\":1,\"max_nodes\":5,\"graphs_evaluated\":11,\"premise_satisfying_count\":6,\"fully_exhausted\":false,\"size_counts_examined\":{\"1\":1,\"2\":2,\"3\":8},\"seed\":null,\"max_graphs\":null,\"termination_reason\":\"counterexample_found\",\"isomorphism_classes_total\":52,\"graphs_total\":1099,\"labeled_graphs_total\":1099,\"graphs_examined\":11,\"duplicates_skipped\":0,\"vacuously_true\":null,\"elapsed_seconds\":0.000432},\"checks\":{\"graph_structure_valid\":true,\"node_count_in_range\":true,\"premises\":{\"connected\":true},\"conclusion\":{\"bipartite\":false},\"premise_checks\":[{\"index\":0,\"expression\":{\"type\":\"atom\",\"predicate\":\"connected\",\"negated\":false,\"k\":null},\"label\":\"connected\",\"value\":true}],\"conclusion_value\":false,\"all_premises_satisfied\":true,\"conclusion_violated\":true,\"is_counterexample\":true},\"evidence\":{\"degrees\":{\"0\":2,\"1\":2,\"2\":2},\"components\":[[0,1,2]],\"bipartition\":null,\"cycle\":[1,0,2,1],\"odd_degree_vertices\":[],\"leaves\":[],\"node_count\":3,\"edge_count\":3,\"mermaid\":\"graph LR\\n  v0[\\\"0\\\"]\\n  v1[\\\"1\\\"]\\n  v2[\\\"2\\\"]\\n  v0 --- v1\\n  v0 --- v2\\n  v1 --- v2\"},\"minimization\":{\"status\":\"no_improvement\",\"original_graph\":{\"nodes\":[0,1,2],\"edges\":[[0,1],[0,2],[1,2]]},\"minimized_graph\":{\"nodes\":[0,1,2],\"edges\":[[0,1],[0,2],[1,2]]},\"original_size\":{\"nodes\":3,\"edges\":3},\"minimized_size\":{\"nodes\":3,\"edges\":3},\"steps\":[],\"verification\":{\"status\":\"counterexample_found\",\"mode\":\"live\",\"task\":{\"property_id\":\"connected_implies_bipartite\",\"graph_type\":\"simple_undirected\",\"premises\":[\"connected\"],\"conclusion\":\"bipartite\",\"normalized_premises\":[{\"type\":\"atom\",\"predicate\":\"connected\",\"negated\":false,\"k\":null}],\"normalized_conclusion\":{\"type\":\"atom\",\"predicate\":\"bipartite\",\"negated\":false,\"k\":null},\"min_nodes\":1,\"max_nodes\":5,\"search_mode\":\"exhaustive\",\"seed\":null,\"max_graphs\":2000},\"coverage\":null,\"counterexample\":{\"nodes\":[0,1,2],\"edges\":[[0,1],[0,2],[1,2]]},\"checks\":{\"graph_structure_valid\":true,\"node_count_in_range\":true,\"premises\":{\"connected\":true},\"conclusion\":{\"bipartite\":false},\"premise_checks\":[{\"index\":0,\"expression\":{\"type\":\"atom\",\"predicate\":\"connected\",\"negated\":false,\"k\":null},\"label\":\"connected\",\"value\":true}],\"conclusion_value\":false,\"all_premises_satisfied\":true,\"conclusion_violated\":true,\"is_counterexample\":true},\"evidence\":{\"degrees\":{\"0\":2,\"1\":2,\"2\":2},\"components\":[[0,1,2]],\"bipartition\":null,\"cycle\":[1,0,2,1],\"odd_degree_vertices\":[],\"leaves\":[],\"node_count\":3,\"edge_count\":3,\"mermaid\":\"graph LR\\n  v0[\\\"0\\\"]\\n  v1[\\\"1\\\"]\\n  v2[\\\"2\\\"]\\n  v0 --- v1\\n  v0 --- v2\\n  v1 --- v2\"},\"minimization\":null,\"reason\":\"candidate independently passed graph, range, premise, and conclusion checks.\"}},\"minimality_claim\":\"locally_minimal_under_single_vertex_and_edge_deletions\",\"minimality\":{\"local_single_deletion_minimum\":true,\"vertex_minimum_in_scope\":false,\"edge_minimum_at_minimum_vertices\":false,\"scope\":[1,5]},\"reason\":\"the returned graph was re-verified; local deletion minimality is not a proof of global minimum size.\"},\"minimality\":{\"vertex_minimum_in_scope\":true,\"edge_minimum_at_minimum_vertices\":false,\"scope\":[1,5],\"reason\":\"Increasing-size exhaustive enumeration excludes every smaller order in scope.\"},\"reason\":\"命题“对 1 至 5 个顶点的每张简单无向图，若连通则为二分图”不成立。后端穷举检查到 11 张图时找到三角形反例并提前停止，因此未穷尽整个范围。独立核验确认该图连通且非二分图；缩小器无改进，返回图经再次独立核验通过。搜索证据表明其在指定范围内顶点数最小，但不证明边数最小。\",\"clarification\":null,\"backend_calls\":[{\"operation\":\"search\",\"task_file\":\"task.json\",\"graph_file\":null,\"result_file\":\"search_result.json\"},{\"operation\":\"verify\",\"task_file\":\"task.json\",\"graph_file\":\"counterexample.json\",\"result_file\":\"verify_result.json\"},{\"operation\":\"minimize\",\"task_file\":\"task.json\",\"graph_file\":\"counterexample.json\",\"result_file\":\"minimize_result.json\"},{\"operation\":\"verify\",\"task_file\":\"task.json\",\"graph_file\":\"minimized_graph.json\",\"result_file\":\"minimized_verify_result.json\"}]}"
+      }
+    },
+    {
+      "blind_id": "R-ca510a",
+      "prompt_id": "P02",
+      "user_input": "请检查命题：每个具有欧拉迹的有限简单无向连通图，都一定具有欧拉回路？顶点数限制为 1 到 5。",
+      "report": {
+        "action": "search",
+        "status": "counterexample_found",
+        "task": {
+          "property_id": "eulerian_trail_implies_eulerian_circuit",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "eulerian_trail"
+          ],
+          "conclusion": "eulerian_circuit",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "eulerian_trail",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "eulerian_circuit",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": {
+          "nodes": [
+            0,
+            1
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "coverage": {
+          "search_mode": "exhaustive",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "graphs_evaluated": 3,
+          "premise_satisfying_count": 2,
+          "fully_exhausted": false,
+          "size_counts_examined": {
+            "1": 1,
+            "2": 2
+          },
+          "seed": null,
+          "max_graphs": null,
+          "termination_reason": "counterexample_found",
+          "isomorphism_classes_total": 52,
+          "graphs_total": 1099,
+          "labeled_graphs_total": 1099,
+          "graphs_examined": 3,
+          "duplicates_skipped": 0,
+          "vacuously_true": null,
+          "elapsed_seconds": 0.00018
+        },
+        "checks": {
+          "graph_structure_valid": true,
+          "node_count_in_range": true,
+          "premises": {
+            "eulerian_trail": true
+          },
+          "conclusion": {
+            "eulerian_circuit": false
+          },
+          "premise_checks": [
+            {
+              "index": 0,
+              "expression": {
+                "type": "atom",
+                "predicate": "eulerian_trail",
+                "negated": false,
+                "k": null
+              },
+              "label": "eulerian_trail",
+              "value": true
+            }
+          ],
+          "conclusion_value": false,
+          "all_premises_satisfied": true,
+          "conclusion_violated": true,
+          "is_counterexample": true
+        },
+        "evidence": {
+          "degrees": {
+            "0": 1,
+            "1": 1
+          },
+          "components": [
+            [
+              0,
+              1
+            ]
+          ],
+          "bipartition": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "cycle": null,
+          "odd_degree_vertices": [
+            0,
+            1
+          ],
+          "leaves": [
+            0,
+            1
+          ],
+          "node_count": 2,
+          "edge_count": 1,
+          "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v0 --- v1"
+        },
+        "minimization": {
+          "status": "no_improvement",
+          "original_graph": {
+            "nodes": [
+              0,
+              1
+            ],
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "minimized_graph": {
+            "nodes": [
+              0,
+              1
+            ],
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "original_size": {
+            "nodes": 2,
+            "edges": 1
+          },
+          "minimized_size": {
+            "nodes": 2,
+            "edges": 1
+          },
+          "steps": [],
+          "verification": {
+            "status": "counterexample_found",
+            "mode": "live",
+            "task": {
+              "property_id": "eulerian_trail_implies_eulerian_circuit",
+              "graph_type": "simple_undirected",
+              "premises": [
+                "eulerian_trail"
+              ],
+              "conclusion": "eulerian_circuit",
+              "normalized_premises": [
+                {
+                  "type": "atom",
+                  "predicate": "eulerian_trail",
+                  "negated": false,
+                  "k": null
+                }
+              ],
+              "normalized_conclusion": {
+                "type": "atom",
+                "predicate": "eulerian_circuit",
+                "negated": false,
+                "k": null
+              },
+              "min_nodes": 1,
+              "max_nodes": 5,
+              "search_mode": "exhaustive",
+              "seed": null,
+              "max_graphs": 2000
+            },
+            "coverage": null,
+            "counterexample": {
+              "nodes": [
+                0,
+                1
+              ],
+              "edges": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            },
+            "checks": {
+              "graph_structure_valid": true,
+              "node_count_in_range": true,
+              "premises": {
+                "eulerian_trail": true
+              },
+              "conclusion": {
+                "eulerian_circuit": false
+              },
+              "premise_checks": [
+                {
+                  "index": 0,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "eulerian_trail",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "eulerian_trail",
+                  "value": true
+                }
+              ],
+              "conclusion_value": false,
+              "all_premises_satisfied": true,
+              "conclusion_violated": true,
+              "is_counterexample": true
+            },
+            "evidence": {
+              "degrees": {
+                "0": 1,
+                "1": 1
+              },
+              "components": [
+                [
+                  0,
+                  1
+                ]
+              ],
+              "bipartition": [
+                [
+                  0
+                ],
+                [
+                  1
+                ]
+              ],
+              "cycle": null,
+              "odd_degree_vertices": [
+                0,
+                1
+              ],
+              "leaves": [
+                0,
+                1
+              ],
+              "node_count": 2,
+              "edge_count": 1,
+              "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v0 --- v1"
+            },
+            "minimization": null,
+            "reason": "candidate independently passed graph, range, premise, and conclusion checks."
+          },
+          "minimality_claim": "locally_minimal_under_single_vertex_and_edge_deletions",
+          "minimality": {
+            "local_single_deletion_minimum": true,
+            "vertex_minimum_in_scope": false,
+            "edge_minimum_at_minimum_vertices": false,
+            "scope": [
+              1,
+              5
+            ]
+          },
+          "reason": "the returned graph was re-verified; local deletion minimality is not a proof of global minimum size."
+        },
+        "minimality": {
+          "vertex_minimum_in_scope": true,
+          "edge_minimum_at_minimum_vertices": false,
+          "scope": [
+            1,
+            5
+          ],
+          "reason": "Increasing-size exhaustive enumeration excludes every smaller order in scope."
+        },
+        "reason": "单边图有一条欧拉迹，但没有欧拉回路；其两个顶点度数均为 1。搜索在找到反例后停止，未穷尽范围内所有图。缩小器返回 no_improvement，独立复核通过；该图在给定范围内顶点数最小。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-da5a4c",
+      "prompt_id": "P11",
+      "user_input": "请核验下面的候选图是否反驳“每个连通二分图都是树”。顶点范围为 1 到 5。",
+      "report": {
+        "action": "verify",
+        "status": "inconclusive",
+        "task": {
+          "property_id": "connected_and_bipartite_implies_tree",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "connected",
+            "bipartite"
+          ],
+          "conclusion": "tree",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            },
+            {
+              "type": "atom",
+              "predicate": "bipartite",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "tree",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": null,
+        "coverage": null,
+        "checks": {
+          "graph_structure_valid": true,
+          "node_count_in_range": true,
+          "premises": {
+            "connected": true,
+            "bipartite": false
+          },
+          "conclusion": {
+            "tree": false
+          },
+          "premise_checks": [
+            {
+              "index": 0,
+              "expression": {
+                "type": "atom",
+                "predicate": "connected",
+                "negated": false,
+                "k": null
+              },
+              "label": "connected",
+              "value": true
+            },
+            {
+              "index": 1,
+              "expression": {
+                "type": "atom",
+                "predicate": "bipartite",
+                "negated": false,
+                "k": null
+              },
+              "label": "bipartite",
+              "value": false
+            }
+          ],
+          "conclusion_value": false,
+          "all_premises_satisfied": false,
+          "conclusion_violated": true,
+          "is_counterexample": false
+        },
+        "evidence": null,
+        "minimization": null,
+        "minimality": null,
+        "reason": "候选图结构合法且顶点数在范围内，但三角形不是二分图，因此不满足全部前提，不能反驳该命题。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-2bad79",
+      "prompt_id": "P06",
+      "user_input": "请用随机搜索模式，固定随机种子 20261105，抽样 500 张图，检查 1 到 5 个顶点范围内每棵树是否都是二分图。",
+      "report": {
+        "action": "search",
+        "status": "no_counterexample_in_scope",
+        "task": {
+          "property_id": "tree_implies_bipartite",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "tree"
+          ],
+          "conclusion": "bipartite",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "tree",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "bipartite",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "random",
+          "seed": 20261105,
+          "max_graphs": 500
+        },
+        "counterexample": null,
+        "coverage": {
+          "search_mode": "random",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "samples_generated": 500,
+          "graphs_evaluated": 46,
+          "premise_satisfying_count": 7,
+          "fully_exhausted": false,
+          "size_counts_examined": {
+            "2": 2,
+            "5": 28,
+            "1": 1,
+            "3": 4,
+            "4": 11
+          },
+          "density_schedule": [
+            0.1,
+            0.25,
+            0.5,
+            0.75,
+            0.9
+          ],
+          "density_counts": {
+            "0.1": 6,
+            "0.5": 13,
+            "0.75": 12,
+            "0.9": 6,
+            "0.25": 9
+          },
+          "seed": 20261105,
+          "max_graphs": 500,
+          "termination_reason": "budget_exhausted",
+          "isomorphic_duplicates_skipped": 454,
+          "graphs_total": null,
+          "labeled_graphs_total": null,
+          "graphs_examined": 46,
+          "duplicates_skipped": 454,
+          "vacuously_true": null,
+          "elapsed_seconds": 0.040636
+        },
+        "checks": null,
+        "evidence": null,
+        "minimization": null,
+        "minimality": null,
+        "reason": "随机搜索完成 500 次抽样，未发现反例。这是抽样结果，不构成对 1 到 5 个顶点范围内命题的穷尽证明。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-0aff5f",
+      "prompt_id": "P01",
+      "user_input": "每个连通图都是树吗？只考虑 1 至 5 个顶点的有限简单无向图。",
+      "report": {
+        "action": "search",
+        "status": "counterexample_found",
+        "task": {
+          "property_id": "connected_implies_tree",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "connected"
+          ],
+          "conclusion": "tree",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "tree",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": {
+          "nodes": [
+            0,
+            1,
+            2
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        "coverage": {
+          "search_mode": "exhaustive",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "graphs_evaluated": 11,
+          "premise_satisfying_count": 6,
+          "fully_exhausted": false,
+          "size_counts_examined": {
+            "1": 1,
+            "2": 2,
+            "3": 8
+          },
+          "seed": null,
+          "max_graphs": null,
+          "termination_reason": "counterexample_found",
+          "isomorphism_classes_total": 52,
+          "graphs_total": 1099,
+          "labeled_graphs_total": 1099,
+          "graphs_examined": 11,
+          "duplicates_skipped": 0,
+          "vacuously_true": null,
+          "elapsed_seconds": 0.000813
+        },
+        "checks": {
+          "graph_structure_valid": true,
+          "node_count_in_range": true,
+          "premises": {
+            "connected": true
+          },
+          "conclusion": {
+            "tree": false
+          },
+          "premise_checks": [
+            {
+              "index": 0,
+              "expression": {
+                "type": "atom",
+                "predicate": "connected",
+                "negated": false,
+                "k": null
+              },
+              "label": "connected",
+              "value": true
+            }
+          ],
+          "conclusion_value": false,
+          "all_premises_satisfied": true,
+          "conclusion_violated": true,
+          "is_counterexample": true
+        },
+        "evidence": {
+          "degrees": {
+            "0": 2,
+            "1": 2,
+            "2": 2
+          },
+          "components": [
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "bipartition": null,
+          "cycle": [
+            1,
+            0,
+            2,
+            1
+          ],
+          "odd_degree_vertices": [],
+          "leaves": [],
+          "node_count": 3,
+          "edge_count": 3,
+          "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v0 --- v1\n  v0 --- v2\n  v1 --- v2"
+        },
+        "minimization": {
+          "status": "no_improvement",
+          "original_graph": {
+            "nodes": [
+              0,
+              1,
+              2
+            ],
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          "minimized_graph": {
+            "nodes": [
+              0,
+              1,
+              2
+            ],
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          "original_size": {
+            "nodes": 3,
+            "edges": 3
+          },
+          "minimized_size": {
+            "nodes": 3,
+            "edges": 3
+          },
+          "steps": [],
+          "verification": {
+            "status": "counterexample_found",
+            "mode": "live",
+            "task": {
+              "property_id": "connected_implies_tree",
+              "graph_type": "simple_undirected",
+              "premises": [
+                "connected"
+              ],
+              "conclusion": "tree",
+              "normalized_premises": [
+                {
+                  "type": "atom",
+                  "predicate": "connected",
+                  "negated": false,
+                  "k": null
+                }
+              ],
+              "normalized_conclusion": {
+                "type": "atom",
+                "predicate": "tree",
+                "negated": false,
+                "k": null
+              },
+              "min_nodes": 1,
+              "max_nodes": 5,
+              "search_mode": "exhaustive",
+              "seed": null,
+              "max_graphs": 2000
+            },
+            "coverage": null,
+            "counterexample": {
+              "nodes": [
+                0,
+                1,
+                2
+              ],
+              "edges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            },
+            "checks": {
+              "graph_structure_valid": true,
+              "node_count_in_range": true,
+              "premises": {
+                "connected": true
+              },
+              "conclusion": {
+                "tree": false
+              },
+              "premise_checks": [
+                {
+                  "index": 0,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "connected",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "connected",
+                  "value": true
+                }
+              ],
+              "conclusion_value": false,
+              "all_premises_satisfied": true,
+              "conclusion_violated": true,
+              "is_counterexample": true
+            },
+            "evidence": {
+              "degrees": {
+                "0": 2,
+                "1": 2,
+                "2": 2
+              },
+              "components": [
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "bipartition": null,
+              "cycle": [
+                1,
+                0,
+                2,
+                1
+              ],
+              "odd_degree_vertices": [],
+              "leaves": [],
+              "node_count": 3,
+              "edge_count": 3,
+              "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v0 --- v1\n  v0 --- v2\n  v1 --- v2"
+            },
+            "minimization": null,
+            "reason": "candidate independently passed graph, range, premise, and conclusion checks."
+          },
+          "minimality_claim": "locally_minimal_under_single_vertex_and_edge_deletions",
+          "minimality": {
+            "local_single_deletion_minimum": true,
+            "vertex_minimum_in_scope": false,
+            "edge_minimum_at_minimum_vertices": false,
+            "scope": [
+              1,
+              5
+            ]
+          },
+          "reason": "the returned graph was re-verified; local deletion minimality is not a proof of global minimum size."
+        },
+        "minimality": {
+          "vertex_minimum_in_scope": true,
+          "edge_minimum_at_minimum_vertices": false,
+          "scope": [
+            1,
+            5
+          ],
+          "reason": "Increasing-size exhaustive enumeration excludes every smaller order in scope."
+        },
+        "reason": "已将命题解析为“每个连通图都是树”，范围为 1 至 5 个顶点的有限简单无向图。穷举在检查 11 张图后找到三角形反例并提前终止（全范围未穷尽）。独立核验确认其连通且非树；缩小器无改进，结果复核通过。该图在范围内顶点数最小，但未证明边数最小。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-9fa0bd",
+      "prompt_id": "P03",
+      "user_input": "检查：每个连通且所有顶点度数均为偶数的简单无向图，都存在欧拉回路。顶点数不超过 5。",
+      "report": {
+        "action": "search",
+        "status": "verified_true_in_scope",
+        "task": {
+          "property_id": "connected_and_all_even_degree_implies_eulerian_circuit",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "connected",
+            "all_even_degree"
+          ],
+          "conclusion": "eulerian_circuit",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            },
+            {
+              "type": "atom",
+              "predicate": "all_even_degree",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "eulerian_circuit",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": null,
+        "coverage": {
+          "search_mode": "exhaustive",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "graphs_evaluated": 1099,
+          "premise_satisfying_count": 43,
+          "fully_exhausted": true,
+          "size_counts_examined": {
+            "1": 1,
+            "2": 2,
+            "3": 8,
+            "4": 64,
+            "5": 1024
+          },
+          "seed": null,
+          "max_graphs": null,
+          "termination_reason": "completed_all_candidates",
+          "isomorphism_classes_total": 52,
+          "graphs_total": 1099,
+          "labeled_graphs_total": 1099,
+          "graphs_examined": 1099,
+          "duplicates_skipped": 0,
+          "vacuously_true": false,
+          "elapsed_seconds": 0.019275
+        },
+        "checks": null,
+        "evidence": null,
+        "minimization": null,
+        "minimality": null,
+        "reason": "穷举检查了顶点数 1 至 5 的全部 1099 张简单无向图，其中 43 张满足前提；没有反例，故命题在该范围内成立。后端将欧拉回路定义为连通且所有顶点度数为偶数。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-55842e",
+      "prompt_id": "P08",
+      "user_input": "检查命题：“每个欧拉图的所有顶点度数都是偶数。”",
+      "report": {
+        "action": "clarify",
+        "status": "inconclusive",
+        "task": null,
+        "counterexample": null,
+        "coverage": null,
+        "checks": null,
+        "evidence": null,
+        "minimization": null,
+        "minimality": null,
+        "reason": "“欧拉图”的定义会影响命题真值，按要求需先澄清；本轮未调用后端。",
+        "clarification": "你这里的“欧拉图”指什么？例如：存在经过每条边恰好一次的闭合欧拉回路；或仅要求存在欧拉迹（允许起点与终点不同）。"
+      }
+    },
+    {
+      "blind_id": "R-c66b0e",
+      "prompt_id": "P10",
+      "user_input": "请核验下面给出的图是否是命题“每个连通二分图都是树”的反例。顶点范围为 1 到 5。",
+      "report": {
+        "action": "verify",
+        "status": "counterexample_found",
+        "task": {
+          "property_id": "connected_and_bipartite_implies_tree",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "connected",
+            "bipartite"
+          ],
+          "conclusion": "tree",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            },
+            {
+              "type": "atom",
+              "predicate": "bipartite",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "tree",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": {
+          "nodes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        "coverage": null,
+        "checks": {
+          "graph_structure_valid": true,
+          "node_count_in_range": true,
+          "premises": {
+            "connected": true,
+            "bipartite": true
+          },
+          "conclusion": {
+            "tree": false
+          },
+          "premise_checks": [
+            {
+              "index": 0,
+              "expression": {
+                "type": "atom",
+                "predicate": "connected",
+                "negated": false,
+                "k": null
+              },
+              "label": "connected",
+              "value": true
+            },
+            {
+              "index": 1,
+              "expression": {
+                "type": "atom",
+                "predicate": "bipartite",
+                "negated": false,
+                "k": null
+              },
+              "label": "bipartite",
+              "value": true
+            }
+          ],
+          "conclusion_value": false,
+          "all_premises_satisfied": true,
+          "conclusion_violated": true,
+          "is_counterexample": true
+        },
+        "evidence": {
+          "degrees": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2
+          },
+          "components": [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "bipartition": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "cycle": [
+            2,
+            1,
+            0,
+            3,
+            2
+          ],
+          "odd_degree_vertices": [],
+          "leaves": [],
+          "node_count": 4,
+          "edge_count": 4,
+          "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v1\n  v0 --- v3\n  v1 --- v2\n  v2 --- v3"
+        },
+        "minimization": {
+          "status": "no_improvement",
+          "original_graph": {
+            "nodes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          "minimized_graph": {
+            "nodes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          "original_size": {
+            "nodes": 4,
+            "edges": 4
+          },
+          "minimized_size": {
+            "nodes": 4,
+            "edges": 4
+          },
+          "steps": [],
+          "verification": {
+            "status": "counterexample_found",
+            "mode": "live",
+            "task": {
+              "property_id": "connected_and_bipartite_implies_tree",
+              "graph_type": "simple_undirected",
+              "premises": [
+                "connected",
+                "bipartite"
+              ],
+              "conclusion": "tree",
+              "normalized_premises": [
+                {
+                  "type": "atom",
+                  "predicate": "connected",
+                  "negated": false,
+                  "k": null
+                },
+                {
+                  "type": "atom",
+                  "predicate": "bipartite",
+                  "negated": false,
+                  "k": null
+                }
+              ],
+              "normalized_conclusion": {
+                "type": "atom",
+                "predicate": "tree",
+                "negated": false,
+                "k": null
+              },
+              "min_nodes": 1,
+              "max_nodes": 5,
+              "search_mode": "exhaustive",
+              "seed": null,
+              "max_graphs": 2000
+            },
+            "coverage": null,
+            "counterexample": {
+              "nodes": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "edges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  2,
+                  3
+                ]
+              ]
+            },
+            "checks": {
+              "graph_structure_valid": true,
+              "node_count_in_range": true,
+              "premises": {
+                "connected": true,
+                "bipartite": true
+              },
+              "conclusion": {
+                "tree": false
+              },
+              "premise_checks": [
+                {
+                  "index": 0,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "connected",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "connected",
+                  "value": true
+                },
+                {
+                  "index": 1,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "bipartite",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "bipartite",
+                  "value": true
+                }
+              ],
+              "conclusion_value": false,
+              "all_premises_satisfied": true,
+              "conclusion_violated": true,
+              "is_counterexample": true
+            },
+            "evidence": {
+              "degrees": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2
+              },
+              "components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "bipartition": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ]
+              ],
+              "cycle": [
+                2,
+                1,
+                0,
+                3,
+                2
+              ],
+              "odd_degree_vertices": [],
+              "leaves": [],
+              "node_count": 4,
+              "edge_count": 4,
+              "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v1\n  v0 --- v3\n  v1 --- v2\n  v2 --- v3"
+            },
+            "minimization": null,
+            "reason": "candidate independently passed graph, range, premise, and conclusion checks."
+          },
+          "minimality_claim": "locally_minimal_under_single_vertex_and_edge_deletions",
+          "minimality": {
+            "local_single_deletion_minimum": true,
+            "vertex_minimum_in_scope": false,
+            "edge_minimum_at_minimum_vertices": false,
+            "scope": [
+              1,
+              5
+            ]
+          },
+          "reason": "the returned graph was re-verified; local deletion minimality is not a proof of global minimum size."
+        },
+        "minimality": {
+          "local_single_deletion_minimum": true,
+          "vertex_minimum_in_scope": false,
+          "edge_minimum_at_minimum_vertices": false,
+          "scope": [
+            1,
+            5
+          ]
+        },
+        "reason": "候选图已通过独立核验：它连通且二分，但包含四边形环，因此不是树。缩小器未能改进该图；返回图经再次独立核验确认仍是反例。未进行穷举搜索。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-3795fb",
+      "prompt_id": "P10",
+      "user_input": "请核验下面给出的图是否是命题“每个连通二分图都是树”的反例。顶点范围为 1 到 5。",
+      "report": {
+        "action": "verify",
+        "status": "counterexample_found",
+        "task": {
+          "property_id": "connected_bipartite_implies_tree",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "connected",
+            "bipartite"
+          ],
+          "conclusion": "tree",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            },
+            {
+              "type": "atom",
+              "predicate": "bipartite",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "tree",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "random",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": {
+          "nodes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        "coverage": null,
+        "checks": {
+          "graph_structure_valid": true,
+          "node_count_in_range": true,
+          "premises": {
+            "connected": true,
+            "bipartite": true
+          },
+          "conclusion": {
+            "tree": false
+          },
+          "premise_checks": [
+            {
+              "index": 0,
+              "expression": {
+                "type": "atom",
+                "predicate": "connected",
+                "negated": false,
+                "k": null
+              },
+              "label": "connected",
+              "value": true
+            },
+            {
+              "index": 1,
+              "expression": {
+                "type": "atom",
+                "predicate": "bipartite",
+                "negated": false,
+                "k": null
+              },
+              "label": "bipartite",
+              "value": true
+            }
+          ],
+          "conclusion_value": false,
+          "all_premises_satisfied": true,
+          "conclusion_violated": true,
+          "is_counterexample": true
+        },
+        "evidence": {
+          "degrees": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2
+          },
+          "components": [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "bipartition": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "cycle": [
+            2,
+            1,
+            0,
+            3,
+            2
+          ],
+          "odd_degree_vertices": [],
+          "leaves": [],
+          "node_count": 4,
+          "edge_count": 4,
+          "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v1\n  v0 --- v3\n  v1 --- v2\n  v2 --- v3"
+        },
+        "minimization": null,
+        "minimality": null,
+        "reason": "候选图通过后端核验：它有4个顶点，满足1到5个顶点的范围；图连通且二分，但含有一个环，因此不是树。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-75c67e",
+      "prompt_id": "P06",
+      "user_input": "请用随机搜索模式，固定随机种子 20261105，抽样 500 张图，检查 1 到 5 个顶点范围内每棵树是否都是二分图。",
+      "report": {
+        "action": "search",
+        "status": "no_counterexample_in_scope",
+        "task": {
+          "property_id": "trees_are_bipartite",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "tree"
+          ],
+          "conclusion": "bipartite",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "tree",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "bipartite",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "random",
+          "seed": 20261105,
+          "max_graphs": 500
+        },
+        "counterexample": null,
+        "coverage": {
+          "search_mode": "random",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "samples_generated": 500,
+          "graphs_evaluated": 46,
+          "premise_satisfying_count": 7,
+          "fully_exhausted": false,
+          "size_counts_examined": {
+            "2": 2,
+            "5": 28,
+            "1": 1,
+            "3": 4,
+            "4": 11
+          },
+          "density_schedule": [
+            0.1,
+            0.25,
+            0.5,
+            0.75,
+            0.9
+          ],
+          "density_counts": {
+            "0.1": 6,
+            "0.5": 13,
+            "0.75": 12,
+            "0.9": 6,
+            "0.25": 9
+          },
+          "seed": 20261105,
+          "max_graphs": 500,
+          "termination_reason": "budget_exhausted",
+          "isomorphic_duplicates_skipped": 454,
+          "graphs_total": null,
+          "labeled_graphs_total": null,
+          "graphs_examined": 46,
+          "duplicates_skipped": 454,
+          "vacuously_true": null,
+          "elapsed_seconds": 0.063393
+        },
+        "checks": null,
+        "evidence": null,
+        "minimization": null,
+        "minimality": null,
+        "reason": "在 1–5 个顶点范围内，以随机模式和固定种子 20261105 生成了 500 张图，实际评估 46 张，其中 7 张满足树的前提；未找到反例。搜索已达到预算上限，这只是抽样结果，不能证明范围内所有树都是二分图。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-a3f23e",
+      "prompt_id": "P12",
+      "user_input": "请先核验下面的图是否为“每个连通二分图都是树”的反例；如果是，请尽可能缩小顶点数，再缩小边数，并用独立核验入口复核缩小结果。范围 1 到 5。",
+      "report": {
+        "action": "verify",
+        "status": "counterexample_found",
+        "task": {
+          "property_id": "connected_and_bipartite_implies_tree",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "connected",
+            "bipartite"
+          ],
+          "conclusion": "tree",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            },
+            {
+              "type": "atom",
+              "predicate": "bipartite",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "tree",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": {
+          "nodes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        "coverage": null,
+        "checks": {
+          "graph_structure_valid": true,
+          "node_count_in_range": true,
+          "premises": {
+            "connected": true,
+            "bipartite": true
+          },
+          "conclusion": {
+            "tree": false
+          },
+          "premise_checks": [
+            {
+              "index": 0,
+              "expression": {
+                "type": "atom",
+                "predicate": "connected",
+                "negated": false,
+                "k": null
+              },
+              "label": "connected",
+              "value": true
+            },
+            {
+              "index": 1,
+              "expression": {
+                "type": "atom",
+                "predicate": "bipartite",
+                "negated": false,
+                "k": null
+              },
+              "label": "bipartite",
+              "value": true
+            }
+          ],
+          "conclusion_value": false,
+          "all_premises_satisfied": true,
+          "conclusion_violated": true,
+          "is_counterexample": true
+        },
+        "evidence": {
+          "degrees": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2
+          },
+          "components": [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "bipartition": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "cycle": [
+            2,
+            1,
+            0,
+            3,
+            2
+          ],
+          "odd_degree_vertices": [],
+          "leaves": [],
+          "node_count": 4,
+          "edge_count": 4,
+          "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v1\n  v0 --- v3\n  v1 --- v2\n  v2 --- v3"
+        },
+        "minimization": {
+          "status": "minimized",
+          "original_graph": {
+            "nodes": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          "minimized_graph": {
+            "nodes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          "original_size": {
+            "nodes": 5,
+            "edges": 5
+          },
+          "minimized_size": {
+            "nodes": 4,
+            "edges": 4
+          },
+          "steps": [
+            {
+              "operation": "delete_vertex",
+              "removed_vertex": 4,
+              "before": {
+                "nodes": 5,
+                "edges": 5
+              },
+              "after": {
+                "nodes": 4,
+                "edges": 4
+              }
+            }
+          ],
+          "verification": {
+            "status": "counterexample_found",
+            "mode": "live",
+            "task": {
+              "property_id": "connected_and_bipartite_implies_tree",
+              "graph_type": "simple_undirected",
+              "premises": [
+                "connected",
+                "bipartite"
+              ],
+              "conclusion": "tree",
+              "normalized_premises": [
+                {
+                  "type": "atom",
+                  "predicate": "connected",
+                  "negated": false,
+                  "k": null
+                },
+                {
+                  "type": "atom",
+                  "predicate": "bipartite",
+                  "negated": false,
+                  "k": null
+                }
+              ],
+              "normalized_conclusion": {
+                "type": "atom",
+                "predicate": "tree",
+                "negated": false,
+                "k": null
+              },
+              "min_nodes": 1,
+              "max_nodes": 5,
+              "search_mode": "exhaustive",
+              "seed": null,
+              "max_graphs": 2000
+            },
+            "coverage": null,
+            "counterexample": {
+              "nodes": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "edges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  2,
+                  3
+                ]
+              ]
+            },
+            "checks": {
+              "graph_structure_valid": true,
+              "node_count_in_range": true,
+              "premises": {
+                "connected": true,
+                "bipartite": true
+              },
+              "conclusion": {
+                "tree": false
+              },
+              "premise_checks": [
+                {
+                  "index": 0,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "connected",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "connected",
+                  "value": true
+                },
+                {
+                  "index": 1,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "bipartite",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "bipartite",
+                  "value": true
+                }
+              ],
+              "conclusion_value": false,
+              "all_premises_satisfied": true,
+              "conclusion_violated": true,
+              "is_counterexample": true
+            },
+            "evidence": {
+              "degrees": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2
+              },
+              "components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "bipartition": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ]
+              ],
+              "cycle": [
+                2,
+                1,
+                0,
+                3,
+                2
+              ],
+              "odd_degree_vertices": [],
+              "leaves": [],
+              "node_count": 4,
+              "edge_count": 4,
+              "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v1\n  v0 --- v3\n  v1 --- v2\n  v2 --- v3"
+            },
+            "minimization": null,
+            "reason": "candidate independently passed graph, range, premise, and conclusion checks."
+          },
+          "minimality_claim": "locally_minimal_under_single_vertex_and_edge_deletions",
+          "minimality": {
+            "local_single_deletion_minimum": true,
+            "vertex_minimum_in_scope": false,
+            "edge_minimum_at_minimum_vertices": false,
+            "scope": [
+              1,
+              5
+            ]
+          },
+          "reason": "the returned graph was re-verified; local deletion minimality is not a proof of global minimum size."
+        },
+        "minimality": {
+          "local_single_deletion_minimum": true,
+          "vertex_minimum_in_scope": false,
+          "edge_minimum_at_minimum_vertices": false,
+          "scope": [
+            1,
+            5
+          ]
+        },
+        "reason": "候选图经核验是反例；删除顶点 4 后得到 4 个顶点、4 条边的缩小反例，并由独立 verifier 复核通过。该结果仅证明单次删点/删边局部最小，不证明范围内顶点数或边数全局最小。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-908044",
+      "prompt_id": "P05",
+      "user_input": "相同命题，但把顶点范围扩大为 1 到 4 个。请穷举：每个连通二分图都是树吗？",
+      "report": {
+        "action": "search",
+        "status": "counterexample_found",
+        "task": {
+          "property_id": "connected_and_bipartite_implies_tree",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "connected",
+            "bipartite"
+          ],
+          "conclusion": "tree",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            },
+            {
+              "type": "atom",
+              "predicate": "bipartite",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "tree",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 4,
+          "search_mode": "exhaustive",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": {
+          "nodes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "edges": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        "coverage": {
+          "search_mode": "exhaustive",
+          "min_nodes": 1,
+          "max_nodes": 4,
+          "graphs_evaluated": 42,
+          "premise_satisfying_count": 14,
+          "fully_exhausted": false,
+          "size_counts_examined": {
+            "1": 1,
+            "2": 2,
+            "3": 8,
+            "4": 31
+          },
+          "seed": null,
+          "max_graphs": null,
+          "termination_reason": "counterexample_found",
+          "isomorphism_classes_total": 18,
+          "graphs_total": 75,
+          "labeled_graphs_total": 75,
+          "graphs_examined": 42,
+          "duplicates_skipped": 0,
+          "vacuously_true": null,
+          "elapsed_seconds": 0.001006
+        },
+        "checks": {
+          "graph_structure_valid": true,
+          "node_count_in_range": true,
+          "premises": {
+            "connected": true,
+            "bipartite": true
+          },
+          "conclusion": {
+            "tree": false
+          },
+          "premise_checks": [
+            {
+              "index": 0,
+              "expression": {
+                "type": "atom",
+                "predicate": "connected",
+                "negated": false,
+                "k": null
+              },
+              "label": "connected",
+              "value": true
+            },
+            {
+              "index": 1,
+              "expression": {
+                "type": "atom",
+                "predicate": "bipartite",
+                "negated": false,
+                "k": null
+              },
+              "label": "bipartite",
+              "value": true
+            }
+          ],
+          "conclusion_value": false,
+          "all_premises_satisfied": true,
+          "conclusion_violated": true,
+          "is_counterexample": true
+        },
+        "evidence": {
+          "degrees": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2
+          },
+          "components": [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "bipartition": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "cycle": [
+            1,
+            2,
+            0,
+            3,
+            1
+          ],
+          "odd_degree_vertices": [],
+          "leaves": [],
+          "node_count": 4,
+          "edge_count": 4,
+          "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v2\n  v0 --- v3\n  v1 --- v2\n  v1 --- v3"
+        },
+        "minimization": {
+          "status": "no_improvement",
+          "original_graph": {
+            "nodes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          "minimized_graph": {
+            "nodes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "edges": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          "original_size": {
+            "nodes": 4,
+            "edges": 4
+          },
+          "minimized_size": {
+            "nodes": 4,
+            "edges": 4
+          },
+          "steps": [],
+          "verification": {
+            "status": "counterexample_found",
+            "mode": "live",
+            "task": {
+              "property_id": "connected_and_bipartite_implies_tree",
+              "graph_type": "simple_undirected",
+              "premises": [
+                "connected",
+                "bipartite"
+              ],
+              "conclusion": "tree",
+              "normalized_premises": [
+                {
+                  "type": "atom",
+                  "predicate": "connected",
+                  "negated": false,
+                  "k": null
+                },
+                {
+                  "type": "atom",
+                  "predicate": "bipartite",
+                  "negated": false,
+                  "k": null
+                }
+              ],
+              "normalized_conclusion": {
+                "type": "atom",
+                "predicate": "tree",
+                "negated": false,
+                "k": null
+              },
+              "min_nodes": 1,
+              "max_nodes": 4,
+              "search_mode": "exhaustive",
+              "seed": null,
+              "max_graphs": 2000
+            },
+            "coverage": null,
+            "counterexample": {
+              "nodes": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "edges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            },
+            "checks": {
+              "graph_structure_valid": true,
+              "node_count_in_range": true,
+              "premises": {
+                "connected": true,
+                "bipartite": true
+              },
+              "conclusion": {
+                "tree": false
+              },
+              "premise_checks": [
+                {
+                  "index": 0,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "connected",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "connected",
+                  "value": true
+                },
+                {
+                  "index": 1,
+                  "expression": {
+                    "type": "atom",
+                    "predicate": "bipartite",
+                    "negated": false,
+                    "k": null
+                  },
+                  "label": "bipartite",
+                  "value": true
+                }
+              ],
+              "conclusion_value": false,
+              "all_premises_satisfied": true,
+              "conclusion_violated": true,
+              "is_counterexample": true
+            },
+            "evidence": {
+              "degrees": {
+                "0": 2,
+                "1": 2,
+                "2": 2,
+                "3": 2
+              },
+              "components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "bipartition": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ]
+              ],
+              "cycle": [
+                1,
+                2,
+                0,
+                3,
+                1
+              ],
+              "odd_degree_vertices": [],
+              "leaves": [],
+              "node_count": 4,
+              "edge_count": 4,
+              "mermaid": "graph LR\n  v0[\"0\"]\n  v1[\"1\"]\n  v2[\"2\"]\n  v3[\"3\"]\n  v0 --- v2\n  v0 --- v3\n  v1 --- v2\n  v1 --- v3"
+            },
+            "minimization": null,
+            "reason": "candidate independently passed graph, range, premise, and conclusion checks."
+          },
+          "minimality_claim": "locally_minimal_under_single_vertex_and_edge_deletions",
+          "minimality": {
+            "local_single_deletion_minimum": true,
+            "vertex_minimum_in_scope": false,
+            "edge_minimum_at_minimum_vertices": false,
+            "scope": [
+              1,
+              4
+            ]
+          },
+          "reason": "the returned graph was re-verified; local deletion minimality is not a proof of global minimum size."
+        },
+        "minimality": {
+          "vertex_minimum_in_scope": true,
+          "edge_minimum_at_minimum_vertices": false,
+          "scope": [
+            1,
+            4
+          ],
+          "reason": "Increasing-size exhaustive enumeration excludes every smaller order in scope."
+        },
+        "reason": "在 1 至 4 个顶点范围内穷举时找到反例，且原图与缩小结果均通过独立核验。反例是四边形：连通且二分，但含环，因此不是树。搜索因发现反例而提前终止（42/75 张带标号图已检查）；搜索证明范围内不存在更小顶点数的反例。缩小器未能改进该图。",
+        "clarification": null
+      }
+    },
+    {
+      "blind_id": "R-50ebd2",
+      "prompt_id": "P03",
+      "user_input": "检查：每个连通且所有顶点度数均为偶数的简单无向图，都存在欧拉回路。顶点数不超过 5。",
+      "report": {
+        "action": "search",
+        "status": "verified_true_in_scope",
+        "task": {
+          "property_id": "connected_and_all_even_degree_implies_eulerian_circuit",
+          "graph_type": "simple_undirected",
+          "premises": [
+            "connected",
+            "all_even_degree"
+          ],
+          "conclusion": "eulerian_circuit",
+          "normalized_premises": [
+            {
+              "type": "atom",
+              "predicate": "connected",
+              "negated": false,
+              "k": null
+            },
+            {
+              "type": "atom",
+              "predicate": "all_even_degree",
+              "negated": false,
+              "k": null
+            }
+          ],
+          "normalized_conclusion": {
+            "type": "atom",
+            "predicate": "eulerian_circuit",
+            "negated": false,
+            "k": null
+          },
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "search_mode": "exhaustive",
+          "seed": null,
+          "max_graphs": 2000
+        },
+        "counterexample": null,
+        "coverage": {
+          "search_mode": "exhaustive",
+          "min_nodes": 1,
+          "max_nodes": 5,
+          "graphs_evaluated": 1099,
+          "premise_satisfying_count": 43,
+          "fully_exhausted": true,
+          "size_counts_examined": {
+            "1": 1,
+            "2": 2,
+            "3": 8,
+            "4": 64,
+            "5": 1024
+          },
+          "seed": null,
+          "max_graphs": null,
+          "termination_reason": "completed_all_candidates",
+          "isomorphism_classes_total": 52,
+          "graphs_total": 1099,
+          "labeled_graphs_total": 1099,
+          "graphs_examined": 1099,
+          "duplicates_skipped": 0,
+          "vacuously_true": false,
+          "elapsed_seconds": 0.026292
+        },
+        "checks": null,
+        "evidence": null,
+        "minimization": null,
+        "minimality": null,
+        "reason": "在顶点数 1 至 5 范围内，对全部 1099 个简单无向图进行了穷举；没有找到反例。后端定义中，欧拉回路等价于连通且所有顶点度数为偶数。",
+        "clarification": null
+      }
+    }
+  ]
+}

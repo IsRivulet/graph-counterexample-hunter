@@ -28,6 +28,7 @@
 - `reason` 必须是非空字符串；`clarification` 必须是非空字符串或 null。
 - `backend_calls` 按实际调用顺序逐次记录对象：`{"operation":"search|verify|minimize","task_file":"相对路径","graph_file":"相对路径或null","result_file":"相对路径"}`。通过独立 CLI 调用 `scripts/... --output` 将每次结果保存到对应文件；不得人工编写或伪造工具结果。没有调用时为空数组。
 - 每次调用使用不同的结果文件；任务和图文件一经调用不得覆盖，可重复引用同一份未修改文件。找到搜索反例后另行调用核验入口；缩小后的图也必须另行调用核验入口，即使缩小器内含核验。只记录真实执行的调用，不补写模拟步骤。
+- 搜索反例经 verifier 确认后，必须显式调用 reducer 并保存原始缩小结果；将其返回的 `minimized_graph` 写入单独图文件，再用 verifier 单独复核。即使 reducer 返回 `no_improvement`，也要复核返回图。只有用户明确要求不缩小时才跳过，并在 `reason` 中注明。减小失败或复核失败时保留原始已核验图和对应证据。
 - 使用工具的工作目录设置定位技能根目录，每条后端命令只执行一次 `python scripts/入口.py --task 任务.json --output 结果.json`（核验/缩小另加 `--graph 图.json`）。不要把 `cd`、管道、重定向或其他命令与该调用拼接；保留 stdout 中完整 JSON，供执行轨迹与结果文件交叉核对。
 - `coverage` 原样取自本次搜索结果（仅候选核验时为 null）。`checks`、`evidence` 对应最终报告中那张图的核验结果；未通过的候选保留核验失败的 `checks`，图与证据为 null。`minimization` 原样取缩小入口结果，或搜索结果中的 `minimization`；`minimality` 对应最终图的证据，不额外合成最小性证明。
 - 需要澄清时 `action="clarify"`、`status="inconclusive"`，`task` 可为 null，不调用后端。明确不支持时 `action="unsupported"`、`status="unsupported"`，不调用后端。

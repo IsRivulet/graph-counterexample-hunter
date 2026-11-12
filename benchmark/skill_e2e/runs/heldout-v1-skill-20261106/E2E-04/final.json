@@ -1,0 +1,1 @@
+{"schema_version":"mathcheck.e2e.v1","action":"clarify","status":"inconclusive","mode":"live","task":null,"counterexample":null,"coverage":null,"checks":null,"evidence":null,"minimization":null,"minimality":null,"reason":"“欧拉迹”的定义会影响命题解释；按要求先澄清，尚未调用后端。","clarification":"这里的“欧拉迹”是指每条边恰好经过一次、允许起点与终点不同的迹吗？","backend_calls":[]}

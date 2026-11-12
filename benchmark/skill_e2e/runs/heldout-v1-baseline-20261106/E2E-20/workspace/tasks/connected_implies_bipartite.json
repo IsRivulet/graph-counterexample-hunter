@@ -1,0 +1,9 @@
+{
+  "property_id": "connected_implies_bipartite",
+  "graph_type": "simple_undirected",
+  "premises": ["connected"],
+  "conclusion": "bipartite",
+  "min_nodes": 1,
+  "max_nodes": 5,
+  "search_mode": "exhaustive"
+}

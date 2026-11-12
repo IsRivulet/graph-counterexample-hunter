@@ -1,0 +1,9 @@
+{
+  "property_id": "connected_max_degree_at_most_2_implies_eulerian_trail",
+  "graph_type": "simple_undirected",
+  "premises": ["connected", {"predicate": "max_degree_at_most", "k": 2}],
+  "conclusion": "eulerian_trail",
+  "min_nodes": 1,
+  "max_nodes": 5,
+  "search_mode": "exhaustive"
+}

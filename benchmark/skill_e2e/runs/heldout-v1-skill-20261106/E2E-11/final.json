@@ -1,0 +1,1 @@
+{"schema_version":"mathcheck.e2e.v1","action":"clarify","status":"inconclusive","mode":"live","task":null,"counterexample":null,"coverage":null,"checks":null,"evidence":null,"minimization":null,"minimality":null,"reason":"需要确认欧拉迹的约定，尤其是单点无边图：是否将空迹视为欧拉迹？这会影响顶点数为 1 时命题的真值。","clarification":"对于单点无边图，是否把空迹（长度为 0 的迹）视为欧拉迹？","backend_calls":[]}

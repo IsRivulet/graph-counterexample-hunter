@@ -1,0 +1,85 @@
+{
+  "schema_version": "mathcheck.e2e.run.v1",
+  "started_at": "2026-11-06T12:25:56.984168+00:00",
+  "condition": "skill",
+  "model_requested": "gpt-6-luna",
+  "backend_version": "0.2.0",
+  "runtime_sha256": {
+    "SKILL.md": "014cdd4e1297ca28df2ffcb9ba6400dd06241adfee98f036ed2e963a4ad1c367",
+    "BACKEND_CONTRACT.md": "fed211c70b89d29ca868d5b4f7ecb7fc24ef1ba011815965500cfc76a29bab67",
+    "README.md": "507791de3f077917bec0b483f5511618935d6835f950ff9fa1fce23eaa5dd3a3",
+    "VERSION": "c58a749f70f5e1ba5394ebcdbfcfa02fa938c4a173d8e41e6c476a7c8b2acddd",
+    "mathcheck/__init__.py": "3877918d48adb6f4fe4b3668b42145b3ad50c439281e6189cb17bba883260959",
+    "mathcheck/canonical.py": "99d3512695f6445f365c4636bfd0ae9d26ac773bc9d00fba505f1a07aab30a16",
+    "mathcheck/cli.py": "2180a79210345d99a39cc34eafe1510778eea1e022d328c83e863ea9297f6d8d",
+    "mathcheck/evidence.py": "d7a492533ad9222884e3510f36e658f32f01b6c3bcb8d4a30006a68a040a6c0f",
+    "mathcheck/graph.py": "399b9531182cae3c5aabf6fa1d5f85c9d6178fdb3818b60dec3ad83961edf61c",
+    "mathcheck/minimize.py": "856a394a87548956662777ff2bf8f3194fd227b1a939b8b9bdd460f5e8a3a98b",
+    "mathcheck/predicates.py": "5b013cacf0ca4ba01ff9bfa8551fbf37f92db079d3ab584b501d27632520874d",
+    "mathcheck/search.py": "be31b09ea79262c73e910abe02d3e12759b99213cedaee93f338aef95f1db762",
+    "mathcheck/task.py": "d0f0a2e5079e4fed9bb65941d6344e9cd135ca58b5d3a669fdbca1d96e2da552",
+    "mathcheck/verify.py": "8f9ba3631fc87b4653fe78cb8be4ec084f4384b01f6c09943d5d00b505bfd117",
+    "scripts/minimize_counterexample.py": "e7e8e70258356fff6fc405d8607bbfffc8dab14dfdf33b743c6968d0d8825752",
+    "scripts/search_engine.py": "42eaaeea2da69b8b82cc0a51e8f5e0cc7d18f3238655da65cb0a255f055c647d",
+    "scripts/verify_candidate.py": "a16d8d088b923a3c9be36f4a4718a4015273da5edb7cee73249f7a02c2ea7416",
+    "references/e2e-report.md": "5e13e5136abcb0e78f76fe1c1e554eb8448bdb421511a942081e2c64cadc449f",
+    "examples/connected_and_bipartite_implies_tree.json": "7dd926e199587e1d52d2ea42e75368a7e0e1edd30cb4931823d9beae052a946d",
+    "examples/minimization_result.json": "76198a7db31bef3086888e5a057ed516236a6af14beb1c3e1bab6a40806e7352",
+    "examples/mock_skill_candidate.json": "da6d85d8df40f59cc691e92d16c5053c28075f0ebd32bc38e45bd94875f17257",
+    "examples/search_result.json": "6334015d6c351ef527510d687612b229c1869c87c1d7915edd4f7419c8e03017",
+    "examples/verification_result.json": "05dbb5bcf25e7853b923c3b87beab219c96d56c407184c0d8089c0a8c3d0addd"
+  },
+  "cases_sha256": "876953b89862745b132442c6c34939b3a6b8690869d76ca2cce546198f679b5e",
+  "case_ids": [
+    "E2E-01",
+    "E2E-02"
+  ],
+  "cases": [
+    {
+      "id": "E2E-01",
+      "command": [
+        "D:\\node.EXE",
+        "C:\\Users\\25922\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\bin\\codex.js",
+        "exec",
+        "--json",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "workspace-write",
+        "--model",
+        "gpt-6-luna",
+        "--output-last-message",
+        "D:\\桌面\\智能体课程\\mathcheck_backend_v0.1.0\\mathcheck_backend\\benchmark\\skill_e2e\\runs\\course-smoke-skill-20261106-escalated\\E2E-01\\final.json",
+        "-"
+      ],
+      "timed_out": false,
+      "exit_code": 0,
+      "error": null,
+      "elapsed_seconds": 121.577714,
+      "runtime_unchanged": true
+    },
+    {
+      "id": "E2E-02",
+      "command": [
+        "D:\\node.EXE",
+        "C:\\Users\\25922\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\bin\\codex.js",
+        "exec",
+        "--json",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--sandbox",
+        "workspace-write",
+        "--model",
+        "gpt-6-luna",
+        "--output-last-message",
+        "D:\\桌面\\智能体课程\\mathcheck_backend_v0.1.0\\mathcheck_backend\\benchmark\\skill_e2e\\runs\\course-smoke-skill-20261106-escalated\\E2E-02\\final.json",
+        "-"
+      ],
+      "timed_out": false,
+      "exit_code": 0,
+      "error": null,
+      "elapsed_seconds": 88.394556,
+      "runtime_unchanged": true
+    }
+  ]
+}
